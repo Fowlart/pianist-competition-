@@ -13,7 +13,7 @@ import {createStore} from 'redux'
  * we use a switch statement, but it's not required.
  */
 
-const cards = [{
+const myCards = [{
         id: "card-1",
         name: "Артур Семіков",
         composition: 'Тестова увертюра Бетховена "Качка жовта в озері тонула"',
@@ -32,7 +32,7 @@ const cards = [{
         videoUrl: ""
     }];
 
-function filmReducer(state = {cardCount: cards.length, cards: cards,isDataInPlace: true}, action) {
+function filmReducer(state = {cardCount: myCards.length, cards: myCards,isDataInPlace: true}, action) {
     switch (action.type) {
         case 'ADD_INITIAL_DATA':
             return {

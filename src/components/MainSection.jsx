@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import styled from "styled-components";
-import {ResultsFilter} from "../../components/MainSectionComponents/ResultsFilter";
-import {Card} from "../../components/MainSectionComponents/Card";
+import {ResultsFilter} from "./ResultsFilter";
+import {Card} from "./Card";
 import {useDispatch, useSelector} from "react-redux";
 
 const MainSectionFlex = styled.div`
@@ -17,8 +17,6 @@ export const MainSection = () => {
 
     //example: the way to retrieve data from redux store
     const cards = useSelector(state => state.cards);
-
-    //example: the way to get dispatcher for redux
     let sectionsForFilter = [`Усі відео`, `Переможці номінації "Фортепіано соло"`, `Переможці номінації "Фортепіанний ансамбль"`, `Переможці номінації "Концертмейстер"`];
 
     return (
