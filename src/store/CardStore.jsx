@@ -1,4 +1,4 @@
-import {applyMiddleware, compose, createStore} from 'redux'
+import {createStore} from 'redux'
 
 /**
  * This is a reducer - a function that takes a current state value and an
@@ -13,43 +13,53 @@ import {applyMiddleware, compose, createStore} from 'redux'
  * we use a switch statement, but it's not required.
  */
 
-function filmReducer(state = {filmCount: 0, films: [],isDataInPlace: false}, action) {
+const cards = [{
+        id: "card-1",
+        name: "Артур Семіков",
+        composition: 'Тестова увертюра Бетховена "Качка жовта в озері тонула"',
+        videoUrl: "https://drive.google.com/file/d/1tW9yfFyzghT1zwmciGk2pNWbay-igCAy/preview"
+    },
+    {
+        id: "card-2",
+        name: "Артур Семіков",
+        composition: 'Тестова увертюра Бетховена "Качка жовта в озері тонула"',
+        videoUrl: "https://drive.google.com/file/d/1tW9yfFyzghT1zwmciGk2pNWbay-igCAy/preview"
+    },
+    {
+        id: "card-3",
+        name: "Артур Семіков",
+        composition: "Тестова увертюра Бетховена 'Качка жовта в озері тонула'",
+        videoUrl: "https://drive.google.com/file/d/1tW9yfFyzghT1zwmciGk2pNWbay-igCAy/preview"
+    }];
+
+function filmReducer(state = {cardCount: cards.length, cards: cards,isDataInPlace: true}, action) {
     switch (action.type) {
         case 'ADD_INITIAL_DATA':
             return {
                 ...state,
-                filmCount: action.payload.length,
-                films: action.payload,
+                cardCount: action.payload.length,
+                cards: action.payload,
                 isDataInPlace: action.isDataInPlace
+            }
+        case 'All':
+            return {
+                ...state
             }
         default:
             return state
     }
 }
 
-const asyncFunctionMiddleware = filmsStore => next => action => {
-    // If the "action" is actually a function instead...
-    if (typeof action === 'function') {
-        // then call the function and pass `dispatch` and `getState` as arguments
-        return action(filmsStore.dispatch, filmsStore.getState)
-    }
-    // Otherwise, it's a normal action - send it onwards
-    return next(action)
-}
-
-const middlewareEnhancer = applyMiddleware(asyncFunctionMiddleware);
-
 
 // Create a Redux store holding the state of your app.
 // Its API is { subscribe, dispatch, getState }.
-export const cardStore = createStore(filmReducer, compose(middlewareEnhancer,
-    window.devToolsExtension ? window.devToolsExtension() : f => f));
+export const cardStore = createStore(filmReducer);
 
 // You can use subscribe() to update the UI in response to state changes.
 // Normally you'd use a view binding library (e.g. React Redux) rather than subscribe() directly.
 // There may be additional use cases where it's helpful to subscribe as well.
 cardStore.subscribe(() =>
-    console.log("FilmsStore state was changed, number of cards: " + cardStore.getState().filmCount)
+    console.log("FilmsStore state was changed, number of cards: " + cardStore.getState().cardCount)
 );
 
 

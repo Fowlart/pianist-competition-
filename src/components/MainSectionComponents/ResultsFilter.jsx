@@ -1,7 +1,6 @@
 import React, {useRef, useState} from "react";
 import styled, {keyframes} from "styled-components";
 import {useDispatch, useSelector} from "react-redux";
-import {fetchMovies, fetchMoviesFiltered} from "../../api_client/apiClient";
 import {AiOutlineFilter, FaFolder} from "react-icons/all";
 
 const FilterContainer = styled.div`
@@ -37,7 +36,6 @@ const StyledResultsFilterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   background-color: #232323;
-  border: solid 0px #232323;
 `;
 
 const grow_0 = keyframes`
@@ -106,43 +104,44 @@ const SortingOptionsHolder = styled.div`
 export const ResultsFilter = (props) => {
 
     const [sections,] = useState(props.sections);
-
-    const refToContainer = useRef();
     const selectedSortOption = useRef();
 
     const [redLineWidth, setRedLineWidth] = useState("10px");
     const [redLineLeft, setRedLineLeft] = useState("10px");
     const [animation, setAnimation] = useState(0);
 
-    const films = useSelector(state => state.films);
+    const cards = useSelector(state => state.cards);
     const dispatch = useDispatch();
 
     function onFilterSectionClick(selectedSection, event) {
-        let currentSectionWidth = event.target.getBoundingClientRect().width;
+        console.log("onFilterSectionClick");
+       /* let currentSectionWidth = event.target.getBoundingClientRect().width;
         let currentSectionLeft = event.target.getBoundingClientRect().left-10;
         setRedLineWidth(currentSectionWidth+"px");
         setRedLineLeft(currentSectionLeft+"px");
         let counter = animation+1;
         setAnimation(counter);
-        let selectedGenreString = selectedSection.section.toLowerCase();
-        const fetchFilms = fetchMovies();
-        const fetchFilmsFiltered = fetchMoviesFiltered(selectedSection);
-        if (selectedGenreString === "усі відео") {
-            dispatch(fetchFilms);
+        let selectedSectionString = selectedSection.section.toLowerCase();
+        console.log(selectedSectionString);*/
+
+        let selectedSectionString = selectedSection.key.toLowerCase();
+        console.log(selectedSectionString);
+        if (selectedSectionString === "усі відео") {
+            dispatch("ALL");
         } else {
-            dispatch(fetchFilmsFiltered);
+            dispatch(selectedSectionString);
         }
     }
 
     let renderedSections = sections.map((section) => (
-      <FilterSection onClick={(event) => {onFilterSectionClick({section},event)}} key={section} keyForSearch={section}><FaFolder/>{section}</FilterSection>
+      <FilterSection onClick={onFilterSectionClick} key={section}> <FaFolder/>{section}</FilterSection>
     ));
 
     function styledSelectChangeHandler() {
         switch (selectedSortOption.current.value) {
             case 'RELEASE DATE':
                 console.log('RELEASE DATE sorting...');
-                let newFilms1 = films.sort((a,b)=> {
+                let newFilms1 = cards.sort((a,b)=> {
                     if (a.release < b.release) {
                         return 1;
                     }
@@ -155,7 +154,7 @@ export const ResultsFilter = (props) => {
                 return;
             case 'ALPHABETICAL':
                 console.log('ALPHABETICAL sorting...');
-                let newFilms2 = films.sort((a,b)=> {
+                let newFilms2 = cards.sort((a,b)=> {
                     let nameA = a.name.toUpperCase(); // ignore upper and lowercase
                     let nameB = b.name.toUpperCase();
                     if (nameA < nameB) {
@@ -174,11 +173,10 @@ export const ResultsFilter = (props) => {
     return (
         <>
             <StyledResultsFilterWrapper>
-                <FilterContainer ref={refToContainer} children={renderedSections}/>
+                <FilterContainer children={renderedSections}/>
                 <SortingOptionsHolder>
                     <StyledSpan><AiOutlineFilter/>Сортування</StyledSpan>
-                    <StyledSelect id="language-selector" name="language" ref={selectedSortOption}
-                                  onChange={styledSelectChangeHandler}>
+                    <StyledSelect ref={selectedSortOption} onChange={styledSelectChangeHandler}>
                         <option value="RELEASE DATE">Дата</option>
                         <option value="ALPHABETICAL">Алфавіт</option>
                     </StyledSelect>

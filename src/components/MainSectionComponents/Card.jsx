@@ -1,13 +1,12 @@
 import React, {useState} from "react";
 import styled from "styled-components";
-import {BsFillPersonFill, FaBookOpen, FaLeanpub} from "react-icons/all";
+import {BsFillPersonFill, FaBookOpen} from "react-icons/all";
 
 export const FilmWrapper = styled.div`
   font-size: 19px;
   font-family: "Segoe UI", serif;
   font-stretch: ultra-expanded;
   color: black;
-    // background-image: url("${props => (props.img)}");
   width: 650px;
   height: 520px;
   margin: 15px;
@@ -30,8 +29,7 @@ export const Card = (props) => {
 
     return (
         <FilmWrapper>
-
-            <iframe src={videoUrl} width="640" height="480"></iframe>
+            <iframe src={videoUrl} width="640" height="480"/>
             <FilmInfo><span><BsFillPersonFill/><b>{name}</b></span>
                 <span><FaBookOpen/><i>{composition}</i></span></FilmInfo>
         </FilmWrapper>
