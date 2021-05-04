@@ -17,19 +17,19 @@ const cards = [{
         id: "card-1",
         name: "Артур Семіков",
         composition: 'Тестова увертюра Бетховена "Качка жовта в озері тонула"',
-        videoUrl: "https://drive.google.com/file/d/1tW9yfFyzghT1zwmciGk2pNWbay-igCAy/preview"
+        videoUrl: ""
     },
     {
         id: "card-2",
-        name: "Артур Семіков",
+        name: "Оленка Семікова",
         composition: 'Тестова увертюра Бетховена "Качка жовта в озері тонула"',
-        videoUrl: "https://drive.google.com/file/d/1tW9yfFyzghT1zwmciGk2pNWbay-igCAy/preview"
+        videoUrl: ""
     },
     {
         id: "card-3",
         name: "Артур Семіков",
         composition: "Тестова увертюра Бетховена 'Качка жовта в озері тонула'",
-        videoUrl: "https://drive.google.com/file/d/1tW9yfFyzghT1zwmciGk2pNWbay-igCAy/preview"
+        videoUrl: ""
     }];
 
 function filmReducer(state = {cardCount: cards.length, cards: cards,isDataInPlace: true}, action) {

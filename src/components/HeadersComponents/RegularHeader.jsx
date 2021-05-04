@@ -1,8 +1,25 @@
-import Input from "../UI/Input.styled";
-import Button from "../UI/Button.styled";
+
 import React, {useState} from "react";
 import styled from "styled-components";
 import {AiOutlineFileSearch} from "react-icons/all";
+
+const Button = styled.input`
+font-size: medium;
+width: 20%;
+height: 90%;
+background-color: red;
+color: white;
+transition: all 0.5s;
+:hover {
+  color: darkred;
+}`;
+
+const Input = styled.input`
+  font-size: medium;
+  flex-direction: column;
+  color: ${props => props.inputColor || "palevioletred"};
+  `;
+
 
 const InputStyle = styled.div`
   font-size: large;
@@ -25,6 +42,10 @@ const StyledSpan = styled.span`
 
 export const RegularHeader = () => {
 
+    function handler(){
+        alert("handler");
+    }
+
     return (
         <>
             <InputWraper>
@@ -32,7 +53,7 @@ export const RegularHeader = () => {
                     <StyledSpan><AiOutlineFileSearch/>Пошук відео</StyledSpan>
                     <Input type="text" placeholder="Введіть слово для пошуку..." inputColor="black"/>
                 </InputStyle>
-                <Button type="submit" value="Пошук"/>
+                <Button type="submit" value="Пошук" onClick={handler}/>
             </InputWraper>
         </>
     )

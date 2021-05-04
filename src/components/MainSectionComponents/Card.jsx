@@ -27,10 +27,14 @@ export const Card = (props) => {
     const [composition,] = useState(props.composition);
     const [videoUrl,] = useState(props.videoUrl);
 
+    function clickHandler(){
+        console.log("click!");
+    }
+
     return (
         <FilmWrapper>
-            <iframe src={videoUrl} width="640" height="480"/>
-            <FilmInfo><span><BsFillPersonFill/><b>{name}</b></span>
+            <iframe   src={videoUrl} width="640" height="480"/>
+            <FilmInfo><span onClick={clickHandler}><BsFillPersonFill/><b>{name}</b></span>
                 <span><FaBookOpen/><i>{composition}</i></span></FilmInfo>
         </FilmWrapper>
     );

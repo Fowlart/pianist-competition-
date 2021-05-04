@@ -115,16 +115,13 @@ export const ResultsFilter = (props) => {
 
     function onFilterSectionClick(selectedSection, event) {
         console.log("onFilterSectionClick");
-       /* let currentSectionWidth = event.target.getBoundingClientRect().width;
+       let currentSectionWidth = event.target.getBoundingClientRect().width;
         let currentSectionLeft = event.target.getBoundingClientRect().left-10;
         setRedLineWidth(currentSectionWidth+"px");
         setRedLineLeft(currentSectionLeft+"px");
         let counter = animation+1;
         setAnimation(counter);
         let selectedSectionString = selectedSection.section.toLowerCase();
-        console.log(selectedSectionString);*/
-
-        let selectedSectionString = selectedSection.key.toLowerCase();
         console.log(selectedSectionString);
         if (selectedSectionString === "усі відео") {
             dispatch("ALL");

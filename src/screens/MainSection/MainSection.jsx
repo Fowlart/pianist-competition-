@@ -13,13 +13,13 @@ const MainSectionFlex = styled.div`
 `;
 
 
-const MainSection = () => {
+export const MainSection = () => {
 
     //example: the way to retrieve data from redux store
     const cards = useSelector(state => state.cards);
 
     //example: the way to get dispatcher for redux
-    let sectionsForFilter = ['Усі відео', 'Переможці номінації "Фортепіано соло"', 'Переможці номінації "Фортепіанний ансамбль"', 'Переможці номінації "Концертмейстер"'];
+    let sectionsForFilter = [`Усі відео`, `Переможці номінації "Фортепіано соло"`, `Переможці номінації "Фортепіанний ансамбль"`, `Переможці номінації "Концертмейстер"`];
 
     return (
         <>
@@ -36,27 +36,3 @@ const MainSection = () => {
         </>
     );
 };
-
-const OopsDiv = styled.div`
-  background-color: black;
-  color: red;
-  text-align: center;`;
-
-
-const OopsText = () => {
-    return (
-        <OopsDiv>
-            < h2> Oops, something went wrong... We are doing our best to fix the issue ! < /h2>
-        </OopsDiv>
-    );
-};
-
-const ErrorBoundaryMainSection = () => {
-
-    const isDataInPlace = true;
-
-    return isDataInPlace ?
-        <MainSection/> : <OopsText/>;
-};
-
-export default ErrorBoundaryMainSection;
