@@ -1,7 +1,7 @@
 import React, {useRef, useState} from "react";
 import styled, {keyframes} from "styled-components";
 import {useDispatch, useSelector} from "react-redux";
-import {AiOutlineFilter, FaFolder} from "react-icons/all";
+import {AiOutlineFilter, FaFolder, FaUniversity} from "react-icons/all";
 
 const FilterContainer = styled.div`
   font-size: 15px;
@@ -113,45 +113,64 @@ export const ResultsFilter = (props) => {
     const cards = useSelector(state => state.cards);
     const dispatch = useDispatch();
 
-    function onFilterSectionClick(selectedSection, event) {
-        console.log("onFilterSectionClick");
-       let currentSectionWidth = event.target.getBoundingClientRect().width;
-        let currentSectionLeft = event.target.getBoundingClientRect().left-10;
-        setRedLineWidth(currentSectionWidth+"px");
-        setRedLineLeft(currentSectionLeft+"px");
-        let counter = animation+1;
+    function reRenderRedLin(event){
+        let currentSectionWidth = event.target.getBoundingClientRect().width;
+        let currentSectionLeft = event.target.getBoundingClientRect().left - 10;
+        setRedLineWidth(currentSectionWidth + "px");
+        setRedLineLeft(currentSectionLeft + "px");
+        let counter = animation + 1;
         setAnimation(counter);
-        let selectedSectionString = selectedSection.section.toLowerCase();
+    }
+
+    function onFilterSectionClick(selectedSection, event) {
+        reRenderRedLin(event);
+        let selectedSectionString = selectedSection.section;
         console.log(selectedSectionString);
-        if (selectedSectionString === "усі відео") {
-            dispatch("ALL");
-        } else {
-            dispatch(selectedSectionString);
+        switch (selectedSectionString) {
+            case `Усі відео`:
+                dispatch({type: "ALL"});
+                break;
+            case `Переможці номінації "Фортепіано соло"`:
+                dispatch({type: "group-1"});
+                break;
+            case `Переможці номінації "Фортепіанний ансамбль"`:
+                dispatch({type: "group-2"});
+                break;
+            case `Переможці номінації "Концертмейстер"`:
+                dispatch({type: "group-3"});
+                break;
         }
     }
 
+    function renderInfoPage(event){
+        reRenderRedLin(event);
+        dispatch({type: "INFO_PAGE"});
+    }
+
     let renderedSections = sections.map((section) => (
-      <FilterSection onClick={onFilterSectionClick} key={section}> <FaFolder/>{section}</FilterSection>
+        section==="Про конкурс"?
+            <FilterSection onClick={renderInfoPage} key={section}> <FaUniversity/>{section} </FilterSection>
+        :<FilterSection onClick={(e) => onFilterSectionClick({section}, e)} key={section}> <FaFolder/>{section}</FilterSection>
     ));
 
     function styledSelectChangeHandler() {
         switch (selectedSortOption.current.value) {
             case 'RELEASE DATE':
                 console.log('RELEASE DATE sorting...');
-                let newFilms1 = cards.sort((a,b)=> {
+                let newFilms1 = cards.sort((a, b) => {
                     if (a.release < b.release) {
                         return 1;
                     }
-                    if (a.release> b.release) {
+                    if (a.release > b.release) {
                         return -1;
                     }
                     return 0;
                 }).slice();
-                dispatch({type:"ADD_INITIAL_DATA", payload: newFilms1, isDataInPlace: true})
+                dispatch({type: "ADD_INITIAL_DATA", payload: newFilms1, isDataInPlace: true})
                 return;
             case 'ALPHABETICAL':
                 console.log('ALPHABETICAL sorting...');
-                let newFilms2 = cards.sort((a,b)=> {
+                let newFilms2 = cards.sort((a, b) => {
                     let nameA = a.name.toUpperCase(); // ignore upper and lowercase
                     let nameB = b.name.toUpperCase();
                     if (nameA < nameB) {
@@ -162,7 +181,7 @@ export const ResultsFilter = (props) => {
                     }
                     return 0;
                 }).slice();
-                dispatch({type:"ADD_INITIAL_DATA", payload: newFilms2, isDataInPlace: true})
+                dispatch({type: "ADD_INITIAL_DATA", payload: newFilms2, isDataInPlace: true})
                 return;
         }
     }

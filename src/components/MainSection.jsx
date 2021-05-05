@@ -12,16 +12,22 @@ const MainSectionFlex = styled.div`
   background-color: bisque;
 `;
 
+const P = styled.p`
+    color: red;
+`;
+
 
 export const MainSection = () => {
 
     //example: the way to retrieve data from redux store
     const cards = useSelector(state => state.cards);
-    let sectionsForFilter = [`Усі відео`, `Переможці номінації "Фортепіано соло"`, `Переможці номінації "Фортепіанний ансамбль"`, `Переможці номінації "Концертмейстер"`];
+    const isDataInPlace =  useSelector(state => state.isDataInPlace);
+    let sectionsForFilter = [`Про конкурс`,`Усі відео`, `Переможці номінації "Фортепіано соло"`, `Переможці номінації "Фортепіанний ансамбль"`, `Переможці номінації "Концертмейстер"`];
 
     return (
         <>
             <ResultsFilter sections={sectionsForFilter}/>
+            { isDataInPlace?(
             <MainSectionFlex>
                 {cards.map(card => (
                     <Card
@@ -29,8 +35,7 @@ export const MainSection = () => {
                         videoUrl={card.videoUrl}
                         composition={card.composition}
                         key={card.id}/>
-                ))}
-            </MainSectionFlex>
+                ))}</MainSectionFlex>):<P>Тут має бути інфо-сторінка</P>}
         </>
     );
 };

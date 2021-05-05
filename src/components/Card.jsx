@@ -16,9 +16,8 @@ export const FilmWrapper = styled.div`
 
 export const FilmInfo = styled.div`
   height: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  text-align: center;
+  justify-content: center;
 `;
 
 export const Card = (props) => {
@@ -27,15 +26,17 @@ export const Card = (props) => {
     const [composition,] = useState(props.composition);
     const [videoUrl,] = useState(props.videoUrl);
 
-    function clickHandler(){
+    function clickHandler() {
         console.log("click!");
     }
 
     return (
         <FilmWrapper>
-            <iframe   src={videoUrl} width="640" height="480"/>
-            <FilmInfo><span onClick={clickHandler}><BsFillPersonFill/><b>{name}</b></span>
-                <span><FaBookOpen/><i>{composition}</i></span></FilmInfo>
+            <iframe src={videoUrl} width="640" height="480"/>
+            <FilmInfo>
+                <span><FaBookOpen/><i>{composition}</i></span><br/>
+                <span onClick={clickHandler}><BsFillPersonFill/><b>{name}</b></span>
+            </FilmInfo>
         </FilmWrapper>
     );
 }
