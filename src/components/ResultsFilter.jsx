@@ -80,28 +80,6 @@ const ThinLineInnerDiv = styled.div`
   animation: ${props => (props.animation % 2 === 0) ? grow_0 : grow_1} 0.5s linear;
 `;
 
-const StyledSelect = styled.select`
-  color: white;
-  background-color: #232323;
-  font-size: 15px;
-  font-family: "Segoe UI", serif;
-`;
-
-const StyledSpan = styled.span`
-  position: relative;
-  font-size: 15px;
-  font-family: "Segoe UI", serif;
-  color: gray;
-  margin-top: 4%;
-  margin-right: 30px;
-`;
-
-const SortingOptionsHolder = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-`;
-
 export const ResultsFilter = (props) => {
 
     const [sections,] = useState(props.sections);
@@ -117,7 +95,6 @@ export const ResultsFilter = (props) => {
         reRenderRedLin({target:infoPageSectionRef.current})
     }, [width]);
 
-    const cards = useSelector(state => state.cards);
     const dispatch = useDispatch();
 
     function reRenderRedLin(event) {

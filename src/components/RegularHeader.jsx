@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useRef, useState} from "react";
 import styled from "styled-components";
-import {AiOutlineFileSearch} from "react-icons/all";
+import {AiOutlineFileSearch, HiOutlineExclamationCircle} from "react-icons/all";
+import {useDispatch, useSelector} from "react-redux";
 
 const Button = styled.input`
   font-size: medium;
@@ -36,28 +37,52 @@ const InputWraper = styled.div`
   justify-content: center;
   flex-direction: row;
   height: 60px;
-  background-color: #232323;
 `;
 
 const StyledSpan = styled.span`
   color: white;
 `;
 
-export const RegularHeader = () => {
+const Error = styled.div`
+  color: red;
+  text-align: center;`
+
+const Warn = styled.div`
+  color: yellow;
+  text-align: center;`
+
+export const RegularHeader = (props) => {
+
+    const searchField = useRef();
+    const error = useSelector(state=>state.error);
+    const dispatch = useDispatch();
 
     function handler() {
-        alert("handler");
+        let str = String(searchField.current.value);
+        if (str.length < 3 || str.includes(" ")) {
+            dispatch({type: "ERROR", msg: "Будбь ласка введіть більше 3 символів і не використовуйте пробіл"});
+        } else {
+            dispatch({type: "SEARCH", query: str});
+        }
+    }
+
+    function handleKeyPress (event) {
+        if(event.key === 'Enter'){
+            handler();
+        }
     }
 
     return (
         <>
             <InputWraper>
                 <InputStyle>
-                    <StyledSpan><AiOutlineFileSearch/>Пошук відео</StyledSpan>
-                    <Input type="text" placeholder="Введіть прізвище/ім'я учасника..." inputColor="black"/>
+                    <StyledSpan>Пошук відео <AiOutlineFileSearch/></StyledSpan>
+                    <Input onKeyPress={handleKeyPress} ref={searchField} type="text" placeholder="Введіть прізвище учасника..." inputColor="black"/>
                 </InputStyle>
-                <Button type="submit" value="Пошук" onClick={handler}/>
+                <Button value="Пошук" type="submit" onClick={handler} />
             </InputWraper>
+            {error !== "" ? <Error><HiOutlineExclamationCircle/>{error}<HiOutlineExclamationCircle/></Error> : null}
+            {props.cardCount === 0 ? <Warn><HiOutlineExclamationCircle/>відео не знайдені<HiOutlineExclamationCircle/></Warn> : null}
         </>
     )
 }

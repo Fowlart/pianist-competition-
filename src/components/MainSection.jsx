@@ -2,7 +2,8 @@ import React, {useEffect} from "react";
 import styled from "styled-components";
 import {ResultsFilter} from "./ResultsFilter";
 import {Card} from "./Card";
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
+import {RegularHeader} from "./RegularHeader";
 
 const MainSectionFlex = styled.div`
   display: flex;
@@ -19,13 +20,14 @@ const P = styled.p`
 
 export const MainSection = () => {
 
-    //example: the way to retrieve data from redux store
     const cards = useSelector(state => state.cards);
-    const isDataInPlace =  useSelector(state => state.isDataInPlace);
-    let sectionsForFilter = [`Про конкурс`,`Усі відео`, `Переможці номінації "Фортепіано соло"`, `Переможці номінації "Фортепіанний ансамбль"`, `Переможці номінації "Концертмейстер"`];
+    const isDataInPlace = useSelector(state => state.isDataInPlace);
+    const cardCount = useSelector(state => state.cardCount);
+    const sectionsForFilter = [`Про конкурс`,`Усі відео`, `Переможці номінації "Фортепіано соло"`, `Переможці номінації "Фортепіанний ансамбль"`, `Переможці номінації "Концертмейстер"`];
 
     return (
         <>
+            <RegularHeader cardCount={cardCount}/>
             <ResultsFilter sections={sectionsForFilter}/>
             { isDataInPlace?(
             <MainSectionFlex>

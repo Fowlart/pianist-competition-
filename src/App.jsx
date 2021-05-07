@@ -5,10 +5,10 @@ import {cardStore} from "./store/CardStore";
 import {RegularHeader} from "./components/RegularHeader";
 
 function App() {
+
     return (
         <React.StrictMode>
             <Provider store={cardStore}>
-                <RegularHeader/>
                 <MainSection/>
             </Provider>
         </React.StrictMode>
