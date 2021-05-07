@@ -1,7 +1,8 @@
-import React, {useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import styled, {keyframes} from "styled-components";
 import {useDispatch, useSelector} from "react-redux";
-import {AiOutlineFilter, FaFolder, FaUniversity} from "react-icons/all";
+import {FaFolder, FaUniversity} from "react-icons/all";
+import useWindowDimensions from "../hooks/UseWindowDimensions";
 
 const FilterContainer = styled.div`
   font-size: 15px;
@@ -104,16 +105,23 @@ const SortingOptionsHolder = styled.div`
 export const ResultsFilter = (props) => {
 
     const [sections,] = useState(props.sections);
-    const selectedSortOption = useRef();
 
     const [redLineWidth, setRedLineWidth] = useState("10px");
     const [redLineLeft, setRedLineLeft] = useState("10px");
     const [animation, setAnimation] = useState(0);
+    const {height, width} = useWindowDimensions();
+    const infoPageSectionRef = useRef();
+
+    //handling redLine on resize
+    useEffect(() => {
+        reRenderRedLin({target:infoPageSectionRef.current})
+    }, [width]);
 
     const cards = useSelector(state => state.cards);
     const dispatch = useDispatch();
 
-    function reRenderRedLin(event){
+    function reRenderRedLin(event) {
+        infoPageSectionRef.current = event.target;
         let currentSectionWidth = event.target.getBoundingClientRect().width;
         let currentSectionLeft = event.target.getBoundingClientRect().left - 10;
         setRedLineWidth(currentSectionWidth + "px");
@@ -142,61 +150,22 @@ export const ResultsFilter = (props) => {
         }
     }
 
-    function renderInfoPage(event){
+    function renderInfoPage(event) {
         reRenderRedLin(event);
         dispatch({type: "INFO_PAGE"});
     }
 
     let renderedSections = sections.map((section) => (
-        section==="Про конкурс"?
-            <FilterSection onClick={renderInfoPage} key={section}> <FaUniversity/>{section} </FilterSection>
-        :<FilterSection onClick={(e) => onFilterSectionClick({section}, e)} key={section}> <FaFolder/>{section}</FilterSection>
+        section === "Про конкурс" ?
+            <FilterSection ref={infoPageSectionRef} onClick={renderInfoPage} key={section}> <FaUniversity/>{section} </FilterSection>
+            : <FilterSection  onClick={(e) => onFilterSectionClick({section}, e)} key={section}> <FaFolder/>{section}
+            </FilterSection>
     ));
-
-    function styledSelectChangeHandler() {
-        switch (selectedSortOption.current.value) {
-            case 'RELEASE DATE':
-                console.log('RELEASE DATE sorting...');
-                let newFilms1 = cards.sort((a, b) => {
-                    if (a.release < b.release) {
-                        return 1;
-                    }
-                    if (a.release > b.release) {
-                        return -1;
-                    }
-                    return 0;
-                }).slice();
-                dispatch({type: "ADD_INITIAL_DATA", payload: newFilms1, isDataInPlace: true})
-                return;
-            case 'ALPHABETICAL':
-                console.log('ALPHABETICAL sorting...');
-                let newFilms2 = cards.sort((a, b) => {
-                    let nameA = a.name.toUpperCase(); // ignore upper and lowercase
-                    let nameB = b.name.toUpperCase();
-                    if (nameA < nameB) {
-                        return -1;
-                    }
-                    if (nameA > nameB) {
-                        return 1;
-                    }
-                    return 0;
-                }).slice();
-                dispatch({type: "ADD_INITIAL_DATA", payload: newFilms2, isDataInPlace: true})
-                return;
-        }
-    }
 
     return (
         <>
             <StyledResultsFilterWrapper>
                 <FilterContainer children={renderedSections}/>
-                <SortingOptionsHolder>
-                    <StyledSpan><AiOutlineFilter/>Сортування</StyledSpan>
-                    <StyledSelect ref={selectedSortOption} onChange={styledSelectChangeHandler}>
-                        <option value="RELEASE DATE">Дата</option>
-                        <option value="ALPHABETICAL">Алфавіт</option>
-                    </StyledSelect>
-                </SortingOptionsHolder>
             </StyledResultsFilterWrapper>
             <DivThinLine><ThinLineInnerDiv width={redLineWidth} left={redLineLeft} animation={animation}/></DivThinLine>
         </>
