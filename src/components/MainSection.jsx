@@ -5,6 +5,7 @@ import {Card} from "./Card";
 import {useSelector} from "react-redux";
 import {RegularHeader} from "./RegularHeader";
 import {InfoPage} from "./InfoPage";
+import logo from "../1163023.png";
 
 const MainSectionFlex = styled.div`
   display: flex;
@@ -12,6 +13,7 @@ const MainSectionFlex = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   background-color: bisque;
+  background-image: url("${logo}");
 `;
 
 export const MainSection = () => {

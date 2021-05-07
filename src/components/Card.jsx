@@ -6,12 +6,14 @@ import useWindowDimensions from "../hooks/UseWindowDimensions";
 const FilmWrapper = styled.div`
   font-size: 19px;
   font-family: "Segoe UI", serif;
-  font-stretch: ultra-expanded;
+  font-weight: 700;
   color: black;
   margin: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between`;
+  justify-content: space-between;
+  transition: all;
+`;
 
 const FilmInfo = styled.div`
   height: 10%;
