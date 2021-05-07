@@ -23,7 +23,7 @@ export const MainSection = () => {
     const cards = useSelector(state => state.cards);
     const isDataInPlace = useSelector(state => state.isDataInPlace);
     const cardCount = useSelector(state => state.cardCount);
-    const sectionsForFilter = [`Про конкурс`,`Усі відео`, `Переможці номінації "Фортепіано соло"`, `Переможці номінації "Фортепіанний ансамбль"`, `Переможці номінації "Концертмейстер"`];
+    const sectionsForFilter = [`Про конкурс`,`Усі відео`, `Номінація "Фортепіано соло"`, `Номінація "Фортепіанний ансамбль"`, `Номінація "Концертмейстер"`];
 
     return (
         <>
