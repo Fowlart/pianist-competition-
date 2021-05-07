@@ -51,7 +51,6 @@ function filmReducer(state = {cardCount: myCards.length, cards: myCards, isDataI
                 error: ""
             };
         case 'group-1':
-            console.log(`> Переможці номінації "Фортепіано соло"`);
             let newCards = myCards.filter(card => card.group === group1).slice();
             return {
                 cards: newCards,
@@ -60,7 +59,6 @@ function filmReducer(state = {cardCount: myCards.length, cards: myCards, isDataI
                 error: ""
             }
         case 'group-2':
-            console.log(`> Переможці номінації "Фортепіанний ансамбль"`);
             let newCards1 =  myCards.filter(card => card.group === group2).slice();
             return {
                 cards: newCards1,
@@ -69,7 +67,6 @@ function filmReducer(state = {cardCount: myCards.length, cards: myCards, isDataI
                 error: ""
             }
         case 'group-3':
-            console.log(`> Переможці номінації "Концертмейстер"`);
             let newCards2 = myCards.filter(card => card.group === group3).slice();
             return {
                 cards: newCards2,

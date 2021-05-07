@@ -2,14 +2,14 @@ import React, {useRef} from "react";
 import styled from "styled-components";
 import {AiOutlineFileSearch, HiOutlineExclamationCircle} from "react-icons/all";
 import {useDispatch, useSelector} from "react-redux";
+import useWindowDimensions from "../hooks/UseWindowDimensions";
 
 const Button = styled.input`
+  margin-top: 14px;
   font-size: 15px;
-  margin-top: 23px;
-  margin-left: 10px;
   width: 15%;
-  height: 45%;
-  background-color: red;
+ border: solid white 2px;
+  background-color: black;
   color: white;
   transition: all 0.5s;
 
@@ -34,7 +34,7 @@ const InputStyle = styled.div`
 
 const InputWraper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
   height: 60px;
 `;
@@ -44,12 +44,14 @@ const StyledSpan = styled.span`
 `;
 
 const Error = styled.div`
-  font-size: 22px;
+  margin-top: 17px;
+  font-size: 18px;
   color: red;
   text-align: center;`
 
 const Warn = styled.div`
-  font-size: 22px;
+  margin-top: 17px;
+  font-size: 18px;
   color: yellow;
   text-align: center;`
 
@@ -58,6 +60,7 @@ export const RegularHeader = (props) => {
     const searchField = useRef();
     const error = useSelector(state => state.error);
     const dispatch = useDispatch();
+    const {height, width} = useWindowDimensions();
 
     function handler() {
         let str = String(searchField.current.value);

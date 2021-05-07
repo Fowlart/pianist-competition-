@@ -7,7 +7,7 @@ const FilmWrapper = styled.div`
   font-size: 19px;
   font-family: "Segoe UI", serif;
   font-weight: 700;
-  color: black;
+  color: lawngreen;
   margin: 15px;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,7 @@ const FilmInfo = styled.div`
 const IframeBox = styled.iframe`
   width: ${props => props.width};
   height: 480px;
+  border: solid gold 3px;
 `;
 
 export const Card = (props) => {

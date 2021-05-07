@@ -16,9 +16,10 @@ const A = styled.a`
   font-weight: 800;
   margin-top: 20px;
   font-size: 20px;
-  color: black;
+  color: lawngreen;
   transition: all ease;
   text-decoration: none;
+
   :hover {
     color: darkred;
   }
@@ -27,6 +28,8 @@ const A = styled.a`
 
 export const InfoPage = () => {
     return (<Div>
+        <br/>
+        <br/>
         <A href="https://drive.google.com/file/d/1qdyL0mXafowI888sPJLyM7yuhYJNR70b/view?usp=sharing"><BiLinkExternal/>
             Склад організаційного комітету </A>
         <br/>
