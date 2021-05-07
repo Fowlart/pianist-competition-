@@ -1,10 +1,10 @@
-import React, {useRef, useState} from "react";
+import React, {useRef} from "react";
 import styled from "styled-components";
 import {AiOutlineFileSearch, HiOutlineExclamationCircle} from "react-icons/all";
 import {useDispatch, useSelector} from "react-redux";
 
 const Button = styled.input`
-  font-size: medium;
+  font-size: 15px;
   margin-top: 23px;
   margin-left: 10px;
   width: 15%;
@@ -18,14 +18,14 @@ const Button = styled.input`
   }`;
 
 const Input = styled.input`
-  font-size: medium;
+  font-size: 15px;
   flex-direction: column;
   color: ${props => props.inputColor || "palevioletred"};
 `;
 
 
 const InputStyle = styled.div`
-  font-size: large;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   width: 60%;
@@ -44,17 +44,19 @@ const StyledSpan = styled.span`
 `;
 
 const Error = styled.div`
+  font-size: 22px;
   color: red;
   text-align: center;`
 
 const Warn = styled.div`
+  font-size: 22px;
   color: yellow;
   text-align: center;`
 
 export const RegularHeader = (props) => {
 
     const searchField = useRef();
-    const error = useSelector(state=>state.error);
+    const error = useSelector(state => state.error);
     const dispatch = useDispatch();
 
     function handler() {
@@ -66,8 +68,8 @@ export const RegularHeader = (props) => {
         }
     }
 
-    function handleKeyPress (event) {
-        if(event.key === 'Enter'){
+    function handleKeyPress(event) {
+        if (event.key === 'Enter') {
             handler();
         }
     }
@@ -76,13 +78,15 @@ export const RegularHeader = (props) => {
         <>
             <InputWraper>
                 <InputStyle>
-                    <StyledSpan>Пошук відео <AiOutlineFileSearch/></StyledSpan>
-                    <Input onKeyPress={handleKeyPress} ref={searchField} type="text" placeholder="Введіть прізвище учасника..." inputColor="black"/>
+                    <StyledSpan><AiOutlineFileSearch/>Пошук відео по прізвищу учасника </StyledSpan>
+                    <Input onKeyPress={handleKeyPress} ref={searchField} type="text"
+                           placeholder="Введіть прізвище учасника..." inputColor="black"/>
                 </InputStyle>
-                <Button value="Пошук" type="submit" onClick={handler} />
+                <Button value="Пошук" type="submit" onClick={handler}/>
             </InputWraper>
             {error !== "" ? <Error><HiOutlineExclamationCircle/>{error}<HiOutlineExclamationCircle/></Error> : null}
-            {props.cardCount === 0 ? <Warn><HiOutlineExclamationCircle/>відео не знайдені<HiOutlineExclamationCircle/></Warn> : null}
+            {props.cardCount === 0 ?
+                <Warn><HiOutlineExclamationCircle/>відео не знайдені<HiOutlineExclamationCircle/></Warn> : null}
         </>
     )
 }

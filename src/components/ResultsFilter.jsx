@@ -21,7 +21,7 @@ const FilterSection = styled(FilterContainer)`
   color: lawngreen;
 
   :hover {
-    color: red;
+    color: darkred;
   }
 `;
 
@@ -37,6 +37,7 @@ const StyledResultsFilterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   background-color: #232323;
+  margin-top: 15px;
 `;
 
 const grow_0 = keyframes`
@@ -88,17 +89,17 @@ export const ResultsFilter = (props) => {
     const [redLineLeft, setRedLineLeft] = useState("10px");
     const [animation, setAnimation] = useState(0);
     const {height, width} = useWindowDimensions();
-    const infoPageSectionRef = useRef();
+    const markedSectionRef = useRef();
 
     //handling redLine on resize
     useEffect(() => {
-        reRenderRedLin({target:infoPageSectionRef.current})
+        reRenderRedLin({target:markedSectionRef.current})
     }, [width]);
 
     const dispatch = useDispatch();
 
     function reRenderRedLin(event) {
-        infoPageSectionRef.current = event.target;
+        markedSectionRef.current = event.target;
         let currentSectionWidth = event.target.getBoundingClientRect().width;
         let currentSectionLeft = event.target.getBoundingClientRect().left - 10;
         setRedLineWidth(currentSectionWidth + "px");
@@ -115,13 +116,13 @@ export const ResultsFilter = (props) => {
             case `Усі відео`:
                 dispatch({type: "ALL"});
                 break;
-            case `Переможці номінації "Фортепіано соло"`:
+            case `Номінація "Фортепіано соло"`:
                 dispatch({type: "group-1"});
                 break;
-            case `Переможці номінації "Фортепіанний ансамбль"`:
+            case `Номінація "Фортепіанний ансамбль"`:
                 dispatch({type: "group-2"});
                 break;
-            case `Переможці номінації "Концертмейстер"`:
+            case `Номінація "Концертмейстер"`:
                 dispatch({type: "group-3"});
                 break;
         }
@@ -134,9 +135,8 @@ export const ResultsFilter = (props) => {
 
     let renderedSections = sections.map((section) => (
         section === "Про конкурс" ?
-            <FilterSection ref={infoPageSectionRef} onClick={renderInfoPage} key={section}> <FaUniversity/>{section} </FilterSection>
-            : <FilterSection  onClick={(e) => onFilterSectionClick({section}, e)} key={section}> <FaFolder/>{section}
-            </FilterSection>
+            <FilterSection  onClick={renderInfoPage} key={section}> <FaUniversity/>{section} </FilterSection>
+            : <FilterSection  ref={markedSectionRef} onClick={(e) => onFilterSectionClick({section}, e)} key={section}> <FaFolder/>{section}</FilterSection>
     ));
 
     return (
