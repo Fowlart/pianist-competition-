@@ -33,7 +33,7 @@ export const Card = (props) => {
 
     //handling resize
     useEffect(() => {
-        if (width<700) setCalculatedWidth(width - 50);
+        if (width<1000) setCalculatedWidth(width - 50);
         else setCalculatedWidth(640);
     }, [width]);
 
