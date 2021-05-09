@@ -17,9 +17,8 @@ const FilterContainer = styled.div`
 const FilterSection = styled(FilterContainer)`
   align-self: center;
   margin: 10px;
-  transition: all ease;
-  color: lawngreen;
-
+  color: white;
+  transition: all 0.5s;
   :hover {
     color: darkred;
   }

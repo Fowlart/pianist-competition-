@@ -34,6 +34,6 @@ export const MainSection = () => {
                             name={card.name}
                             videoUrl={card.videoUrl}
                             composition={card.composition}
-                            key={card.id}/>
+                            key={card.id.$oid}/>
                     ))}</MainSectionFlex>) : (<InfoPage/>)}</>);
 };

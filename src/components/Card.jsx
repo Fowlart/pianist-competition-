@@ -7,7 +7,7 @@ const FilmWrapper = styled.div`
   font-size: 19px;
   font-family: "Segoe UI", serif;
   font-weight: 700;
-  color: lawngreen;
+  color: white;
   margin: 15px;
   display: flex;
   flex-direction: column;
@@ -17,14 +17,14 @@ const FilmWrapper = styled.div`
 
 const FilmInfo = styled.div`
   height: 10%;
-  text-align: center;
+  text-align: left;
 `;
 
 
 const IframeBox = styled.iframe`
   width: ${props => props.width};
   height: 480px;
-  border: solid gold 3px;
+  border: solid white 3px;
 `;
 
 export const Card = (props) => {
@@ -46,8 +46,8 @@ export const Card = (props) => {
         <FilmWrapper>
             <IframeBox src={videoUrl} width={calculatedWidth}/>
             <FilmInfo>
-                <span><FaBookOpen/><i>{composition}</i></span><br/>
-                <span><BsFillPersonFill/><b>{name}</b></span>
+                <span><FaBookOpen/> {composition}</span><br/>
+                <span><BsFillPersonFill/> <b>{name}</b></span>
             </FilmInfo>
         </FilmWrapper>
     );
