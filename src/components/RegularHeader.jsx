@@ -6,9 +6,9 @@ import useWindowDimensions from "../hooks/UseWindowDimensions";
 
 const Button = styled.input`
   margin-top: 14px;
-  font-size: 15px;
+  font-size: 10px;
   width: 15%;
- border: solid white 2px;
+  border: solid white 2px;
   background-color: black;
   color: white;
   transition: all 0.5s;
@@ -85,7 +85,7 @@ export const RegularHeader = (props) => {
                     <Input onKeyPress={handleKeyPress} ref={searchField} type="text"
                            placeholder="Введіть прізвище учасника..." inputColor="black"/>
                 </InputStyle>
-                <Button value="Пошук" type="submit" onClick={handler}/>
+                <Button type="submit" value="ПОШУК" onClick={handler}/><AiOutlineFileSearch/>
             </InputWraper>
             {error !== "" ? <Error><HiOutlineExclamationCircle/>{error}<HiOutlineExclamationCircle/></Error> : null}
             {props.cardCount === 0 ?

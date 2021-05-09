@@ -7,7 +7,6 @@ import useWindowDimensions from "../hooks/UseWindowDimensions";
 const FilterContainer = styled.div`
   font-size: 15px;
   font-family: "Segoe UI", serif;
-  background-color: #232323;
   color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -35,7 +34,6 @@ const DivThinLine = styled.div`
 const StyledResultsFilterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  background-color: #232323;
   margin-top: 15px;
 `;
 

@@ -7,13 +7,15 @@ import {RegularHeader} from "./RegularHeader";
 import {InfoPage} from "./InfoPage";
 import logo from "../1163023.png";
 
+const CommonWrapper = styled.div`
+  background-image: url("${logo}");
+`;
+
 const MainSectionFlex = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: bisque;
-  background-image: url("${logo}");
 `;
 
 export const MainSection = () => {
@@ -24,7 +26,7 @@ export const MainSection = () => {
     const sectionsForFilter = [`Номінація "Фортепіано соло"`, `Номінація "Фортепіанний ансамбль"`, `Номінація "Концертмейстер"`,`Усі відео`,`Про конкурс`];
 
     return (
-        <>
+        <CommonWrapper>
             <RegularHeader cardCount={cardCount}/>
             <ResultsFilter sections={sectionsForFilter}/>
             {isDataInPlace ? (
@@ -35,5 +37,5 @@ export const MainSection = () => {
                             videoUrl={card.videoUrl}
                             composition={card.composition}
                             key={card.id.$oid}/>
-                    ))}</MainSectionFlex>) : (<InfoPage/>)}</>);
+                    ))}</MainSectionFlex>) : (<InfoPage/>)}</CommonWrapper>);
 };

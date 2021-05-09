@@ -16,8 +16,7 @@ const FilmWrapper = styled.div`
 `;
 
 const FilmInfo = styled.div`
-  height: 10%;
-  text-align: left;
+  text-align: center;
 `;
 
 
