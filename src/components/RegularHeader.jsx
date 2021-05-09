@@ -4,13 +4,13 @@ import {AiOutlineFileSearch, HiOutlineExclamationCircle} from "react-icons/all";
 import {useDispatch, useSelector} from "react-redux";
 import useWindowDimensions from "../hooks/UseWindowDimensions";
 
-const Button = styled.input`
+const Button = styled.button`
   margin-top: 14px;
-  font-size: 10px;
+  font-size: 25px;
   width: 15%;
   border: solid white 2px;
-  background-color: black;
   color: white;
+  background-color: black;
   transition: all 0.5s;
 
   :hover {
@@ -85,7 +85,7 @@ export const RegularHeader = (props) => {
                     <Input onKeyPress={handleKeyPress} ref={searchField} type="text"
                            placeholder="Введіть прізвище учасника..." inputColor="black"/>
                 </InputStyle>
-                <Button type="submit" value="ПОШУК" onClick={handler}/><AiOutlineFileSearch/>
+                <Button value="" onClick={handler}><AiOutlineFileSearch/></Button>
             </InputWraper>
             {error !== "" ? <Error><HiOutlineExclamationCircle/>{error}<HiOutlineExclamationCircle/></Error> : null}
             {props.cardCount === 0 ?
