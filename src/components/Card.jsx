@@ -46,8 +46,8 @@ export const Card = (props) => {
         <FilmWrapper>
             <IframeBox src={videoUrl} width={calculatedWidth}/>
             <FilmInfo>
-                <span><FaBookOpen/> {composition}</span><br/>
                 <span><BsFillPersonFill/> <b>{name}</b></span>
+                <span><FaBookOpen/> {composition}</span><br/>
             </FilmInfo>
         </FilmWrapper>
     );
