@@ -4,7 +4,7 @@ const group1 = `Номінація "Фортепіано соло"`;
 const group2 = `Номінація "Фортепіанний ансамбль"`;
 const group3 = `Номінація "Концертмейстер"`;
 
-const myCards = [{
+let myCards = [{
     "id": {
         "$oid": "609853dc683dda47f8b61307"
     },
@@ -507,6 +507,7 @@ const myCards = [{
     "name": "Аміхалакіоає Ємельян, 10 років",
     "composition": "1)О.Білаченко.''Осінній ескіз'', 2)М.Кармінський.''Гумореска''",
     "videoUrl": " https://drive.google.com/file/d/1zfqkyG6BpZ3_1XXdf_FVYOWFmpakjWWP/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61346"
@@ -514,6 +515,7 @@ const myCards = [{
     "name": "Антонюк Варвара, 12 років ",
     "composition": "І.Плейєль. Сонатина ре мажор",
     "videoUrl": " https://drive.google.com/file/d/1DJeHf3fAuZ55Pf65mMAtw2Pct96dfa-t/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61347"
@@ -521,6 +523,7 @@ const myCards = [{
     "name": "Антонюк Варвара, 12 років ",
     "composition": "С.Майкапар.''В ковальні''",
     "videoUrl": " https://drive.google.com/file/d/1lXyKuwM_JgxYZl6eWkAseU6vNaWz7pYz/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61348"
@@ -528,6 +531,7 @@ const myCards = [{
     "name": "Бабчанік Андрій, 10 років ",
     "composition": "1)Д.Чимароза. Сонатина соль мажор. 2)Ю.Білковський. ''Роздуми''",
     "videoUrl": " https://drive.google.com/file/d/1UHAsNKjcJiBgxAdILOsjDERJKQMzeq7A/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61349"
@@ -535,6 +539,7 @@ const myCards = [{
     "name": "Балута Аліна, 10 років",
     "composition": " 1) Е.Гріг. ''Танець з Йольстера'', 2)Л.Забара.''Ніч яка місячна''",
     "videoUrl": " https://drive.google.com/file/d/1oXGF3m41K-QN8Y1-W_j85DrTjkk88sQX/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6134a"
@@ -542,6 +547,7 @@ const myCards = [{
     "name": "Басиста Олександра, 12 років",
     "composition": " 1)Ф.Шопен. Вальс, тв.64 №1, 2)С.Борткевич. Прелюдія, тв.6 №1",
     "videoUrl": " https://drive.google.com/file/d/1sPWZSPn4UMJVdfz73graDwdwIxyXgjBY/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6134b"
@@ -549,6 +555,7 @@ const myCards = [{
     "name": "Білінкевич Наталія, 12 років",
     "composition": "1) М.Лисенко. Елегія,2)К.Черні. Етюд №1 тв.740",
     "videoUrl": " https://drive.google.com/file/d/1AR_WW0CFSSCXzVAfrHXuwBAD-_QC8j6W/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6134c"
@@ -556,6 +563,7 @@ const myCards = [{
     "name": "Бульковська Марина, 10 років",
     "composition": " Д.Чімароза. Соната соль мажор",
     "videoUrl": " https://drive.google.com/file/d/1boxdtgAdhBIJdtcxdznZHP-q5faqa5QK/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6134d"
@@ -563,6 +571,7 @@ const myCards = [{
     "name": "Бульковська Марина, 10 років",
     "composition": "К.Габел. ''Дерево життя''",
     "videoUrl": " https://drive.google.com/file/d/1fXZ6NdsN6u78tI6erKEjX2ofesHB2ebh/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6134e"
@@ -570,6 +579,7 @@ const myCards = [{
     "name": "Вакуленко Аріна, 10 років ",
     "composition": "І.Беркович. Варіації на тему грузинської народної пісні ''Світлячок''",
     "videoUrl": " https://drive.google.com/file/d/1CdtXoVzjEl1YqVCdByxKsZdqEjft1hs6/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6134f"
@@ -577,6 +587,7 @@ const myCards = [{
     "name": "Вакуленко Аріна, 10 років ",
     "composition": "С.Джоплін.''Артист естради''",
     "videoUrl": " https://drive.google.com/file/d/1GntiYvLzHrUXIsWDfdHp40-tt5yYuigq/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61350"
@@ -584,6 +595,7 @@ const myCards = [{
     "name": "Васильєва Вероніка, 12 років",
     "composition": "1)Р.Глієр. Прелюдія до мінор;2)С.Джербашян.''Швидкий рух''",
     "videoUrl": " https://drive.google.com/file/d/1QBgtdhw2IQeTH6QEYnKLGBalX0K2upN4/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61351"
@@ -591,6 +603,7 @@ const myCards = [{
     "name": "Войтенко Лілія, 10 років",
     "composition": "1) Л. Шукайло.''Поні'', 2)О.Рибалова. ''Непосида''",
     "videoUrl": " https://drive.google.com/file/d/1-L_kJHu1PpkPGRCJ_EfxFLBbmc8fOOwq/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61352"
@@ -598,6 +611,7 @@ const myCards = [{
     "name": "Войченко Владислав, 11 років",
     "composition": " 1) Й.С.Бах.Двоголосна інвенція фа мажор; 2)Ф.Шопен. Ноктюрн до дієз мінор",
     "videoUrl": " https://drive.google.com/file/d/1wu5klXGG7Bh2fPlR3YbeMlSKZBT8PRnN/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61353"
@@ -605,6 +619,7 @@ const myCards = [{
     "name": "Вощинський Ілля, 12 років",
     "composition": "1)Е.Гріг. Ноктюрн, 2)М.Римський-Корсаков. ''Політ джмеля''",
     "videoUrl": " https://drive.google.com/file/d/17lbS0L956aNZ9D0GTI-p-k39z4lpehC7/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61354"
@@ -612,6 +627,7 @@ const myCards = [{
     "name": "Галечев Іван, 11 років",
     "composition": " 1)Обр. Г.Без'язичного. ''Ніч яка місячна'', 2)П.Чайковський. ''Неаполітанська пісенька''",
     "videoUrl": " https://drive.google.com/file/d/14-Z82vYkVF1x2NpnqK1_xhAf2bWuaPQV/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61355"
@@ -619,6 +635,7 @@ const myCards = [{
     "name": "Гамзалієва Зейнаб, 12 років",
     "composition": "Білорус. нар.пісня ''Бульба'', обр.Д.Льва-Компанійця",
     "videoUrl": " https://drive.google.com/file/d/1dQqGFphOGo0VpGoUd4z4U3en9LTc19pk/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61356"
@@ -626,6 +643,7 @@ const myCards = [{
     "name": "Гамзалієва Зейнаб, 12 років ",
     "composition": "Й.Гайдн. Менует",
     "videoUrl": " https://drive.google.com/file/d/1Ww_800JPvH69YtjONECJH8VtZ_eZkkyk/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61357"
@@ -633,6 +651,7 @@ const myCards = [{
     "name": "Гіліна Олександра, 11 років",
     "composition": "1)В.МоцартАрія; 2)Д.Градескі.''Морозиво. Регтайм''",
     "videoUrl": " https://drive.google.com/file/d/1f3K50GVcw8ksdYgRMxV61adRAFH5PKMw/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61358"
@@ -640,6 +659,7 @@ const myCards = [{
     "name": "Горай Ярослав,12 років",
     "composition": "1)М.Скорик ''Мелодія'',         2) П.Базала. ''Потік''",
     "videoUrl": " https://drive.google.com/file/d/1UCbn7xPvEbrHCpMThnCIj5Qtgn6rVS_f/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61359"
@@ -647,6 +667,7 @@ const myCards = [{
     "name": "Гоцуленко Вікторія, 12 років",
     "composition": "1)Й.Бах. Двоголосна інвенція ля мінор, 2) Ф.Шопен. Ноктюрн №21",
     "videoUrl": " https://drive.google.com/file/d/171ICM_7Ghrao1RN6ug0XLoRNJKobaRGQ/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6135a"
@@ -654,6 +675,7 @@ const myCards = [{
     "name": "Гукасян Ліана, 10 років",
     "composition": "1)Л.Келлер. Сонатина,          2) А.Хачатурян. ''Андантіно''",
     "videoUrl": " https://drive.google.com/file/d/12IdAfSi_waU6lrNfUvP2H0x0WO78aMGa/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6135b"
@@ -661,6 +683,7 @@ const myCards = [{
     "name": "Гуляєва Єва, 11років",
     "composition": "1)П. Захаров.''Елегія'', 2) Г.Валленгаупт. ''Скерцино''",
     "videoUrl": " https://drive.google.com/file/d/1rbcm7F_BfAeqMEzfQhZ6fF3Y21a7rYsw/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6135c"
@@ -668,6 +691,7 @@ const myCards = [{
     "name": "Гутник  Кірена, 10 років ",
     "composition": "Л.Шітте.''Танець  гномів''",
     "videoUrl": " https://drive.google.com/file/d/1niDqNiCJu3CLS3EG5BWHuB_Aq7v45Rs3/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6135d"
@@ -675,6 +699,7 @@ const myCards = [{
     "name": "Гутник Кірена, 10 років",
     "composition": " О.Соловяненко.''Поні біля цирку''",
     "videoUrl": " https://drive.google.com/file/d/1h7q0YaYiy6A6s6Bpw_TxtzrwwS_Az9Lx/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6135e"
@@ -682,6 +707,7 @@ const myCards = [{
     "name": "Дорошенко Юлія, 10 років",
     "composition": "1) М. Клементі. Сонатина, тв.36 №6, І ч; 2) І.Беркович. Прелюдія, тв.46 №15",
     "videoUrl": " https://drive.google.com/file/d/1GlFCLC3x_1tZCOfmNhN0m4T0POJYBTjN/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6135f"
@@ -689,6 +715,7 @@ const myCards = [{
     "name": "Дудін Дмитро, 11 років ",
     "composition": "1)Л.Бетховен. Сонатина соль мажор,І-ІІ ч.; 2)С.Прокоф'єв. ''Казочка''",
     "videoUrl": " https://drive.google.com/file/d/1xbm4x-VfzHzuzB4jThbsPh8IaCa94ttB/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61360"
@@ -696,6 +723,7 @@ const myCards = [{
     "name": "Єрмоленко Дарина, 12 років ",
     "composition": "Й.С. Бах. Арія ре мажор",
     "videoUrl": " https://drive.google.com/file/d/1u7M6CXiysUfJuu6M-AvB774Wen0AnuZN/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61361"
@@ -703,6 +731,7 @@ const myCards = [{
     "name": "Єрмоленко Дарина, 12 років",
     "composition": "О. Білаш. ''Баркарола''",
     "videoUrl": " https://drive.google.com/file/d/1hORf4uVvoW54pTCxgK2zImgxYxH47Yoo/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61362"
@@ -710,6 +739,7 @@ const myCards = [{
     "name": "Загаєвська Софія, 12 років ",
     "composition": "1)А.Классен ''Музичний ескіз''№1, 2)О.Кимлик.''Леонтовіана''",
     "videoUrl": " https://drive.google.com/file/d/1w1TPh9JXsAje_KpE9QPp5Iv0EujmvjG-/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61363"
@@ -717,6 +747,7 @@ const myCards = [{
     "name": "Іваннікова Марія, 11 років",
     "composition": "1)В.Моцарт. Соната №16, І частина,  2)О.Грибоєдов. Вальс",
     "videoUrl": " https://drive.google.com/file/d/1X1vhsTIPkI5zis22JHOXxQUDdOBe9A9G/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61364"
@@ -724,6 +755,7 @@ const myCards = [{
     "name": "Іванюк Вірсавія,10 років",
     "composition": "1)О.Ходош.''Червона шапочка'', 2)І.Щербаков.''Елегія київських пагорбів''",
     "videoUrl": " https://drive.google.com/file/d/1M7I1QJbFkWBQHwK1lHKoyoE30l-Wc12m/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61365"
@@ -731,6 +763,7 @@ const myCards = [{
     "name": "Ївженко Ада, 12 років",
     "composition": "1)М.Клементі.Сонатина соль мажор, 2)М.Скорик. ''Народний танець''",
     "videoUrl": " https://drive.google.com/file/d/1kpm6k0MCtujg7sPH9dcodY0kz1BrGEX9/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61366"
@@ -738,6 +771,7 @@ const myCards = [{
     "name": "Каманчи Єлизавета, 12 років",
     "composition": "1)В.Калістратов.''Коник Горбоконик'', 2)Ю.Весняк. ''Ніжність''",
     "videoUrl": " https://drive.google.com/file/d/1mlWaLYsD8fkBQHgdrX-RfNCkd6wRrPkO/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61367"
@@ -745,6 +779,7 @@ const myCards = [{
     "name": "Карашкевич Христина, 11 років ",
     "composition": "1)Й.С.Бах. Триголосна інвенція ре мінор, 2)М.Дремлюга. ''Скерцо''",
     "videoUrl": " https://drive.google.com/file/d/1EBGhNIptJSei0GZLKpsfyaIhi3Uae0cH/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61368"
@@ -752,6 +787,7 @@ const myCards = [{
     "name": "Кіцера Аліна, 11 років",
     "composition": "1)К.Дебюссі ''Романтичний вальс'', 2)Б.Фільц. ''Скерцо''",
     "videoUrl": " https://drive.google.com/file/d/1Novsog_w52pzGkfJ2hZxihv33C2cSf0J/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61369"
@@ -759,6 +795,7 @@ const myCards = [{
     "name": "Король Єлізавета, 10 років ",
     "composition": "1) П.Чайковський.''Пісня жайворонка''; 2)Л.Шукайло. Прелюдія",
     "videoUrl": " https://drive.google.com/file/d/1kbrGl8_IhfqnjkvTvoWh79mgm9pQ5kTJ/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6136a"
@@ -766,6 +803,7 @@ const myCards = [{
     "name": "Котляревська Юлія, 11 років",
     "composition": " Й. Гайдн. Соната соль мажор, Іч.",
     "videoUrl": " https://drive.google.com/file/d/1FAWHHKQ5ox0ETJLvurrRgZ2dOm1vtFke/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6136b"
@@ -773,6 +811,7 @@ const myCards = [{
     "name": "Котляревська Юлія, 11 років ",
     "composition": "'Гандзя'', обр.Є Веврика",
     "videoUrl": " https://drive.google.com/file/d/1kIvdsvIrxeo816d-_MV5nbbcr-aOZhEp/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6136c"
@@ -780,6 +819,7 @@ const myCards = [{
     "name": "Котова Марія, 10 років ",
     "composition": "1)О.Ключарьов.''Шуралє'', 2)Ф.Мендельсон.''Пісня без слів'', тв.19 №2",
     "videoUrl": " https://drive.google.com/file/d/1Y1cW_2ZiwBEN0Yc1KrWWncX376zgaD5B/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6136d"
@@ -787,6 +827,7 @@ const myCards = [{
     "name": "Кривобабко Ксенія, 10 років",
     "composition": " Л.Шукайло. ''Весняні  краплинки''",
     "videoUrl": " https://drive.google.com/file/d/1dIJgkLIO2e7lcNpuARjxmudw03xjnc32/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6136e"
@@ -794,6 +835,7 @@ const myCards = [{
     "name": "Кривобабко Ксенія, 10 років ",
     "composition": "Н.Карпенко. Етюд  ре мінор",
     "videoUrl": " https://drive.google.com/file/d/1B4-EbRYO-bcCjfuppeHXShv5DQzui9hA/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6136f"
@@ -801,6 +843,7 @@ const myCards = [{
     "name": "Кутковська Лариса, 12 років",
     "composition": " 1)Е.Гріг. ''Ноктюрн'', тв.54 №4, 2)Т.Кулієв. ''Лезгінка''",
     "videoUrl": " https://drive.google.com/file/d/11cmQBdsm2epwZS_mUJx3gp1W582ZyWd7/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61370"
@@ -808,6 +851,7 @@ const myCards = [{
     "name": "Лiзогуб Арсен, 10 років",
     "composition": "1)Г.Сасько.''Регтайм'', 2)П.Захаров.''Старовинна балада''",
     "videoUrl": " https://drive.google.com/file/d/11SFkWFvWn_UGNJK7c7Z1LlJ2NasM9Ksg/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61371"
@@ -815,6 +859,7 @@ const myCards = [{
     "name": "Ланський Євген, 10 років ",
     "composition": "1)П.Чайковський.''Ранкова молитва'', тв.39, 2)І.Беркович. Токата ля мінор",
     "videoUrl": " https://drive.google.com/file/d/1VnPFLs5xHCt0TL2sd1E9WWyhTB8kGTuh/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61372"
@@ -822,6 +867,7 @@ const myCards = [{
     "name": "Левандівська Марта, 10 років ",
     "composition": "В.Барвінський. ''Український танець''",
     "videoUrl": " https://drive.google.com/file/d/1FVjxAeB3dOzJpATDXyI-1ABtRizjzjod/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61373"
@@ -829,6 +875,7 @@ const myCards = [{
     "name": "Левандівська Марта, 10 років",
     "composition": " Я. Сібеліус. Етюд тв. 76 №2",
     "videoUrl": " https://drive.google.com/file/d/18K7rgRzjCqZ-_5EWr0EoE5JlnTyhgZS4/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61374"
@@ -836,6 +883,7 @@ const myCards = [{
     "name": "Леза Анна, 11 років ",
     "composition": "1) Ф.Шопен. Ноктюрн №20, 2)П.Захаров. ''Рондо-галоп''",
     "videoUrl": " https://drive.google.com/file/d/1Twf2sJ3_9Ar3oOTmZWKv6q8SMa9fGa-p/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61375"
@@ -843,6 +891,7 @@ const myCards = [{
     "name": "Ликова Варвара, 11 років",
     "composition": "1) В.Гіллок.''Bill bailey'', 2)Ю.Щуровський.''Шарманка''",
     "videoUrl": " https://drive.google.com/file/d/1dE5LcfV-T8QhLXiAfn8sxLEMecvgS-hO/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61376"
@@ -850,6 +899,7 @@ const myCards = [{
     "name": "Лілік Марія-Магдалина, 11 років ",
     "composition": "1)Ф.Шопен. ''Аркуш з альбома'' мі бемоль мажор, 2)М.Колесса. ''Скерцино''",
     "videoUrl": " https://drive.google.com/file/d/1qticduAQQm72Ncy8e-st6nkjqwBrFSTe/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61377"
@@ -857,6 +907,7 @@ const myCards = [{
     "name": "Макаревич Андрій-Олександр, 11 років ",
     "composition": "1)Й.С.Бах. Триголосна інвенція ре мажор, 2)К.Черні. Етюд №5, тв.299",
     "videoUrl": " https://drive.google.com/file/d/1iVuBPfw4HncPJkJn2yNZZw8UXlUXJHVc/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61378"
@@ -864,6 +915,7 @@ const myCards = [{
     "name": "Маціборська Анна, 10 років",
     "composition": "1) Й. Бах. Двоголосна інвенція сі бемоль мажор,    2) Ф. Якименко. ''Елегія''",
     "videoUrl": " https://drive.google.com/file/d/1SrYttJFdizsuBe0yNsKrNDgJUP_AihaN/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61379"
@@ -871,6 +923,7 @@ const myCards = [{
     "name": "Мельник Михайло, 10 років",
     "composition": "1)М.Клементі. сонатина до мажор, 2)В.Косенко. ''Дощик''",
     "videoUrl": " https://drive.google.com/file/d/1c0pWjGogDaEYCRCskzcq9VdUlHy-hshG/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6137a"
@@ -878,6 +931,7 @@ const myCards = [{
     "name": "Меркулова Марія, 10 років ",
     "composition": "1) Д.Чімароза.Соната соль мажор; 2) М. Жербін. Вальс",
     "videoUrl": " https://drive.google.com/file/d/1j5pED7wQ3AHP0pNx9VO4Pp8dril9aMzf/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6137b"
@@ -885,6 +939,7 @@ const myCards = [{
     "name": "Мигалюк Ріанна, 11 років",
     "composition": "1)Н.Нижанківський. ''Коломийка'',   2)В.Гіллок.''Карнавал в Ріо''",
     "videoUrl": " https://drive.google.com/file/d/1p5SMOeBaUz0jzX8A0l6X4N9yvtwG0w8m/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6137c"
@@ -892,6 +947,7 @@ const myCards = [{
     "name": "Миргород Всеволод,12 років",
     "composition": "1)Ф.Кулау. Сонатина фа мажор,І ч.; 2)М.Лисенко. ''Елегія''",
     "videoUrl": " https://drive.google.com/file/d/1kpxsuRJnl3t64lbO8viVgfGsw_aMkRSm/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6137d"
@@ -899,6 +955,7 @@ const myCards = [{
     "name": "Морозова Тетяна, 11 років ",
     "composition": "1) Й.Бенда.Сонатина, 2) С.Шевченко.''Вечір''",
     "videoUrl": " https://drive.google.com/file/d/15u4oK4uIv923BbhwHuQxc2kb2zW4DImG/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6137e"
@@ -906,6 +963,7 @@ const myCards = [{
     "name": "Мунтян Наталія, 10 років ",
     "composition": "1)Ю.Щуровський. Тема з варіаціями,       2)Л.Шитте.''Іскри''",
     "videoUrl": " https://drive.google.com/file/d/1VjNHcWWgtmbakUXmpc3h7fhoN5gps9RV/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6137f"
@@ -913,6 +971,7 @@ const myCards = [{
     "name": "Оборкіна Олександра, 11 років",
     "composition": "1)Е.Гріг.''Мелодія'',    2)Л.Шукайло. ''Багатель'' №5",
     "videoUrl": " https://drive.google.com/file/d/1ch2wvzxtR7ER2-6iDLUgvCAquUiv8dVf/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61380"
@@ -920,6 +979,7 @@ const myCards = [{
     "name": "Пендюр Софія, 11 років",
     "composition": "1) О.Даргомижський.''Вальс'', 2)М.Скорик.''Народний танець''",
     "videoUrl": " https://drive.google.com/file/d/1sDG6wngpKHcMSOaOi_YlUGkucadBApBJ/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61381"
@@ -927,6 +987,7 @@ const myCards = [{
     "name": "Перетятько Анастасія, 10 років ",
     "composition": "Е.Гріг. ''Танець із Йольстера''",
     "videoUrl": " https://drive.google.com/file/d/10_Lgv-fLOd3yPAmNmWCd8YN3lSwXHLKG/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61382"
@@ -934,6 +995,7 @@ const myCards = [{
     "name": "Перетятько Анастасія, 10 років",
     "composition": "М.Клементі. Сонатина №4, тв.36",
     "videoUrl": " https://drive.google.com/file/d/13wsI-ssTPx9ea0qZHFYsvsP2nuPbSDJ7/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61383"
@@ -941,6 +1003,7 @@ const myCards = [{
     "name": "Позняк Веніамін, 10 років",
     "composition": "1) Д.Пуленк. Стаккато. 2) Л.Бетховен. Весела-сумна",
     "videoUrl": " https://drive.google.com/file/d/1vsbc2GvHYArggP57-Z5wFlGwchMpNp3E/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61384"
@@ -948,6 +1011,7 @@ const myCards = [{
     "name": "Прокопюк Марина, 10 років",
     "composition": " 1)І.Білаченко. Експромт. 2)Ю.Щуровський. Танець",
     "videoUrl": " https://drive.google.com/file/d/1Qn9DQL2NHJeOfGHDHYwauZ62vinrflAy/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61385"
@@ -955,6 +1019,7 @@ const myCards = [{
     "name": "Решетнікова Людмила, 11 років",
     "composition": " 1)О.Білаченко.''Осінній ескіз'', 2)О.Польовий.''Полька-бабка''",
     "videoUrl": " https://drive.google.com/file/d/1_XfCK8FK1FLmxbkEB8VTdfa990qJ7xRA/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61386"
@@ -962,6 +1027,7 @@ const myCards = [{
     "name": "Ротар Каріна, 10 років ",
     "composition": "1) Ю.Щуровський. ''Баркарола'', 2) Д.Пешетті. ''Престо''",
     "videoUrl": " https://drive.google.com/file/d/17MF-0z6uAkmKWlpYySWGH8sbOiZ--n9J/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61387"
@@ -969,6 +1035,7 @@ const myCards = [{
     "name": "Савченко Матвій, 11років ",
     "composition": "1)Л.Бетховен. Соната мі бемоль мажор, І ч., 2)І.Щербаков. '' Елегія київських пагорбів''",
     "videoUrl": " https://drive.google.com/file/d/1J_HQk6IS2PZPZUP9uYOP6wkQtR3opo6B/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61388"
@@ -976,6 +1043,7 @@ const myCards = [{
     "name": "Саква Валерія, 11 років ",
     "composition": "1)М.Лансевич.''Прелюдія'', 2)М.Дворжак. ''Джазовий етюд'' ля мажор",
     "videoUrl": " https://drive.google.com/file/d/11tsdLvk25bD8FSDYTXXnypR29gkPtxXs/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61389"
@@ -983,6 +1051,7 @@ const myCards = [{
     "name": "Сартанія Давид, 10 років",
     "composition": " 1)Е.Вагнер.Сонатина до мажор,   2) Р.Вандалл.''Водоспад''",
     "videoUrl": " https://drive.google.com/file/d/1mrESYZIiP1iWenGiZDUIOb0usCJK0dT8/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6138a"
@@ -990,6 +1059,7 @@ const myCards = [{
     "name": "Скороходько Євгенія, 10 років ",
     "composition": "1)Н.Нижанківський. ''Івась грає на чельо'', 2)Ю.Щуровський. ''Токата'' сі мінор",
     "videoUrl": " https://drive.google.com/file/d/1Eif0Z_MiAQVpzbczVSjjbvh1gUxe_E3X/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6138b"
@@ -997,6 +1067,7 @@ const myCards = [{
     "name": "Солоненко Анна, 10 років ",
     "composition": "В.Косенко. ''Петрушка''",
     "videoUrl": " https://drive.google.com/file/d/1tCxp4UbZFZeFMrw6DYNi9VYHYSvYwNQI/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6138c"
@@ -1004,6 +1075,7 @@ const myCards = [{
     "name": "Солоненко Анна, 10 років",
     "composition": " Ф. Бургмюллер. ''Балада''",
     "videoUrl": " https://drive.google.com/file/d/1EOH6zhwow4aQZfJes28LxiIBsh5HbfGu/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6138d"
@@ -1011,6 +1083,7 @@ const myCards = [{
     "name": "Сорока Марія, 13 років",
     "composition": "1)Д.Циполі. Прелюдія та фуга ре мінор, 2)К.Гурліт. ''Шторм''",
     "videoUrl": " https://drive.google.com/file/d/1tfp_gBRZ1flj-LGqde6EdxQmKTlep0jP/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6138e"
@@ -1018,6 +1091,7 @@ const myCards = [{
     "name": "Стецюк Олександра, 12 років ",
     "composition": "1)К.Дебюссі. ''Doctor Gradus ad Parnasum'', 2)Ф.Шопен. ''Вальс'' №9",
     "videoUrl": " https://drive.google.com/file/d/1zxJWyCms7kZhspNBAlzacUnALW8EJAM7/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6138f"
@@ -1025,6 +1099,7 @@ const myCards = [{
     "name": "Сторожук Станіслав, 12 років",
     "composition": "1)Е.Гріг. ''Поетична картинка'' №1, 2)А.Кос-Анатольський. ''Полонина''",
     "videoUrl": " https://drive.google.com/file/d/1rtK0vUrAoIlGbUJ5HaUGbQPl1zVmTKKJ/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61390"
@@ -1032,6 +1107,7 @@ const myCards = [{
     "name": "Ткаченко Майя, 12 років",
     "composition": "1)В. А. Моцарт. Соната 16 К 545,Іч.; 2)І.Шамо.'' Веснянка''",
     "videoUrl": " https://drive.google.com/file/d/1m6ZsVarNPrcfymO3BkumdKxLJyBTxx5-/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61391"
@@ -1039,6 +1115,7 @@ const myCards = [{
     "name": "Унгурян Олександра, 12 років ",
     "composition": "1) О.Грибоєдов. Вальс,          2)М.Сільванський. ''Стрімкий потік''",
     "videoUrl": " https://drive.google.com/file/d/1v2LRVDhFJ2zXN_5wVxAch7X8l0WQ8rOg/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61392"
@@ -1046,6 +1123,7 @@ const myCards = [{
     "name": "Федорченко Євгенія, 10 років",
     "composition": " Л.Бетховен. ''Багатель'', тв.119",
     "videoUrl": " https://drive.google.com/file/d/1ZPHGQDAyftoAW0aKOT2snfa8MjgalcZQ/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61393"
@@ -1053,6 +1131,7 @@ const myCards = [{
     "name": "Федорченко Євгенія, 10 років",
     "composition": "О.Білаш.''Скерцо''",
     "videoUrl": " https://drive.google.com/file/d/1h1isGwveW1uiW3U2xeO2WWuFxvSSvQ-L/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61394"
@@ -1060,6 +1139,7 @@ const myCards = [{
     "name": "Федотова Катерина, 12 років",
     "composition": " 1) С. Борткевич.''Етюд'' фа дієз мінор, 2) Ф.Шопен. ''Ноктюрн''до дієз мінор",
     "videoUrl": " https://drive.google.com/file/d/1eQBXy6khLci4fJNG8BaCM1ZFLkKj0NRw/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61395"
@@ -1067,6 +1147,7 @@ const myCards = [{
     "name": "Федчук Аліна, 11 років",
     "composition": "1)А. Діабеллі. Сонатина №1, ІІІ.ч; 2)Дж. Ласт.'' Самотній пастух''",
     "videoUrl": " https://drive.google.com/file/d/1jrFbvdgG2NlU-b416-uR0birDrW-PnIH/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61396"
@@ -1074,6 +1155,7 @@ const myCards = [{
     "name": "Федюк Володимир, 12 років",
     "composition": "1) К.М.Вебер.Сонатина до мажор; 2)О.Гончарук. ''Зелений'' із збірки ''Веселка''",
     "videoUrl": " https://drive.google.com/file/d/1H_Iw89xjf1o27PtP_neQI78ByP65yEvY/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61397"
@@ -1081,6 +1163,7 @@ const myCards = [{
     "name": "Хоу Жуй, 12 років",
     "composition": "1)П.І.Чайковський. ''Жовтень'', 2)Е.Веврик. ''Гандзя''",
     "videoUrl": " https://drive.google.com/file/d/1XZwWXt6hQASuYftSNr5sTPErstFUV58R/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61398"
@@ -1088,6 +1171,7 @@ const myCards = [{
     "name": "Чиж Ніна, 10 років ",
     "composition": "1)Й.Гайдн Соната №4, Іч; 2)Л.Дьяконенко. ''Пробачення у мами''",
     "videoUrl": " https://drive.google.com/file/d/1aIUr0h-N5290B6KaImXkJHmSDik_Uawe/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b61399"
@@ -1095,6 +1179,7 @@ const myCards = [{
     "name": "Чідера Самуель Умех, 10 років",
     "composition": "1)  П.Чайковський. ''Старовинна французька пісенька''. 2) Д.Кабалевський.''Клоуни''",
     "videoUrl": " https://drive.google.com/file/d/1pLYAmRBXwzIn1x3XHhvLre_ANZJT2p8w/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6139a"
@@ -1102,6 +1187,7 @@ const myCards = [{
     "name": "Шаталова Ілона, 10 років",
     "composition": "1)Ф. Гіллер. ''Маленьке рондо''; 2)В. Косенко. ''Вальс'' сі мінор",
     "videoUrl": " https://drive.google.com/file/d/1Ug56cbY1CUBhO1-tZfucRAuAHbIFKz9c/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6139b"
@@ -1109,6 +1195,7 @@ const myCards = [{
     "name": "Шевченко Маргарита, 10 років ",
     "composition": "1)С.Баландін. Варіації,          2)Т.Браун. ''Танець вітру''",
     "videoUrl": " https://drive.google.com/file/d/1pkBBqfS-pmFxb5nNdAch9WXUpGqsUxa8/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6139c"
@@ -1116,6 +1203,7 @@ const myCards = [{
     "name": "Шепетько Олександр, 11 років ",
     "composition": "1) Ф.Шопен. Мазурка,тв.67 № 4, 2)Е.Гріг. ''Танець із Йольстера''",
     "videoUrl": " https://drive.google.com/file/d/1VbhVjWrUitTo--83I5FWNydQrPC3YGyR/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985400683dda47f8b6139d"
@@ -1123,6 +1211,7 @@ const myCards = [{
     "name": "Шумська Надія, 12 років",
     "composition": "1)С.Борткевич.''Темна кімната'', 2)В.Неугасімов.Скерцо",
     "videoUrl": " https://drive.google.com/file/d/1k66-Wry63S8x7t48GWUjY0e6O1xqeUot/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b6139e"
@@ -1130,6 +1219,7 @@ const myCards = [{
     "name": "Арутюнян Ліда, 14 років",
     "composition": " 1)Й.Гайдн. Соната №20, Іч.; 2)Л.Шукайло.''Ємеля''",
     "videoUrl": " https://drive.google.com/file/d/1Bj568cnRdDZMKrMYfLT8kCbHm4yfXb2k/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b6139f"
@@ -1137,6 +1227,7 @@ const myCards = [{
     "name": "Базилюк Наталія, 16 років",
     "composition": " 1)Я.Сібеліус. Прелюдія ля мінор,2)І.Беркович.Прелюдія фа дієз мінор",
     "videoUrl": " https://drive.google.com/file/d/1GaWeZbKc6SiIudiYQVBgFxaiOO9SEskA/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613a0"
@@ -1144,6 +1235,7 @@ const myCards = [{
     "name": "Білогуб Антон, 13 років ",
     "composition": "Л.Бетховен. Легка соната фа мінор, І ч.",
     "videoUrl": " https://drive.google.com/file/d/1fHUmtMWOjGN9p5xaSrcIOvQEu-koTGaT/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613a1"
@@ -1151,6 +1243,7 @@ const myCards = [{
     "name": "Білогуб Антон, 13 років",
     "composition": " О.Строк. ''Місячна рапсодія''",
     "videoUrl": " https://drive.google.com/file/d/1fqnNOFvNnVUcI1LUZ-TqgFzCl5XFE_si/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613a2"
@@ -1158,6 +1251,7 @@ const myCards = [{
     "name": "Бірук Таміла, 14 років",
     "composition": "1)М.Клементі.Сонатина, тв.26№3, 2)Я.Сібеліус. ''Ялина''",
     "videoUrl": " https://drive.google.com/file/d/14_B26LPyzQjk_aBZxGFWIq8Rz6KRCBnX/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613a3"
@@ -1165,6 +1259,7 @@ const myCards = [{
     "name": "Боровікова Єлизавета, 15 років",
     "composition": " 1)М.Бобер. ''Діамантова рапсодія'', 2)Ф.Сай. ''Чорна земля''",
     "videoUrl": " https://drive.google.com/file/d/1pO1FGqB-K6tth8pPRMBCal_rsceSMx20/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613a4"
@@ -1172,6 +1267,7 @@ const myCards = [{
     "name": "Бурухіна Катерина, 13 років",
     "composition": "1) Й.Гайдн. Соната мі мінор, Іч., 2) С.Нікітін.''Наспів''",
     "videoUrl": " https://drive.google.com/file/d/1rpLH63SzNTHeMyXHk7rCheswScKu9_cH/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613a5"
@@ -1179,6 +1275,7 @@ const myCards = [{
     "name": "Вашуріна В., 13 років ",
     "composition": "1) В.Косенко. ''Поема-Легенда'', 2) О.Саратський.''Коломийка''",
     "videoUrl": " https://drive.google.com/file/d/1y9kusgtqXgIgfFc16l_5qvgF_Jy62vX7/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613a6"
@@ -1186,6 +1283,7 @@ const myCards = [{
     "name": "Вишневська Анна, 13 років ",
     "composition": "Ж. Бізе.''Дзига''",
     "videoUrl": " https://drive.google.com/file/d/1YN-2yp1ocRVE1RdXq2L7sj9q_A8yv5PO/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613a7"
@@ -1193,6 +1291,7 @@ const myCards = [{
     "name": "Вишневська Анна, 13 років",
     "composition": "К. Лавалле. ''Метелик''",
     "videoUrl": " https://drive.google.com/file/d/161tFqTFJoja2OVDvHKTtIWPjNQ-2Lfx1/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613a8"
@@ -1200,6 +1299,7 @@ const myCards = [{
     "name": "Герасимчук Мілєна, 15 років ",
     "composition": "М.Таравердієв. ''Спогад''",
     "videoUrl": " https://drive.google.com/file/d/1Ao0wOx50UcKLaX8gpE3W9t65DC6KphrM/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613a9"
@@ -1207,6 +1307,7 @@ const myCards = [{
     "name": "Герасимчук Мілєна, 15 років",
     "composition": " О.Білаш.''Танець ляльок''",
     "videoUrl": " https://drive.google.com/file/d/1xnbfjBmzclN4-tl6t9EGDm3yjLGjwpR5/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613aa"
@@ -1214,6 +1315,7 @@ const myCards = [{
     "name": "Гордієнко Єлизавета, 19 років",
     "composition": "1)Й.С.Бах.Прелюдія і фуга ре мінор, ДТК-І, 2)С.Борткевич. Прелюдія до дієз мінор",
     "videoUrl": " https://drive.google.com/file/d/1oxBe6N3altFp3UktF5FdGYFrdXyHDHWf/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613ab"
@@ -1221,6 +1323,7 @@ const myCards = [{
     "name": "Грещак Марія, 14 років",
     "composition": "1)К.Черні. Етюд ля мажор; 2)Ю.Щуровський.''Елегічний прелюд''",
     "videoUrl": " https://drive.google.com/file/d/1IwuLrdPakxH1f6ZPfmw7d7vGchKjoU6m/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613ac"
@@ -1228,6 +1331,7 @@ const myCards = [{
     "name": "Дейнега Каріна, 14 років",
     "composition": "1) Л.Бетховен. Соната №14, І ч.; 2) С.Жданов. ''Прелюд''",
     "videoUrl": " https://drive.google.com/file/d/1c5iWC9b5J3Tw3OWTDKSwM95CFTFBly4t/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613ad"
@@ -1235,6 +1339,7 @@ const myCards = [{
     "name": "Дячук Зоряна, 13 років ",
     "composition": "1)Ю.Щуровський. ''Ранок'', 2)Н.Нижанківський. ''Коломийка''",
     "videoUrl": " https://drive.google.com/file/d/1SsVrIFRfitLvzM37-UWnfGNcsj07Ou_2/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613ae"
@@ -1242,6 +1347,7 @@ const myCards = [{
     "name": "Іщук Катерина, 15 років",
     "composition": " К.Черні. Етюд №1,тв.740",
     "videoUrl": " https://drive.google.com/file/d/1nscqS5e1pUwtdIOSOIeXAVHRGjFu_3Mn/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613af"
@@ -1249,6 +1355,7 @@ const myCards = [{
     "name": "Іщук Катерина, 15 років",
     "composition": "Ф.Шопен.''Ларго''",
     "videoUrl": " https://drive.google.com/file/d/1EoKeSr7BIeLw0KsjCtp1DEDJ_8Xggxnq/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613b0"
@@ -1256,6 +1363,7 @@ const myCards = [{
     "name": "Іваночко Антоніна, 13 років.",
     "composition": " 1)Й.С.Бах. Прелюдія і фуга до дієз мінор ДТК-І, 2) К.Черні. Етюд №6 тв.740",
     "videoUrl": " https://drive.google.com/file/d/1uTqORJIxI65uKq4-2RqOXnVuXjoQPKkS/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613b1"
@@ -1263,6 +1371,7 @@ const myCards = [{
     "name": "Кареліна Крістіна, 13 років",
     "composition": "Й.С. Бах.Прелюдія і фуга ре мінор, ДТК-ІІ",
     "videoUrl": " https://drive.google.com/file/d/1FmhW2Ol9tl-fV7ROatz3mEnb1C0VwAbx/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613b2"
@@ -1270,6 +1379,7 @@ const myCards = [{
     "name": "Кареліна Крістіна, 13 років",
     "composition": " В.А. Моцарт. Соната №8, Іч.",
     "videoUrl": " https://drive.google.com/file/d/1jFt0zknGa8vvXxDRKQo5x1Ydzcr-IxHR/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613b3"
@@ -1277,6 +1387,7 @@ const myCards = [{
     "name": "Каськів Андрій, 14 років ",
     "composition": "А.Лешгорн. Етюд фа дієз мінор",
     "videoUrl": " https://drive.google.com/file/d/14uKZUG7l1REwDkXkvR6fYBjQiTPZC3ko/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613b4"
@@ -1284,6 +1395,7 @@ const myCards = [{
     "name": "Каськів Андрій, 14 років",
     "composition": " К.Дебюссі. ''Місячне сяйво''",
     "videoUrl": " https://drive.google.com/file/d/1SPNLI8VvFhKzpRwN9-iBRuTddPfJuUe-/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613b5"
@@ -1291,6 +1403,7 @@ const myCards = [{
     "name": "Кирилова Олександра, 13 років ",
     "composition": "1) Т.Браун. ''Шторм, що наближається'', 2) П.Захаров. ''Рондо-галоп''",
     "videoUrl": " https://drive.google.com/file/d/1WHj--haYnE7pWtfHBoypXnhm7i0insvG/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613b6"
@@ -1298,6 +1411,7 @@ const myCards = [{
     "name": "Кондратюк Аліна, 14 років",
     "composition": "1) О.Дюбюк. Варіації, 2) О.Білаш.''Роздум''",
     "videoUrl": " https://drive.google.com/file/d/1RwfSQtTfwWpLDzYyGfmFyOKdy_SrK7SZ/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613b7"
@@ -1305,6 +1419,7 @@ const myCards = [{
     "name": "Косенко Аліса, 13 років",
     "composition": "1) А.Караманов. ''Зруйнований храм'', 2)С.Рахманінов. Прелюдія №7, тв.23",
     "videoUrl": " https://drive.google.com/file/d/1-6kYrtQuHZNk5ChAaWLv7IRZzk22Wddh/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613b8"
@@ -1312,6 +1427,7 @@ const myCards = [{
     "name": "Кочубей Ярослав, 14 років",
     "composition": "Обр. Є.Веврика.''Молдавські наспіви''",
     "videoUrl": " https://drive.google.com/file/d/19KjKHfI-uij6j3mNCYZ26LLZMoBbYk9r/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613b9"
@@ -1319,6 +1435,7 @@ const myCards = [{
     "name": "Кочубей Ярослав, 14 років ",
     "composition": "Ф.Кулау. Сонатина №55",
     "videoUrl": " https://drive.google.com/file/d/1R7HwXpLbO1tiz3KzMg35t4N3Bmx7ABOL/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613ba"
@@ -1326,6 +1443,7 @@ const myCards = [{
     "name": "Куліковська Катерина, 14 років",
     "composition": "1) Й.С.Бах. Прелюдія і фуга фа дієз мажор, ДТК-І, 2) С.Борткевич. Етюд №9, тв.15",
     "videoUrl": " https://drive.google.com/file/d/1zQjsqGpWqWYkejPYN_TG-E0mMA8cSj-r/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613bb"
@@ -1333,6 +1451,7 @@ const myCards = [{
     "name": "Макаревич Наталія, 15 років ",
     "composition": "1)Й.С.Бах. Прелюдія і фуга ре мінор, ДТК-І, 2)О.Бордюгова. ''Український романс''",
     "videoUrl": " https://drive.google.com/file/d/1irVBVS0WDufWZC2YEB57uUMLWbw8BLnR/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613bc"
@@ -1340,6 +1459,7 @@ const myCards = [{
     "name": "Малярчук Єлізавета, 13 років ",
     "composition": "1)С.Борткевич. Етюд №9, тв.15, 2)Ф.Шопен.''Гулянка''",
     "videoUrl": " https://drive.google.com/file/d/1om0hfVgra-VSx6YXhJbpZwLRbe0a8BE-/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613bd"
@@ -1347,6 +1467,7 @@ const myCards = [{
     "name": "Опанасюк Тарас, 13 років",
     "composition": "1) П.Захаров. ''Токата-прелюдія'', 2) Е.Гріг. ''Ноктюрн''",
     "videoUrl": " https://drive.google.com/file/d/1gghwyH2Ax-AeVuelbSWsS0oIoAxS_uJD/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613be"
@@ -1354,6 +1475,7 @@ const myCards = [{
     "name": "Ослам  Єлизавета, 14 років",
     "composition": "1) П.Чайковський.''Лютий'' із циклу''Пори року'',     2) Н.Лагодюг. ''Танго мрій''",
     "videoUrl": " https://drive.google.com/file/d/1mq4-ZBYZmlnGPzJY1jR_QVr0Gz75aMlX/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613bf"
@@ -1361,6 +1483,7 @@ const myCards = [{
     "name": "Панімаш Ірина, 15 років",
     "composition": "1) Й.Гайдн.Соната до мажор (№50), І ч.; 2) С.Рахманінов.''Музичний момент'', тв.16 №4",
     "videoUrl": " https://drive.google.com/file/d/1h_KQ_WpvmjZFsXE4XT_Mdf23sk4K9GTs/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613c0"
@@ -1368,6 +1491,7 @@ const myCards = [{
     "name": "Петрусь Наталія, 13 років",
     "composition": "1)Ф.Ліст.''Романс'',     2)Е.Гіллок.''Вальс-етюд''",
     "videoUrl": " https://drive.google.com/file/d/1O15_CujwttaF1BxXgW844w6ABUQkujfb/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613c1"
@@ -1375,6 +1499,7 @@ const myCards = [{
     "name": "Прищепа Анна, 14 років",
     "composition": "1) М.Шмітц. Джазова інвенція №13,  2) О.Девіс.''Щасливий день''",
     "videoUrl": " https://drive.google.com/file/d/1JKMIlun3RehERqKaSHpl6SJ6eyuuq3aW/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613c2"
@@ -1382,6 +1507,7 @@ const myCards = [{
     "name": "Прокопчук Олександра, 17 років",
     "composition": " В.Верменич. ''Чорнобривці''",
     "videoUrl": " https://drive.google.com/file/d/1FNL7e6qh8SOKlUxMoRtA7rSY8NhanlX-/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613c3"
@@ -1389,6 +1515,7 @@ const myCards = [{
     "name": "Прокопчук Олександра, 17 років",
     "composition": " Ф.Шпиндлер. Сонатина,ІІІ ч.",
     "videoUrl": " https://drive.google.com/file/d/1KGMCcN6_BWPdiwzrRIuA3NdxUeJbwI1j/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613c4"
@@ -1396,6 +1523,7 @@ const myCards = [{
     "name": "Пучко Софія, 13років ",
     "composition": "1)М. Дворжак. Етюд 2 (2-й зошит), 2)В. Верменич. ''Чорнобривці''",
     "videoUrl": " https://drive.google.com/file/d/14WfsFv4An2FbV_uFjhqREI87-IfzQUb8/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613c5"
@@ -1403,6 +1531,7 @@ const myCards = [{
     "name": "Радковська Аліна, 13 років ",
     "composition": "Е. Гріг. Етюд пам'яті Ф.Шопена",
     "videoUrl": " https://drive.google.com/file/d/1_aBN8JgrmFmVfuVYW4s0leNNYxfP59So/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613c6"
@@ -1410,6 +1539,7 @@ const myCards = [{
     "name": "Радковська Аліна, 13 років",
     "composition": " Ф.Ліст. ''Сумний степ''",
     "videoUrl": " https://drive.google.com/file/d/1n2mSaPNwrVjlcPAohViYro24WziktB0j/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613c7"
@@ -1417,6 +1547,7 @@ const myCards = [{
     "name": "Рибкіна Олександра, 15 років",
     "composition": "1) М. Терещук. ''Фуга Lockdown''; 2)М.Бобер.''Опівнічна рапсодія''",
     "videoUrl": " https://drive.google.com/file/d/1sPVEB2VIt_oDZM0pmBUQ5jUoUBNivTwe/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613c8"
@@ -1424,6 +1555,7 @@ const myCards = [{
     "name": "Руссу Ганна, 14 років",
     "composition": "1)Г.Волленгаупт. ''Характерна п'єса у формі етюда'', 2)Ю.Щуровський. ''Елегія''",
     "videoUrl": " https://drive.google.com/file/d/1aEeFiUX_AvRcRMG-4hBA3i8c45EsZH9m/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613c9"
@@ -1431,6 +1563,7 @@ const myCards = [{
     "name": "Рущинська Ксенія, 14 років",
     "composition": "Е.Гріг. ''Мелодія''",
     "videoUrl": " https://drive.google.com/file/d/1072JNwvEm6CduA_GePsABu5_Yk6M02zH/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613ca"
@@ -1438,6 +1571,7 @@ const myCards = [{
     "name": "Рущинська Ксенія, 14 років ",
     "composition": "Й.С. Бах.''Маленька прелюдія'' до мінор",
     "videoUrl": " https://drive.google.com/file/d/1NDk_jKO5SHbnsaXATA1-YwgKe4bAmIdn/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613cb"
@@ -1445,6 +1579,7 @@ const myCards = [{
     "name": "Свинцицька Емілія, 14 років",
     "composition": "1)В.Квасневський.''Думка''; 2)Д.Крамер. ''Танцюючий скрипаль''",
     "videoUrl": " https://drive.google.com/file/d/1algz_oukRxT2kPAFyXoX-QjIA34pICcm/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613cc"
@@ -1452,6 +1587,7 @@ const myCards = [{
     "name": "Свиридюк Денис, 16 років",
     "composition": "1)Й.С.Бах. Триголосна інвенція №12, 2)Г.Галинін. ''Арія''",
     "videoUrl": " https://drive.google.com/file/d/146GFgHaXL3xHVFZw-hrHrxk4977lrNgh/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613cd"
@@ -1459,6 +1595,7 @@ const myCards = [{
     "name": "Селіванова Анна, 14 років",
     "composition": "1)Ю.Щуровський. ''Елегічний прелюд'' сі мінор, 2)М.Дворжак.''Джазовий етюд'' №6 (2 зошит)",
     "videoUrl": " https://drive.google.com/file/d/1JucNtO1D93kqL8woJbk_BJiDjdgGxsQ6/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613ce"
@@ -1466,6 +1603,7 @@ const myCards = [{
     "name": "Семенов Іван, 15 років ",
     "composition": "Е.Дога. ''Сонет''",
     "videoUrl": " https://drive.google.com/file/d/1L0U_HouKRP4y3gPZbVLkzumyYD2ezE2D/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613cf"
@@ -1473,6 +1611,7 @@ const myCards = [{
     "name": "Семенов Іван, 15 років ",
     "composition": "І.Мошeлeс. Eтюд №8,тв.70",
     "videoUrl": " https://drive.google.com/file/d/1_fwY3rkpcIlWjc1Ry_Ytihu-owWp2mgk/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613d0"
@@ -1480,6 +1619,7 @@ const myCards = [{
     "name": "Симоненко Таміла, 13 років ",
     "composition": "1) Л.Бетховен. Соната №19 тв.49, І частина, 2)П.Чайковський .''Підсніжник'' з циклу ''Пори року''",
     "videoUrl": " https://drive.google.com/file/d/1PmEjgOV2YYZiRIUBpTDIHjur-lzR_flv/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613d1"
@@ -1487,6 +1627,7 @@ const myCards = [{
     "name": "Снігур Анна, 13 років",
     "composition": "1)БХаваші. ''Шторм'', 2)Ф.Сай. Варіації",
     "videoUrl": " https://drive.google.com/file/d/1hm_xDHOZTzUCS4UZIso7MHZ3ibkvAIbb/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613d2"
@@ -1494,6 +1635,7 @@ const myCards = [{
     "name": "Тернова Ксенія, 14 років ",
     "composition": "1) І.Беркович. Прелюдія №10, 2)Е.Гріг. ''Похід гномів''",
     "videoUrl": " https://drive.google.com/file/d/1jJoY8kdzeUKl5zU5gLe5du8lhGalBIYB/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613d3"
@@ -1501,6 +1643,7 @@ const myCards = [{
     "name": "Ткачук Вікторія,  14 років",
     "composition": "1) Ф. Мендельсон.  ''Пісня без слів'', 2) В. Гіллок  ''Вальс-етюд''",
     "videoUrl": " https://drive.google.com/file/d/1Ki5C-tanjxy2My7kZ6kWgYEWMAOEYFc9/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613d4"
@@ -1508,6 +1651,7 @@ const myCards = [{
     "name": "Трачук Олександр, 13 років",
     "composition": "П. Захаров.  ''Рондо-галоп''",
     "videoUrl": " https://drive.google.com/file/d/18DlN1b4K1sXrdvvb3A8pHmJFvXwbzYrd/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613d5"
@@ -1515,6 +1659,7 @@ const myCards = [{
     "name": "Трачук Олександр, 13 років",
     "composition": " Д.Фільд. ''Ноктюрн'' №5",
     "videoUrl": " https://drive.google.com/file/d/1L3JxoWPr6jxM5Q3pxO0BBX2U4UiFnE_H/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613d6"
@@ -1522,6 +1667,7 @@ const myCards = [{
     "name": "Федонюк Олександр, 13 років",
     "composition": "1)Й.Гайдн. Соната №23, фа мажор, Іч.; 2)Й.С.Бах. Прелюдія і фуга №23, ДТК-І",
     "videoUrl": " https://drive.google.com/file/d/1i2fuOPVMqQfINCT2ZJbTJXccz5Afb_h5/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613d7"
@@ -1529,6 +1675,7 @@ const myCards = [{
     "name": "Хвостова Олександра, 13 років",
     "composition": "1)Ф.Ліст.Юнацький етюд №2, 2)О.Козаренко-А.Кос-Анатольський. ''Ой ти, дівчино, з горіха зерня''",
     "videoUrl": " https://drive.google.com/file/d/1GnsAZsugdqBLL6hKCGlleA8ZK_qT18Fj/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613d8"
@@ -1536,6 +1683,7 @@ const myCards = [{
     "name": "Храменкова Анастасія, 13 років ",
     "composition": "1)В.Коровіцин.''Русалонька'', 2)М.Скорик.''Жартівлива п'єса''",
     "videoUrl": " https://drive.google.com/file/d/1C0uSpeSybfdaIXYlmYwMrZ5JUsdb7Rb9/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613d9"
@@ -1543,6 +1691,7 @@ const myCards = [{
     "name": "Хелман Віолета, 13 років",
     "composition": "1)УГіллок.''Пурхаючи в хмарках'', 2)В.Ходош.''Червона шапочка''",
     "videoUrl": " https://drive.google.com/file/d/1zuyEGt3cvZ3sVjKnA3CJTZVL2vEVgXWy/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613da"
@@ -1550,6 +1699,7 @@ const myCards = [{
     "name": "Шибанова Варвара, 13 років ",
     "composition": "Ф.Шопен. Ноктюрн №2, тв.9",
     "videoUrl": " https://drive.google.com/file/d/1r1jURFKC555wKMR7ClSymtTG_DWwvgvZ/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985428683dda47f8b613db"
@@ -1557,6 +1707,7 @@ const myCards = [{
     "name": "Шибанова Варвара, 13 років",
     "composition": " С.Борткевич.Етюд №7, тв.29",
     "videoUrl": " https://drive.google.com/file/d/1KTUYP3gWn4PTTGG1Y__FKrI1s5GkXBoO/preview ",
+    "group": "Номінація \"Фортепіано соло\""
 },{
     "id": {
         "$oid": "60985441683dda47f8b613dc"
@@ -1839,6 +1990,735 @@ const myCards = [{
     "group": "Номінація \"Фортепіано соло\""
 }];
 
+let concertmasters = [{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b613ff"
+    },
+    "name": "Кобзар Ніколь, 14 років",
+    "composition": "Ф.Крейслер.''Маленький Віденський марш''",
+    "videoUrl": "https://drive.google.com/file/d/1kuSR0VmOMiqIj9YR0u3lvOzq4JG5aLY8/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61400"
+    },
+    "name": "Кобзар Ніколь, 14 років",
+    "composition": "Е.Ельгар.''Салют кохання''",
+    "videoUrl": "https://drive.google.com/file/d/11gI7Xlj_SLQql2Pi6ETAhSAZTKLMjkBn/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61401"
+    },
+    "name": "Сабо Нестор, 10 років ",
+    "composition": "1)В.Кролл. ''Полька віслючка'', 2)В.Цибін(перекл.А.Царенко). ''Листок з альбома''",
+    "videoUrl": "https://drive.google.com/file/d/14PR5evrUIRaS1VFUvu0s69HMH7xS3WiI/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61402"
+    },
+    "name": "Смірнова Євгенія, 9 років ",
+    "composition": "Л.Бетховен. ''Бабак'',обр. А. Шувалова",
+    "videoUrl": "https://drive.google.com/file/d/1ir2aRKco82NwzR2FQH6ApZVHQZYr0L7y/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61403"
+    },
+    "name": "Смірнова Євгенія, 9 років ",
+    "composition": "О.Бец. ''Подільські викрутаси''",
+    "videoUrl": "https://drive.google.com/file/d/1qJQ9AIWj48pJTMBWfo3h7z6JlKJH980n/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61404"
+    },
+    "name": "Старцев Бенжамін, 11 років ",
+    "composition": "1) Ж.Массне. ''Роздум''; 2)Е.Рибкін. ''Формула 1''",
+    "videoUrl": "https://drive.google.com/file/d/1L6bxDysN0y2GDSNnRXqGEFbHR7eS-ixs/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61405"
+    },
+    "name": "Власюк Назар, 18 років ",
+    "composition": "1)С.Доноті. Арія''O del mio amato ben'',2)Е.Гріг,Г.Х. Андерсен ''Jeg elsker dig''",
+    "videoUrl": "https://drive.google.com/file/d/12_MFPU39btJQKvSt2RYzjiU0HaYsa4Og/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61406"
+    },
+    "name": "Дячек Іоанна, 17років ",
+    "composition": "1)В.А.Моцарт.Арія''Ridente la calma'', 2)Ф.Надененко, І.Франко.Романс ''Чого являєшся мені у сні''",
+    "videoUrl": "https://drive.google.com/file/d/1EQbQKbWivCb-gOQkccICL5APQjgWle9w/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61407"
+    },
+    "name": "Кваша Яна, 16 років",
+    "composition": "1)Й.Кванц. Соната ре мажор, І-ІІ ч.; 2)В.Попп. ''Русский вечер''",
+    "videoUrl": "https://drive.google.com/file/d/1opL41mLH10Bnr1eMyzOExswFJoTZ_8cS/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61408"
+    },
+    "name": "Колодій Антон, 18 років",
+    "composition": "1) П.Чайковський. Романс''Горними тихо летела душа небесами'', 2)С.Рахманінов. ''Елегія'',тв.3№1, обробка для віолончелі та ф-но",
+    "videoUrl": "https://drive.google.com/file/d/1lQIzDOiZp-EdXly10SVm4diOj5WCSk3Z/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61409"
+    },
+    "name": "Конюшек Софія, 21 рік",
+    "composition": "О.Тактакішвілі. Соната для флейти і фортепіано.",
+    "videoUrl": "https://drive.google.com/file/d/1HXE-WblU0-HywgVzCunQniQUCUNXGlNN/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6140a"
+    },
+    "name": "Конюшек Софія, 21 рік ",
+    "composition": "Ф.Комлев. ''Мелодія''",
+    "videoUrl": "https://drive.google.com/file/d/14q78XKpdFg66VSWkAZq0VeRuKaTcJUpu/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6140b"
+    },
+    "name": "Пчелінцева Адріана, 15 років",
+    "composition": "1)В.Моцарт. Арія Блондхен з опери''Викрадення із Сераля'', 2)Р.Глієр.''В порыве нежности сердечной''",
+    "videoUrl": "https://drive.google.com/file/d/17mRVxV06v5Mv6_P3C183oMgON-R_u-qO/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6140c"
+    },
+    "name": "Фесик Назарій, 16 років ",
+    "composition": "1)Дж.Пуччіні. Арія Тоски; 2)М.де Фалья.''Хота''",
+    "videoUrl": "https://drive.google.com/file/d/1BJNsTp4WDxZbAdAnjMLP3hbD63T2eIwY/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6140d"
+    },
+    "name": "Ярошенко Валерія, 19 років",
+    "composition": "1)К.Стеценко. ''Сотояла я і слухала весну''; 2)В.Власов. Скерцо для домри та фор",
+    "videoUrl": "https://drive.google.com/file/d/1OuDlacDb3i94xNxkowk-jsNktxuQK71L/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6140e"
+    },
+    "name": "Козак Ірина",
+    "composition": "Є.Бозза.''Дитячі мрії''",
+    "videoUrl": "https://drive.google.com/file/d/1PsoyOIr17OCyN_GhRU_q7IpS4HWwHWUB/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6140f"
+    },
+    "name": "Козак Ірина",
+    "composition": "'Ніч яка місячна'', обр. Ю.Островського ",
+    "videoUrl": "https://drive.google.com/file/d/1TJKQFEm3a3wziYvI3QfihGxzV2U5QH2n/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61410"
+    },
+    "name": "Микитюк Анастасія ",
+    "composition": "1)Н.Бакланов. ''Концертіно'',      2)З.Багіров. ''Романс''",
+    "videoUrl": "https://drive.google.com/file/d/1j8_mvZEGTgYI0LFGWFoLbQAgCHpI5C0Z/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61411"
+    },
+    "name": "Сав'юк Власта",
+    "composition": "1)В.А. Моцарт. Концерт для фагота з оркестром сі бемоль мажор, Іч.; 2)А.Тансман.Сонатина для фагота і фортепіано,ІІІч.",
+    "videoUrl": "https://drive.google.com/file/d/130aZO1nxV4E8HX7hxWaNvVT4bfgkhx4M/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61412"
+    },
+    "name": "Сасюк Юлія",
+    "composition": "1)Г.Форе. ''Пробудження'', 2) Б.Барток. ''Шість румунських танців''",
+    "videoUrl": "https://drive.google.com/file/d/1ods3tvUDXZdo1yedIVXYcc9Mn77bjh25/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61413"
+    },
+    "name": "Іванова Т.В.",
+    "composition": "Е.Северн. ''Польський танець''",
+    "videoUrl": "https://drive.google.com/file/d/1xXtvOSAunv56RfAxgV1q7m4iKa09sWH1/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61414"
+    },
+    "name": "Іванова Т.В.",
+    "composition": "І.Тамарин ''Старовинний гобелен''",
+    "videoUrl": "https://drive.google.com/file/d/149vlM07Gd8S9Cz4tDZ2KyKkguJzyB1uB/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61415"
+    },
+    "name": "Гачик О.А.",
+    "composition": "1)Р.Глієр.''Романс'', 2)О.Циганков.''Інтродукція та Чардаш''",
+    "videoUrl": "https://drive.google.com/file/d/1Ngs85qpEODEv67a8-daJxZoH6Ko7SUWk/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61416"
+    },
+    "name": "Гриців О.М.",
+    "composition": "1)Ф. Крейслер.''Маленький віденський марш'', 2)Л. Ревуцький. ''Інтермецо''",
+    "videoUrl": "https://drive.google.com/file/d/1nXkybPZHPOWWUzBED_KKeGF3kO2Ecabj/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61417"
+    },
+    "name": "Кірчанова І.В. ",
+    "composition": "1)М.Відмонте.''Par zilo un raibo pasaku'', 2)Губаренко В. Концерт для флейти з камерним оркестром,тв.10",
+    "videoUrl": "https://drive.google.com/file/d/1zpMjCauUpbJdufWXfb5Ofm7P9sAYj-iP/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61418"
+    },
+    "name": "Кекух О.В.",
+    "composition": "1)І.Вимер. ''Гуцульська рапсодія'', 2)Укр.нар. танець в обр.В.Солонського ''Вечорниці''",
+    "videoUrl": "https://drive.google.com/file/d/1dfPx15WQKHfPVtMPWWAAw9sy9UYw5S1e/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61419"
+    },
+    "name": "Лобода Л. М., ",
+    "composition": "1)Л.Бетховен, Т.Шевченко. ''Зоре моя вечірняя'', 2)Лемківська народна пісня ''В темну нічку убочи''",
+    "videoUrl": "https://drive.google.com/file/d/10gZo53X6EhHwEMpXKwpB2tW2_irVo290/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6141a"
+    },
+    "name": "Любченко М.С. ",
+    "composition": "Й.С.Бах. Концерт для скрипки з оркестром ля мінор",
+    "videoUrl": "https://drive.google.com/file/d/1wfhuitXL2MwtYdrUHIkVdMxQZpht6jNl/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6141b"
+    },
+    "name": "Любченко М.С.",
+    "composition": "Н.Стецюн.    ''Болеро''",
+    "videoUrl": "https://drive.google.com/file/d/1bHWUriqKvSTnVnIm47mmLedSi0Nh-XQs/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6141c"
+    },
+    "name": "Михайлова М.В. ",
+    "composition": "1)Й.Тамарин.''Старовинний гобелен'', 2)А.Солтан. ''Мелодія''",
+    "videoUrl": "https://drive.google.com/file/d/1EoES2mTrWCy9CQcqd9qu366Z1tz6IpRQ/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6141d"
+    },
+    "name": "Мялькіна Н.О.",
+    "composition": "Дж.Вільямс. ''Мелодія''",
+    "videoUrl": "https://drive.google.com/file/d/1iM_EF0Vx9-w4DS6HR_ZHRJ-mqJwA-FGp/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6141e"
+    },
+    "name": "Мялькіна Н.О.",
+    "composition": "С.Цинцадзе. ''Сачідао''",
+    "videoUrl": "https://drive.google.com/file/d/159djSrzI1AvL5pkCl0vnYDsHQLTnd5lo/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6141f"
+    },
+    "name": "Нікітіна І.Р.",
+    "composition": "Б.Лятошинський. ''Мелодія''",
+    "videoUrl": "https://drive.google.com/file/d/1yQyO0Q65WvHnvY28xBl3shW-Htdu4239/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61420"
+    },
+    "name": "Нікітіна І.Р.",
+    "composition": "Сл. А.М'ястківського, муз.В.Верменича ''Підкручу я чорнії вуса''",
+    "videoUrl": "https://drive.google.com/file/d/1u_7UQDuOCDqJJj1q5lhEFPEoxd_PU3jY/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61421"
+    },
+    "name": "Саєнко Т.Ю. ",
+    "composition": "Ж.Массне. ''Роздум''",
+    "videoUrl": "https://drive.google.com/file/d/1JlAoY-AAJEyI-rIRDCu7UnywxvrWEBBw/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61422"
+    },
+    "name": "Саєнко Т.Ю., ",
+    "composition": "Т.Чупак. ''Весняний рок-н-ролл''",
+    "videoUrl": "https://drive.google.com/file/d/1T5-IUNUuQmUvFVWYlY6SAVej-TIqmbrq/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61423"
+    },
+    "name": "Савчук Т.І.  ",
+    "composition": "1)Дж.Вільямс, аранж.А.Теплицької.''Колискова для ангела'',2)В.Козлов,перекл. для домри Є.Жукова.''П'єса у стилі фламенко''",
+    "videoUrl": "https://drive.google.com/file/d/17Tgiuogivsh3xwjFXi5a1oRU-okkP960/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61424"
+    },
+    "name": "Смірнова І.Ю.",
+    "composition": "А. Шумакова. ''Танго Евіти''",
+    "videoUrl": "https://drive.google.com/file/d/11CkziRvYJvniW7cia7y9EkI85snLJw7x/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61425"
+    },
+    "name": "Смірнова І.Ю.",
+    "composition": "В.Гомоляка. ''Іспанський танець''",
+    "videoUrl": "https://drive.google.com/file/d/1iOUJN21BvDdzsL0oP0atvsEmoqgUdpYC/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61426"
+    },
+    "name": "Смолянінова С.М. ",
+    "composition": "1)А.Дворжак. Концерт для скрипки ля мінор, І ч.; 2)М.Скорик. ''Карпатська рапсодія''",
+    "videoUrl": "https://drive.google.com/file/d/1tlsrMkQp0UVq0ywtJ01LpHKPsmFOpHnO/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61427"
+    },
+    "name": "Старинська М.А. ",
+    "composition": "1)Ю.Шинкаренко.Варіації; 2)Е.Боцца.''Арія''",
+    "videoUrl": "https://drive.google.com/file/d/1LsWzV_Lt1z0gGXULSegouckY9RZroG7h/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61428"
+    },
+    "name": "Трепак М.І.",
+    "composition": "1)Ж.Демерссман. Фантазія, 2)П.Ітурральде. ''Маленький чардаш''",
+    "videoUrl": "https://drive.google.com/file/d/1TMSKHpEcmM3K7hiZzyY3g4K_8MtHbH9L/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b61429"
+    },
+    "name": "Єрьоміна О.Г. ",
+    "composition": "1) М.Дремлюга. Поема-рапсодія, 2) С.Орфеєв.''Веснянка''",
+    "videoUrl": "https://drive.google.com/file/d/1Y6OKUOoJb1ju3VzS4FCtO4guBLHD910P/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6142a"
+    },
+    "name": "Кадук Т.Ю.",
+    "composition": " 1)К.М.Вебер.Концерт для кларнета №1,І ч.; 2) Я.Мединьш. Романс",
+    "videoUrl": "https://drive.google.com/file/d/1kWBHYUYRmXpm5BCGW9bnt8y9rixgPQZ4/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6142b"
+    },
+    "name": "Новікова М.М.",
+    "composition": "Обр. Д.Задора. ''Серед села дичка''",
+    "videoUrl": "https://drive.google.com/file/d/10aWVlOe3F-ssQhTVqkFng8GJKGJEwU80/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6142c"
+    },
+    "name": "Новікова М.М. ",
+    "composition": "П.І.Чайковський.''Забыть так скоро''",
+    "videoUrl": "https://drive.google.com/file/d/1tw5MNU-5fuXQoSOHpWtaGvGjZxcfMAfm/preview",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b6142d"
+    },
+    "name": "Сирота О.М.",
+    "composition": "1)К.Кудрявцев. ''Один день з життя дятла'', 2)О.Бец.''Українське інтермецо''",
+    "videoUrl": "https://drive.google.com/file/d/1SejB1id_PU7Xg-w5fzKUvJ0EoOnFsDMC/preview",
+    "group": "Номінація \"Концертмейстер\""
+}];
+
+myCards = myCards.concat(concertmasters);
+
+let ensemble = [{
+    "id": {
+        "$oid": "6098d647683dda47f8b61437"
+    },
+    "name": "Ф-ний дует (Журавель С., Артеменко С.)",
+    "composition": "1)Ю.Щуровський. ''Іспанський танець'', 2)Обр.М.Попова. ''Єврейські мотиви''",
+    "videoUrl": "https://drive.google.com/file/d/1KvcEE7qPS0raOCqd8saMEHo-y0UDIpCh/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61438"
+    },
+    "name": "Ф-ний дует  (Пилипчук Н., Кавун Є.)",
+    "composition": "1) В.Алексеєв.'' На прогулянці'', 2)О.Петрова. ''Цирк''",
+    "videoUrl": "https://drive.google.com/file/d/1nELotwqAz9C7d09G4NVBVvbRyKL958rs/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61439"
+    },
+    "name": "Ф-ний дует  (Радковська А., Кузьмич). ",
+    "composition": "А.Шнітке. ''Шинель''",
+    "videoUrl": "https://drive.google.com/file/d/1M4pazNI_Tyv2sDMW9oB9Qem36I5DRZuR/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6143a"
+    },
+    "name": "Ф-ний дует  (Радковська А., Кузьмич). ",
+    "composition": "О. Науменко.''Час великих очікувань''",
+    "videoUrl": "https://drive.google.com/file/d/1LBOe_wFlC_yzt_FfkRbC8-90cVu3stVO/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6143b"
+    },
+    "name": "Ф-ний дует  (Сікора Р. Черепущак М.). ",
+    "composition": "1)О.Науменко. ''Коломийка'', 2)Е.Гріг-Г.Фіртич.''Танець Анітри''",
+    "videoUrl": "https://drive.google.com/file/d/1ORTzw-plehQvAAOinOrdqnHtnU_oCZj5/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6143c"
+    },
+    "name": "Ф-ний дует ''Mycraft'' (Єрмоленко Д., Шибанова В.) ",
+    "composition": "1)М.Скорик. ''Мелодія'',         2)О.Хромушин. ''Друкарська машинка''",
+    "videoUrl": "https://drive.google.com/file/d/1Auvo44aBYTG3vKxsT2hQD0hmkg1Edla7/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6143d"
+    },
+    "name": "Ф-ний дует (Бондаренко М., Слінченко Ю.) ",
+    "composition": "О.Секрет.''Прогулянка Добермана''",
+    "videoUrl": "https://drive.google.com/file/d/11QSAdkwn3iu54kR3hxnh3Hg0C_zpP-ZU/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6143e"
+    },
+    "name": "Ф-ний дует (Бондаренко М., Слінченко Ю.) ",
+    "composition": "П.Чайковський.'' Італійська пісенька''",
+    "videoUrl": "https://drive.google.com/file/d/1ZT-3uCrzbGJtMc0oLwtgJqTorz9jDYes/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6143f"
+    },
+    "name": "Ф-ний дует (Вашуріна В., Єжонков А.).",
+    "composition": "1) Г.Бєлов.''Урасіма і Чарівна Черепаха'', 2)О. Польовий. ''Подорож в Альпи''",
+    "videoUrl": "https://drive.google.com/file/d/1jChvMBrDwyxKk3AJEECSBE7Y_kCLRh8s/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61440"
+    },
+    "name": "Ф-ний дует (Гембицька О., Кузло К.).",
+    "composition": "1)К.Ховард. ''Чарльстон'', 2)Дж. Шірінг. ''Колискова''",
+    "videoUrl": "https://drive.google.com/file/d/1tLNVlhurZUdHx44MchS4qm251eS39roQ/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61441"
+    },
+    "name": "Ф-ний дует (Дерябіна С. та Васильєва В.).",
+    "composition": "1)А.Діабеллі. Соната ре мажор, 2)Л.Шукайло. ''Гумореска''",
+    "videoUrl": "https://drive.google.com/file/d/1yJQBfg7c_BoQqXMmAYqNYQCnYtawZ9To/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61442"
+    },
+    "name": "Ф-ний дует (Кришталович М., Кришталович І.) ",
+    "composition": "Дж.Гершвін. ''Clap you hand''",
+    "videoUrl": "https://drive.google.com/file/d/1MAJeBVnftEdhcio47nDnUgcjGGTwK8Cj/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61443"
+    },
+    "name": "Ф-ний дует (Кришталович М., Кришталович І.)",
+    "composition": "'Колядка'', обр. О.Закалюжної",
+    "videoUrl": "https://drive.google.com/file/d/1pqxYZTvFyrrj6dTpT58UUPSOPHM-hZte/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61444"
+    },
+    "name": "Ф-ний дует (Ланський Є., Ланська О.)",
+    "composition": "1)Е.Гріг. Арія із сюїти ''З часів Хольберга'', 2)В.Птушкін. ''Бренфордська відьма''",
+    "videoUrl": "https://drive.google.com/file/d/18OUsCGQBs3IhlX6it-s3Txuo07M3Ns0H/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61445"
+    },
+    "name": "Ф-ний дует (Симоненко Т., Федина А.)",
+    "composition": "1) Дж.Гершвін.''Коханий мій''; 2) П.Моріа. ''Манует''",
+    "videoUrl": "https://drive.google.com/file/d/1hVekh8_5MOUJDgJtXI8i4GBdRQwCAekt/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61446"
+    },
+    "name": "Ф-ний дует (Скопець А., Мурзак Ю.). ",
+    "composition": "Т.Остен.''Танець ляльок''",
+    "videoUrl": "https://drive.google.com/file/d/1EFzyijuwAFNj8v-TlraiI_PkuHGqX94E/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61447"
+    },
+    "name": "Ф-ний дует (Скопець А. Мурзак Ю.) ",
+    "composition": "Л. Жульєва.''Прогулянка з татом''",
+    "videoUrl": "https://drive.google.com/file/d/1VZr2V-Hv8MIF8KWgZGfJAyuEE7maqWop/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61448"
+    },
+    "name": "Ф-ний дует (Троценко А., Якуніна О.В.)",
+    "composition": "1)К.М.Вебер. Соната до мажор, І ч.; 2)А.Комлікова. ''Спогад''",
+    "videoUrl": "https://drive.google.com/file/d/1aYNB8jH0Jy4SP3ufAceQ-mJ29lPr_rTw/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61449"
+    },
+    "name": "Ф-ний дует (Філіпов І., Марченко Л.)",
+    "composition": "1)Й.С.Бах.''Жарт'' 2)М.Леонтович.''Щедрик''",
+    "videoUrl": "https://drive.google.com/file/d/1phWTyIJb7FzqNQFeUqE5x1lYFZ59Wugz/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6144a"
+    },
+    "name": "Ф-ний дует (Хелман В., Хелман В.)",
+    "composition": "1)У.Гіллок.''На паризькому бульварі'', 2)Н.Смірнова.''Бразильський карнавал''",
+    "videoUrl": "https://drive.google.com/file/d/17c32CI0m_kNJXZkrHkXQe52TdfHWPl6O/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6144b"
+    },
+    "name": "Ф-ний квартет ''Sforzando''.",
+    "composition": " О.Циганков. ''Тустеп''",
+    "videoUrl": "https://drive.google.com/file/d/1UQkZ11UGVlqhR3sradpboQpK9EEyaiqo/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6144c"
+    },
+    "name": "Ф-ний квартет ''Sforzando''.",
+    "composition": "Е. Гріг.''В печері гірського короля''",
+    "videoUrl": "https://drive.google.com/file/d/1STLnt8IU5nlY-G1dqfbKuRa1B_Z8TSkY/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6144d"
+    },
+    "name": "Ф-ний дует (Вихрист М., Фєдосєєв Н.)",
+    "composition": "1)С.Прокоф'єв. Марш, 2)В.Лютославський. Варіації на тему Паганіні",
+    "videoUrl": "https://drive.google.com/file/d/1nzRHXJKtAbdx7PwbB5d4XFGxBNctpNEk/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6144e"
+    },
+    "name": "Ф-ний дует (Вітюк В, Березовська Є.)",
+    "composition": "1)Й.Бах (Вівальді). Концерт для органа ля мінор, 2)А.П'яцолла. ''Лібертанго''",
+    "videoUrl": "https://drive.google.com/file/d/1nf01Ef6OVOyLAJUUjBYyIKNs3MZe_PFv/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6144f"
+    },
+    "name": "Ф-ний дует (Боровець О., ілюстратор)",
+    "composition": "Й.С.Бах.''Арія'' (''Страсті за Матвієм'')",
+    "videoUrl": "https://drive.google.com/file/d/1H1akQUdR7QKRO4P3hDY6_tZtmdSrk0J1/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61450"
+    },
+    "name": "Ф-ний дует (Боровець О.,ілюстратор). ",
+    "composition": "К.Орф.''О,Фортуно'' (''Карміна Бурана'')",
+    "videoUrl": "https://drive.google.com/file/d/19kOIBTdIKKQZ6nXVgPiZH3Y8mycWpwBy/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61451"
+    },
+    "name": "Ф-ний дует (Клименко М., Діордієва М.)",
+    "composition": "1) С.Рахманінов. ''Вокаліз'', 2)Д.Мійо.''Бразильєра''",
+    "videoUrl": "https://drive.google.com/file/d/1u81dAAtlDofq4pnyDtYg-SxGB4jGB3sE/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61452"
+    },
+    "name": "Ф-ний дует (Козак І., Таєр-Ульянова К.). ",
+    "composition": "A.  П'яццола. ''Лібертанго''",
+    "videoUrl": "https://drive.google.com/file/d/1y6YqFtBPGMlXzEQL8uu3BL4UkrMze4jb/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61453"
+    },
+    "name": "Ф-ний дует (Козак І. та Таєр-Ульянова К.). ",
+    "composition": "Е. Гріг. ''Норвежський танець''",
+    "videoUrl": "https://drive.google.com/file/d/1Ttfi4m7P1ouNJEHDXiJna7X3beQPzrfu/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61454"
+    },
+    "name": "Ф-ний дует (Костечко А., Кондратюк М. ).",
+    "composition": "М. К.Дебюссі. ''У човні''",
+    "videoUrl": "https://drive.google.com/file/d/1hRWzCLXIUU6XpDWZ3EisI7Q5NZHzDdio/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61455"
+    },
+    "name": "Ф-ний дует (Костечко А., Кондратюк М.).",
+    "composition": "Ю.Весняк. ''Карлсон''",
+    "videoUrl": "https://drive.google.com/file/d/1A31VrR5d5dXT8kQWtNyGkxfy7bKI5MDU/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61456"
+    },
+    "name": "Ф-ний дует (Мацієвсьа М., Папієва К.). ",
+    "composition": "1)М.Метнер.''Російський хоровод'', 2)А.П'яццола.''Велике танго''",
+    "videoUrl": "https://drive.google.com/file/d/16AngsasGuAshoDZyg9idljB8xoMDv4vC/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61457"
+    },
+    "name": "Ф-ний дует  (Касяненко О.В., Гордієнко І.О.) ",
+    "composition": "1) А.Бабаджанян. ''Ноктюрн'', 2)Ю. Щуровський. ''Гумористичний танець''",
+    "videoUrl": "https://drive.google.com/file/d/1_SXAFQDw_Bm4YK-qcy6Xs4kFoW4H3DaI/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61458"
+    },
+    "name": "Ф-ний дует ''Елегія''",
+    "composition": " 1)М.Скорик. ''Мелодія'', 2)Л.Карпенко.''Віночок улюблених мелодій''",
+    "videoUrl": "https://drive.google.com/file/d/1ckZw0HssiyEdbSSHBqOyawqSftAk1wUj/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61459"
+    },
+    "name": "Ф-ний дует (Григор'єва Г.А. , Якуніна О.В.)",
+    "composition": "1)Ф.Шуберт.''Військовий марш'' 2)А.Комлікова. ''На маскараді''",
+    "videoUrl": "https://drive.google.com/file/d/1UCaJ_qYUapyM-HBhruWb-h7IFySqk_sU/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6145a"
+    },
+    "name": "Ф-ний дует (Косенко О.В., Касумова О.Д.).",
+    "composition": "1)А. Цфасман. ''Ліричний вальс'', 2)М.Мінков. ''Старий рояль''",
+    "videoUrl": "https://drive.google.com/file/d/1zGOKunxIoHd3Uj5FHvdWyN-rvWF7n6V-/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6145b"
+    },
+    "name": "Ф-ний квартет  (Васенко С., Васенко М., Хавалко Т.,Бичков'як К.). ",
+    "composition": "1)А.Вівальді.''Зима''; 2)Ф.Мерк'юра.''Богемна рапсодія''",
+    "videoUrl": "https://drive.google.com/file/d/1B96nEC3vKYRd8OgTXgPiVVX8VB-MSSdY/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6145c"
+    },
+    "name": "Ф-ний квартет ''ALLA BREVE''.",
+    "composition": "І.Стравінський.Фрагмент із балету ''Петрушка''",
+    "videoUrl": "https://drive.google.com/file/d/1bifW8OBv1E61qd184EaJjsvOtrXrRrkV/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6145d"
+    },
+    "name": "Ф-ний квартет ''ALLA BREVE''.",
+    "composition": "К.Гурлітт.''Віденський вальс''",
+    "videoUrl": "https://drive.google.com/file/d/1QjBrKWTkCbiS9Ej5k4pHbHRDsN2D1caM/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6145e"
+    },
+    "name": "Фортепіанний ансамбль ''ЕКСПРЕСІЯ''.",
+    "composition": "О.Науменко. 1)''Часи великих сподівань'', 2)А.П'яццола. ''Лібертанго''",
+    "videoUrl": "https://drive.google.com/file/d/1iUlYKrIKsJ1inuCqAOS0MY4LqGrmcp_k/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b6145f"
+    },
+    "name": "Фортепіанний квартет (Щукіна О.,Сердюк Г., Шаповал О., Максименко В.)",
+    "composition": "1) Л.Лавіньяк.''Галоп-марш''; 2)Г.Гурліт. Ноктюрн",
+    "videoUrl": "https://drive.google.com/file/d/1IYbNIC2Ex6NxxM8ymbCtL2muPAQ4RhMg/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61460"
+    },
+    "name": "Ф-ний ансамбль ( Смик Л.Ю.,Шекель О.О.). ",
+    "composition": "К. Гуаставіно. ''Романс''",
+    "videoUrl": "https://drive.google.com/file/d/1dHBznDmpE-0vWyryMf86XCkFb8sP_HY_/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+},{
+    "id": {
+        "$oid": "6098d647683dda47f8b61461"
+    },
+    "name": "Ф-ний ансамбль (Смик Л.Ю., Шекель О.О.). ",
+    "composition": "О.Цфасман.''Сніжинки''",
+    "videoUrl": "https://drive.google.com/file/d/19PTe-J_cS6DTSO6iZFixgb5g4ZxpazRT/preview",
+    "group": "Номінація \"Фортепіанний ансамбль\""
+}];
+
+myCards = myCards.concat(ensemble);
+
+/** CODE **/
 function filmReducer(state = {cardCount: myCards.length, cards: myCards, isDataInPlace: true, error: ""}, action) {
     switch (action.type) {
         case 'INFO_PAGE':
