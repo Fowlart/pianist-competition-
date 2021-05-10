@@ -89,7 +89,7 @@ let myCards = [{
         "$oid": "609853dc683dda47f8b61311"
     },
     "name": "Данюк Єлизавета, 7 років",
-    "composition": "1)М.Любарський.''Танцювальна'',    2) Д.Кабалевський. Вальс",
+    "composition": "1)М.Любарський.''Танцювальна'', 2) Д.Кабалевський. Вальс",
     "videoUrl": "https://drive.google.com/file/d/1vTk_mAB_ECh9VDwR6EMasY1y21KWrSYH/preview",
     "group": "Номінація \"Фортепіано соло\""
 },{
@@ -281,7 +281,7 @@ let myCards = [{
         "$oid": "609853dc683dda47f8b61329"
     },
     "name": "Остапчук Каріна. 8 років",
-    "composition": "1)В.Гіллок ''Дзвіночки'', 2)І.Хуторянський.'''Вогнівочка-стрибунівочка''",
+    "composition": "1)В.Гіллок ''Дзвіночки'', 2)І.Хуторянський. ''Вогнівочка-стрибунівочка''",
     "videoUrl": "https://drive.google.com/file/d/16RAcN2O6kunKZAFrbgBHsENiZg9iKs4G/preview",
     "group": "Номінація \"Фортепіано соло\""
 },{
@@ -497,7 +497,7 @@ let myCards = [{
         "$oid": "609853dc683dda47f8b61344"
     },
     "name": "Юрчук Яна, 7 років",
-    "composition": " 1)М. Клементі. Сонатина, тв.36 №1, І ч.,2)П.Чайковський.''Вранішня молитва''",
+    "composition": " 1)М. Клементі. Сонатина, тв.36 №1, І ч.,2)П.Чайковський. ''Вранішня молитва''",
     "videoUrl": "https://drive.google.com/file/d/1oPUuH2qzaQULypvuy3M6Q-f7vvhZlAnx/preview",
     "group": "Номінація \"Фортепіано соло\""
 },{
@@ -505,7 +505,7 @@ let myCards = [{
         "$oid": "60985400683dda47f8b61345"
     },
     "name": "Аміхалакіоає Ємельян, 10 років",
-    "composition": "1)О.Білаченко.''Осінній ескіз'', 2)М.Кармінський.''Гумореска''",
+    "composition": "1)О.Білаченко.''Осінній ескіз'', 2)М.Кармінський. ''Гумореска''",
     "videoUrl": " https://drive.google.com/file/d/1zfqkyG6BpZ3_1XXdf_FVYOWFmpakjWWP/preview ",
     "group": "Номінація \"Фортепіано соло\""
 },{
@@ -593,7 +593,7 @@ let myCards = [{
         "$oid": "60985400683dda47f8b61350"
     },
     "name": "Васильєва Вероніка, 12 років",
-    "composition": "1)Р.Глієр. Прелюдія до мінор;2)С.Джербашян.''Швидкий рух''",
+    "composition": "1)Р.Глієр. Прелюдія до мінор;2)С.Джербашян. ''Швидкий рух''",
     "videoUrl": " https://drive.google.com/file/d/1QBgtdhw2IQeTH6QEYnKLGBalX0K2upN4/preview ",
     "group": "Номінація \"Фортепіано соло\""
 },{
@@ -889,7 +889,7 @@ let myCards = [{
         "$oid": "60985400683dda47f8b61375"
     },
     "name": "Ликова Варвара, 11 років",
-    "composition": "1) В.Гіллок.''Bill bailey'', 2)Ю.Щуровський.''Шарманка''",
+    "composition": "1) В.Гіллок.''Bill bailey'', 2)Ю.Щуровський. ''Шарманка''",
     "videoUrl": " https://drive.google.com/file/d/1dE5LcfV-T8QhLXiAfn8sxLEMecvgS-hO/preview ",
     "group": "Номінація \"Фортепіано соло\""
 },{
@@ -1225,7 +1225,7 @@ let myCards = [{
         "$oid": "60985428683dda47f8b6139f"
     },
     "name": "Базилюк Наталія, 16 років",
-    "composition": " 1)Я.Сібеліус. Прелюдія ля мінор,2)І.Беркович.Прелюдія фа дієз мінор",
+    "composition": " 1)Я.Сібеліус. Прелюдія ля мінор,2)І.Беркович. Прелюдія фа дієз мінор",
     "videoUrl": " https://drive.google.com/file/d/1GaWeZbKc6SiIudiYQVBgFxaiOO9SEskA/preview ",
     "group": "Номінація \"Фортепіано соло\""
 },{
@@ -1809,7 +1809,7 @@ let myCards = [{
         "$oid": "60985441683dda47f8b613e8"
     },
     "name": "Куліш Поліна, 15 років ",
-    "composition": "1)Е.Гріг.''Колискова'', 2)І.Падеревський.''Скерцино''",
+    "composition": "1)Е.Гріг.''Колискова'', 2)І.Падеревський. ''Скерцино''",
     "videoUrl": "https://drive.google.com/file/d/1NamVVFfAdRfaFuA1uKjlt9QIWgMiSBy6/preview",
     "group": "Номінація \"Фортепіано соло\""
 },{
@@ -2283,7 +2283,7 @@ let concertmasters = [{
         "$oid": "6098c8f6683dda47f8b61423"
     },
     "name": "Савчук Т.І.  ",
-    "composition": "1)Дж.Вільямс, аранж.А.Теплицької.''Колискова для ангела'',2)В.Козлов,перекл. для домри Є.Жукова.''П'єса у стилі фламенко''",
+    "composition": "1)Дж.Вільямс, аранж.А.Теплицької.''Колискова для ангела'', 2)В.Козлов,перекл. для домри Є.Жукова. ''П'єса у стилі фламенко''",
     "videoUrl": "https://drive.google.com/file/d/17Tgiuogivsh3xwjFXi5a1oRU-okkP960/preview",
     "group": "Номінація \"Концертмейстер\""
 },{
