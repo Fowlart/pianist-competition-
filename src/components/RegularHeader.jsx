@@ -4,7 +4,7 @@ import {AiOutlineFileSearch, HiOutlineExclamationCircle} from "react-icons/all";
 import {useDispatch, useSelector} from "react-redux";
 import useWindowDimensions from "../hooks/UseWindowDimensions";
 
-const Button = styled.div`
+export const Button = styled.div`
   padding-top: 8px;
   text-align: center;
   margin-top: 14px;
