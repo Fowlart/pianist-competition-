@@ -673,10 +673,19 @@ let myCards = [{
         "$oid": "60985400683dda47f8b6135a"
     },
     "name": "Гукасян Ліана, 10 років",
-    "composition": "1)Л.Келлер. Сонатина,          2) А.Хачатурян. ''Андантіно''",
+    "composition": "А.Хачатурян. \"Андантіно\"",
     "videoUrl": " https://drive.google.com/file/d/12IdAfSi_waU6lrNfUvP2H0x0WO78aMGa/preview ",
     "group": "Номінація \"Фортепіано соло\""
-},{
+},
+    {
+        "id": {
+            "$oid": "60985400683dda47f8b6135aa"
+        },
+        "name": "Гукасян Ліана, 10 років",
+        "composition": "Л.Хеллер. Сонатина",
+        "videoUrl": " https://drive.google.com/file/d/1ktOVC3TR_AE4uRbG62OxNKVjoNJqiuPm/preview ",
+        "group": "Номінація \"Фортепіано соло\""
+    },{
     "id": {
         "$oid": "60985400683dda47f8b6135b"
     },
@@ -953,10 +962,18 @@ let myCards = [{
         "$oid": "60985400683dda47f8b6137d"
     },
     "name": "Морозова Тетяна, 11 років ",
-    "composition": "1) Й.Бенда.Сонатина, 2) С.Шевченко.''Вечір''",
+    "composition": "Й.Бенда.Сонатина",
     "videoUrl": " https://drive.google.com/file/d/15u4oK4uIv923BbhwHuQxc2kb2zW4DImG/preview ",
     "group": "Номінація \"Фортепіано соло\""
 },{
+        "id": {
+            "$oid": "60985400683dda47f8b6137dd"
+        },
+        "name": "Морозова Тетяна, 11 років ",
+        "composition": "С.Шевченко \"Вечір\"",
+        "videoUrl": " https://drive.google.com/file/d/1Fy-L04EAfcq7I1bRpx5pE8lydIByT3SF/preview ",
+        "group": "Номінація \"Фортепіано соло\""
+    },{
     "id": {
         "$oid": "60985400683dda47f8b6137e"
     },

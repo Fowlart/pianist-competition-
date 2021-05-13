@@ -9,11 +9,12 @@ import logo from "../1163023.png";
 
 const CommonWrapper = styled.div`
   background-image: url("${logo}");
+  min-height: 1000px;
 `;
 
 const MainSectionFlex = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 `;

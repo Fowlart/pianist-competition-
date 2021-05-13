@@ -2,20 +2,21 @@ import React, {useEffect, useState} from "react";
 import styled from "styled-components";
 import {AiFillPlaySquare, BsFillPersonFill, FaBookOpen} from "react-icons/all";
 import useWindowDimensions from "../hooks/UseWindowDimensions";
+import {DivThinLine} from "./ResultsFilter";
 
 const FilmWrapper = styled.div`
   font-size: 19px;
   font-family: "Segoe UI", serif;
   font-weight: 700;
   color: white;
-  margin: 15px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
+  justify-content: center;
 `;
 
 const FilmInfo = styled.div`
   text-align: center;
-  border: solid white 2px;
 `;
 
 
@@ -25,16 +26,13 @@ const IframeBox = styled.iframe`
   border: solid white 3px;
 `;
 
-export const Button = styled.div`
-  text-align: center;
-  font-size: 25px;
-  width: 80%;
-  margin-left: 10%;
+export const Button = styled.button`
   color: white;
   transition: all 0.5s;
-
+  background-color: black;
+  font-size: 30px;
+  padding-top: 6px;
   :hover {
-    font-size: 27px;
     color: darkred;
   }`;
 
@@ -67,13 +65,14 @@ export const Card = (props) => {
     return (
         <FilmWrapper>
             <FilmInfo>
-                <Button onClick={openVideoHandler}><AiFillPlaySquare/>{openVideoButtonName}</Button>
-                <br/>
                 <span><BsFillPersonFill/> <b>{name}</b></span>
                 <br/>
-                <span><FaBookOpen/> {composition}</span><br/>
+                <span><FaBookOpen/> {composition}</span>
+                <br/>
+                <Button onClick={openVideoHandler} value={openVideoButtonName}><AiFillPlaySquare/></Button><span>{openVideoButtonName}</span>
+                <br/>
+                {showIframe ? <IframeBox src={videoUrl} width={calculatedWidth}/> : null}
             </FilmInfo>
-            {showIframe ? <IframeBox src={videoUrl} width={calculatedWidth}/> : null}
         </FilmWrapper>
     );
 }

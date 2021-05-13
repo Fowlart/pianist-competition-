@@ -23,7 +23,7 @@ const FilterSection = styled(FilterContainer)`
   }
 `;
 
-const DivThinLine = styled.div`
+export const DivThinLine = styled.div`
   width: 100%;
   border: gray solid 1px;
   background-color: gray;
@@ -68,7 +68,7 @@ const grow_1 = keyframes`
 `;
 
 
-const ThinLineInnerDiv = styled.div`
+export const ThinLineInnerDiv = styled.div`
   width: ${props => props.width};
   left: ${props => props.left};
   position: relative;
