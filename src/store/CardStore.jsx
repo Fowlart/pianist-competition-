@@ -2009,6 +2009,22 @@ let myCards = [{
 
 let concertmasters = [{
     "id": {
+        "$oid": "6098c8f6683dda47f8b613ffaas"
+    },
+    "name": "Закалюжна О.Б",
+    "composition": "Г.Венявський. Концертний полонез ре мажор",
+    "videoUrl": "https://www.youtube.com/embed/s3clXLT34hY",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
+        "$oid": "6098c8f6683dda47f8b613ffaas1"
+    },
+    "name": "Закалюжна О.Б",
+    "composition": "Ж.Масне.\"Роздум\"",
+    "videoUrl": "https://www.youtube.com/embed/gDyUCbaneBk",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
         "$oid": "6098c8f6683dda47f8b613ff"
     },
     "name": "Кобзар Ніколь, 14 років",
@@ -2793,13 +2809,13 @@ function filmReducer(state = {cardCount: myCards.length, cards: myCards, isDataI
                 cardCount: newCards3.length,
                 error: ""
             }
-        case
-        'ERROR'
-        :
+        case 'ERROR':
             console.log(`> Помилка`);
             return {
-
-                error: action.msg
+                error: action.msg,
+                cardCount: 1,
+                cards: [],
+                isDataInPlace: true,
             }
         default:
             return {

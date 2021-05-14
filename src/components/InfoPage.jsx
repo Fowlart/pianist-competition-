@@ -16,7 +16,6 @@ const Wrapper = styled.div`
   background-image: url("${logo}");
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   justify-content: center;
 `;
 
@@ -67,9 +66,15 @@ const Div = styled.div`
   flex-direction: row;
 `;
 
+const Div1 = styled(Div)`
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction:column;
+`;
+
 const A = styled.a`
-  margin-left: 10px;
-  margin-right: 10px;
+  text-align: center;
   font-family: "Segoe UI", serif;
   font-style: oblique;
   font-weight: 600;
@@ -77,12 +82,10 @@ const A = styled.a`
   font-size: 20px;
   color: white;
   text-decoration: none;
-  border: solid 2px white;
   transition: all 0.5s;
 
   :hover {
     color: darkred;
-    border: solid 2px darkred;
   }
 `;
 
@@ -98,13 +101,13 @@ const P = styled.div`
 
 
 export const InfoPage = () => {
-    return (<Wrapper><Div>
+    return (<Wrapper><Div1>
 
         <A href="https://drive.google.com/file/d/1ka7GuVc0mhHzR5jq1qhTCHnlNa0HcXmB/view?usp=sharing"> <BiLinkExternal/>Положення</A>
         <A href="https://drive.google.com/file/d/1qdyL0mXafowI888sPJLyM7yuhYJNR70b/view?usp=sharing"> <BiLinkExternal/>
             Організаційний комітет конкурсу </A>
         <A href="https://drive.google.com/file/d/16sz0uu564Bl7l9Y-bqMO_-gLPqTuDBYC/view?usp=sharing"> <BiLinkExternal/>Афіша</A>
-    </Div>
+    </Div1>
         <P>Склад журі:</P>
         <PersonInfoSection>
             <Person imgUrl={person2}
