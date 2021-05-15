@@ -2009,6 +2009,14 @@ let myCards = [{
 
 let concertmasters = [{
     "id": {
+        "$oid": "6098c8f6683dda47f8b613ffaasd"
+    },
+    "name": "Шевельова Єлізавета, 20 років.",
+    "composition": "1) П.Чайковський. Арія Ленського, 2) Г.Хазанова. \" Уздовж вулиці ходу я\"",
+    "videoUrl": "https://www.youtube.com/embed/CWX0eRPTCYY",
+    "group": "Номінація \"Концертмейстер\""
+},{
+    "id": {
         "$oid": "6098c8f6683dda47f8b613ffaas"
     },
     "name": "Закалюжна О.Б",

@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import styled from "styled-components";
 import {AiFillPlaySquare, BsFillPersonFill, FaBookOpen} from "react-icons/all";
 import useWindowDimensions from "../hooks/UseWindowDimensions";
-import {DivThinLine} from "./ResultsFilter";
 
 const FilmWrapper = styled.div`
   font-size: 19px;
