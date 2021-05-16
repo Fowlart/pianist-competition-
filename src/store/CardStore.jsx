@@ -2007,7 +2007,8 @@ let myCards = [{
     "group": "Номінація \"Фортепіано соло\""
 }];
 
-let concertmasters = [{
+let concertmasters = [
+    {
     "id": {
         "$oid": "6098c8f6683dda47f8b613ffaasd"
     },
@@ -2267,11 +2268,19 @@ let concertmasters = [{
     "id": {
         "$oid": "6098c8f6683dda47f8b6141c"
     },
-    "name": "Михайлова М.В. ",
-    "composition": "1)Й.Тамарин.''Старовинний гобелен'', 2)А.Солтан. ''Мелодія''",
+    "name": "Михайлова М.В.",
+    "composition": "А.Солтан. ''Мелодія''",
     "videoUrl": "https://drive.google.com/file/d/1EoES2mTrWCy9CQcqd9qu366Z1tz6IpRQ/preview",
     "group": "Номінація \"Концертмейстер\""
 },{
+        "id": {
+            "$oid": "6098c8f6683dda47f8b613ffaasda"
+        },
+        "name": "Михайлова М.В.",
+        "composition": "Й. Тамарин. \"Старовинний гобелен\"",
+        "videoUrl": "https://drive.google.com/file/d/1u4xJ0vK6deR2XJwGLXFh6sBRePvxGUNr/preview",
+        "group": "Номінація \"Концертмейстер\""
+    },{
     "id": {
         "$oid": "6098c8f6683dda47f8b6141d"
     },
