@@ -92,7 +92,6 @@ const A = styled.a`
 const A1 = styled(A)`
   font-style: normal;
   font-size: 30px;
-  color: gold;
 `;
 
 const P = styled.div`
@@ -110,7 +109,6 @@ export const InfoPage = () => {
     return (<Wrapper><Div1>
         <A1 href="https://drive.google.com/file/d/1auoJ8rWsFopRwbNWrEph_DF6BaofMZah/view?usp=sharing">
             <GiPodiumWinner/> ЛАУРЕТИ «ВСЕУКРАЇНСЬКОГО КОНКУРСУ ПІАНІСТІВ. РІВНЕ-2021»  <GiPodiumWinner/></A1>
-        <br/>
         <A href="https://drive.google.com/file/d/1ka7GuVc0mhHzR5jq1qhTCHnlNa0HcXmB/view?usp=sharing"> <BiLinkExternal/>Положення</A>
         <A href="https://drive.google.com/file/d/1qdyL0mXafowI888sPJLyM7yuhYJNR70b/view?usp=sharing"> <BiLinkExternal/>
             Організаційний комітет конкурсу </A>
