@@ -67,7 +67,7 @@ export const RegularHeader = (props) => {
     function handler() {
         let str = String(searchField.current.value);
         if (str.length < 3 || str.includes(" ")) {
-            dispatch({type: "ERROR", msg: "Будбь ласка введіть більше 3 символів і не використовуйте пробіл"});
+            dispatch({type: "ERROR", msg: "Будь ласка введіть більше 3 символів і не використовуйте пробіл"});
         } else {
             dispatch({type: "SEARCH", query: str});
         }

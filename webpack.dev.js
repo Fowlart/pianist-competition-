@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
     resolve: {
@@ -23,8 +23,8 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-        template: path.resolve(__dirname,"index.html")
-    })],
+            template: path.resolve(__dirname, "index.html")
+        })],
     devtool: 'inline-source-map',
     devServer: {
         contentBase: path.join(__dirname, "dist"),
@@ -46,7 +46,10 @@ module.exports = {
                 exclude: /(node_modules)/,
                 use: [
                     {
-                        loader: 'url-loader?limit=10000&content=static&name=images/[name].[ext]'
+                        loader: 'optimized-images-loader',
+                        options: {
+                            oxipng: {level: 21}
+                        }
                     }
                 ]
             }

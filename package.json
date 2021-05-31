@@ -31,5 +31,8 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.2",
     "react-icons": "^4.2.0"
+  },
+  "dependencies": {
+    "optimized-images-loader": "^0.4.0"
   }
 }

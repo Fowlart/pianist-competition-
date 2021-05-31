@@ -12,6 +12,7 @@ import person7 from "./info-page-imgs/Заходякін-1.png";
 import person8 from "./info-page-imgs/Вишневська-1.png";
 
 
+
 const Wrapper = styled.div`
   background-image: url("${logo}");
   display: flex;
@@ -30,7 +31,7 @@ const Person = (props) => {
     const Container = styled.div`
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
     `;
 
     const TextSection = styled.div`
@@ -40,20 +41,20 @@ const Person = (props) => {
       margin-left: 80px;
       margin-right: 80px;
       font-family: "Segoe UI", serif;
-      font-weight: 850;
-      text-align: left;
+      font-weight: 1000;
+      text-align: center;
       font-size: 20px;
     `;
 
     const Image = styled.img`
-      margin-right: 20%;
-      margin-top: 5px;
-      margin-left: 20%;
+      margin-top: 20px;
+      margin-right: 30%;
+      margin-left: 30%;
       border: solid white 2px;
     `;
 
 
-    return (<Container><Image src={props.imgUrl}/><TextSection>{props.text}</TextSection></Container>);
+    return (<><Image src={props.imgUrl}/><TextSection>{props.text}</TextSection></>);
 
 }
 
@@ -108,7 +109,7 @@ const P = styled.div`
 export const InfoPage = () => {
     return (<Wrapper><Div1>
         <A1 href="https://drive.google.com/file/d/1auoJ8rWsFopRwbNWrEph_DF6BaofMZah/view?usp=sharing">
-            <GiPodiumWinner/> ЛАУРЕТИ «ВСЕУКРАЇНСЬКОГО КОНКУРСУ ПІАНІСТІВ. РІВНЕ-2021»  <GiPodiumWinner/></A1>
+            <GiPodiumWinner/> ЛАУРЕАТИ «ВСЕУКРАЇНСЬКОГО КОНКУРСУ ПІАНІСТІВ. РІВНЕ-2021»  <GiPodiumWinner/></A1>
         <A href="https://drive.google.com/file/d/1ka7GuVc0mhHzR5jq1qhTCHnlNa0HcXmB/view?usp=sharing"> <BiLinkExternal/>Положення</A>
         <A href="https://drive.google.com/file/d/1qdyL0mXafowI888sPJLyM7yuhYJNR70b/view?usp=sharing"> <BiLinkExternal/>
             Організаційний комітет конкурсу </A>
