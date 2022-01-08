@@ -2771,6 +2771,13 @@ myCards = myCards.concat(ensemble);
 /** CODE **/
 function filmReducer(state = {cardCount: myCards.length, cards: myCards, isDataInPlace: true, error: ""}, action) {
     switch (action.type) {
+        case 'RFS_PAGE':
+            return {
+                cardCount: -1,
+                cards: [],
+                isDataInPlace: false,
+                error: ""
+            };
         case 'INFO_PAGE':
             return {
                 cardCount: -1,

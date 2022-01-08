@@ -110,6 +110,9 @@ export const ResultsFilter = (props) => {
         let selectedSectionString = selectedSection.section;
         console.log(selectedSectionString);
         switch (selectedSectionString) {
+            case `Рівненські фортепіанні студії`:
+                dispatch({type: "RFS_PAGE"});
+                break;
             case `Усі відео`:
                 dispatch({type: "ALL"});
                 break;

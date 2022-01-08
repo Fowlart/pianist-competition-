@@ -108,10 +108,10 @@ const P = styled.div`
 
 export const InfoPage = () => {
     return (<Wrapper><Div1>
-        <A1 href="https://drive.google.com/file/d/1auoJ8rWsFopRwbNWrEph_DF6BaofMZah/view?usp=sharing">
+        <A1 href="https://docs.google.com/document/d/1auoJ8rWsFopRwbNWrEph_DF6BaofMZah/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
             <GiPodiumWinner/> ЛАУРЕАТИ «ВСЕУКРАЇНСЬКОГО КОНКУРСУ ПІАНІСТІВ. РІВНЕ-2021»  <GiPodiumWinner/></A1>
-        <A href="https://drive.google.com/file/d/1ka7GuVc0mhHzR5jq1qhTCHnlNa0HcXmB/view?usp=sharing"> <BiLinkExternal/>Положення</A>
-        <A href="https://drive.google.com/file/d/1qdyL0mXafowI888sPJLyM7yuhYJNR70b/view?usp=sharing"> <BiLinkExternal/>
+        <A href="https://docs.google.com/document/d/1ka7GuVc0mhHzR5jq1qhTCHnlNa0HcXmB/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true"> <BiLinkExternal/>Положення</A>
+        <A href="https://docs.google.com/document/d/1qdyL0mXafowI888sPJLyM7yuhYJNR70b/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true"> <BiLinkExternal/>
             Організаційний комітет конкурсу </A>
         <A href="https://drive.google.com/file/d/16sz0uu564Bl7l9Y-bqMO_-gLPqTuDBYC/view?usp=sharing"> <BiLinkExternal/>Афіша</A>
     </Div1>
