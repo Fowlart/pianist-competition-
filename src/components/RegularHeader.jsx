@@ -8,7 +8,8 @@ export const Button = styled.div`
   padding-top: 8px;
   text-align: center;
   margin-top: 14px;
-  font-size: 15px;
+  font-size: 25px;
+  font-family: "Segoe UI", serif;
   width: 15%;
   border: solid white 2px;
   color: white;
@@ -43,6 +44,8 @@ const InputWraper = styled.div`
 
 const StyledSpan = styled.span`
   color: white;
+  font-size: 25px;
+  font-family: "Segoe UI", serif;
 `;
 
 const Error = styled.div`

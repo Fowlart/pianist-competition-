@@ -31,7 +31,7 @@ export const DivThinLine = styled.div`
   transition: all ease;
 `;
 
-const StyledResultsFilterWrapper = styled.div`
+export const StyledResultsFilterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
