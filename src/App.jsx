@@ -4,7 +4,6 @@ import {Provider} from "react-redux";
 import {cardStore} from "./store/CardStore";
 
 function App() {
-
     return (
         <React.StrictMode>
             <Provider store={cardStore}>
