@@ -25,7 +25,6 @@ export const MainSection = () => {
     const isDataInPlace = useSelector(state => state.isDataInPlace);
     const cardCount = useSelector(state => state.cardCount);
     const sectionsForFilter = [
-        `Рівненські фортепіанні студії`,
         `Номінація "Фортепіано соло"`,
         `Номінація "Фортепіанний ансамбль"`,
         `Номінація "Концертмейстер"`,

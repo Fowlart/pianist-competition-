@@ -10,6 +10,8 @@ import person5 from "./info-page-imgs/Остапчук М. М.png";
 import person6 from "./info-page-imgs/Марцева-1.png";
 import person7 from "./info-page-imgs/Заходякін-1.png";
 import person8 from "./info-page-imgs/Вишневська-1.png";
+import poster_1 from "./info-page-imgs/poster.png";
+import poster_2 from "./rfs-page-imgs/rfs.png";
 
 
 
@@ -27,12 +29,6 @@ const PersonInfoSection = styled.div`
 
 
 const Person = (props) => {
-
-    const Container = styled.div`
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-    `;
 
     const TextSection = styled.div`
       color: white;
@@ -77,10 +73,9 @@ const Div1 = styled(Div)`
 const A = styled.a`
   text-align: center;
   font-family: "Segoe UI", serif;
-  font-style: oblique;
   font-weight: 600;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
   text-decoration: none;
   transition: all 0.5s;
@@ -99,23 +94,39 @@ const P = styled.div`
   left: 400px;
   font-size: 40px;
   font-family: "Segoe UI", serif;
-  font-style: oblique;
   font-weight: 600;
   color: white;
   text-align: center;
 `;
 
+const Poster = (props) => {
+
+    const PosterImg = styled.img`
+      margin-top: 20px;
+      margin-right: 30%;
+      margin-left: 30%;
+      border: solid dimgrey 3px;
+      border-radius: 35px;
+      filter: drop-shadow(0 0 10px rgba(100,0,0,0.5));
+    `;
+
+    return (<PosterImg src={props.imgUrl}></PosterImg>);
+}
+
+
 
 export const InfoPage = () => {
     return (<Wrapper><Div1>
-        <A1 href="https://docs.google.com/document/d/1auoJ8rWsFopRwbNWrEph_DF6BaofMZah/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
-            <GiPodiumWinner/> ЛАУРЕАТИ «ВСЕУКРАЇНСЬКОГО КОНКУРСУ ПІАНІСТІВ. РІВНЕ-2021»  <GiPodiumWinner/></A1>
+        <P>Запрошуємо до участі у проекті</P>
+        <Poster imgUrl={poster_2}/>
+        <A href="https://docs.google.com/document/d/1auoJ8rWsFopRwbNWrEph_DF6BaofMZah/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
+            <GiPodiumWinner/> Лауреати 2021 <GiPodiumWinner/></A>
         <A href="https://docs.google.com/document/d/1ka7GuVc0mhHzR5jq1qhTCHnlNa0HcXmB/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true"> <BiLinkExternal/>Положення</A>
         <A href="https://docs.google.com/document/d/1qdyL0mXafowI888sPJLyM7yuhYJNR70b/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true"> <BiLinkExternal/>
             Організаційний комітет конкурсу </A>
-        <A href="https://drive.google.com/file/d/1UamUwOwZ5BVlNBm9y62CKDHhi0zYJKqx/view?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true"> <BiLinkExternal/>  Афіша</A>
+        <Poster imgUrl={poster_1}/>
     </Div1>
-        <P>Склад журі:</P>
+        <P>Склад журі</P>
         <PersonInfoSection>
             <Person imgUrl={person2}
                     text={`Кузнєцова О.О.- голова журі, доктор філософії, кандидат педагогічних наук, професор кафедри  
