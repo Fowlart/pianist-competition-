@@ -16,6 +16,7 @@ import poster_2 from "./rfs-page-imgs/rfs.png";
 
 export const LinkContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
 `;
 
@@ -108,10 +109,10 @@ const Poster = (props) => {
 
     const PosterImg = styled.img`
       margin-top: 20px;
-      margin-right: 30%;
-      margin-left: 30%;
+      margin-right: 5%;
+      margin-left: 5%;
       border: solid dimgrey 3px;
-      border-radius: 35px;
+      border-radius: 15px;
       filter: drop-shadow(0 0 10px rgba(100, 0, 0, 0.5));
     `;
 
@@ -120,7 +121,7 @@ const Poster = (props) => {
 
 
 export const InfoPage = () => {
-    return (<Wrapper><Div1>
+    return (<Wrapper>
             <LinkContainer>
                 <A href="https://docs.google.com/document/d/1auoJ8rWsFopRwbNWrEph_DF6BaofMZah/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
                     <GiPodiumWinner/> Лауреати 2021 </A>
@@ -129,6 +130,7 @@ export const InfoPage = () => {
                 <A href="https://docs.google.com/document/d/1qdyL0mXafowI888sPJLyM7yuhYJNR70b/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
                     <BiLinkExternal/> Організаційний комітет конкурсу </A>
             </LinkContainer>
+            <Div1>
             <br/>
             <P>Запрошуємо до участі у проекті</P>
             <br/>
