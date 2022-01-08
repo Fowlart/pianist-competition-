@@ -11,6 +11,7 @@ const FilterContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: left;
+  margin-top: 14px;
   flex-wrap: wrap;`;
 
 const FilterSection = styled(FilterContainer)`
