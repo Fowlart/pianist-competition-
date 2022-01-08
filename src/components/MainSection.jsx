@@ -24,7 +24,13 @@ export const MainSection = () => {
     const cards = useSelector(state => state.cards);
     const isDataInPlace = useSelector(state => state.isDataInPlace);
     const cardCount = useSelector(state => state.cardCount);
-    const sectionsForFilter = [`Номінація "Фортепіано соло"`, `Номінація "Фортепіанний ансамбль"`, `Номінація "Концертмейстер"`,`Усі відео`,`Про конкурс`];
+    const sectionsForFilter = [
+        `Рівненські фортепіанні студії`,
+        `Номінація "Фортепіано соло"`,
+        `Номінація "Фортепіанний ансамбль"`,
+        `Номінація "Концертмейстер"`,
+        `Усі відео`,
+        `Про конкурс`];
 
     return (
         <CommonWrapper>

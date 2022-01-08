@@ -133,7 +133,7 @@ export const ResultsFilter = (props) => {
     let renderedSections = sections.map((section) => (
         section === "Про конкурс" ?
             <FilterSection  onClick={renderInfoPage} key={section}> <FaUniversity/>{section} </FilterSection>
-            : <FilterSection  ref={markedSectionRef} onClick={(e) => onFilterSectionClick({section}, e)} key={section}> <FaFolder/>{section}</FilterSection>
+            : <FilterSection  ref={markedSectionRef} onClick={e => onFilterSectionClick({section}, e)} key={section}> <FaFolder/>{section}</FilterSection>
     ));
 
     return (
