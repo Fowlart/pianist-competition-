@@ -5,7 +5,7 @@ import {FaFolder, FaUniversity} from "react-icons/all";
 import useWindowDimensions from "../hooks/UseWindowDimensions";
 
 const FilterContainer = styled.div`
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Segoe UI", serif;
   color: #ffffff;
   display: flex;
@@ -16,6 +16,7 @@ const FilterContainer = styled.div`
 const FilterSection = styled(FilterContainer)`
   align-self: center;
   margin: 10px;
+  padding: 5px;
   color: white;
   transition: all 0.5s;
   :hover {
