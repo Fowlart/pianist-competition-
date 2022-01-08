@@ -113,7 +113,7 @@ export const InfoPage = () => {
         <A href="https://docs.google.com/document/d/1ka7GuVc0mhHzR5jq1qhTCHnlNa0HcXmB/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true"> <BiLinkExternal/>Положення</A>
         <A href="https://docs.google.com/document/d/1qdyL0mXafowI888sPJLyM7yuhYJNR70b/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true"> <BiLinkExternal/>
             Організаційний комітет конкурсу </A>
-        <A href="https://drive.google.com/file/d/16sz0uu564Bl7l9Y-bqMO_-gLPqTuDBYC/view?usp=sharing"> <BiLinkExternal/>Афіша</A>
+        <A href="https://drive.google.com/file/d/1UamUwOwZ5BVlNBm9y62CKDHhi0zYJKqx/view?usp=sharing"> <BiLinkExternal/>Афіша</A>
     </Div1>
         <P>Склад журі:</P>
         <PersonInfoSection>
