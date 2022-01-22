@@ -115,7 +115,20 @@ const Poster = (props) => {
       border-radius: 15px;
       filter: drop-shadow(0 0 10px rgba(100, 0, 0, 0.5));
     `;
+    return (<PosterImg src={props.imgUrl}/>);
+}
 
+const LowQualitiPoster = (props) => {
+
+    const PosterImg = styled.img`
+      margin-top: 20px;
+      border: solid dimgrey 3px;
+      border-radius: 15px;
+      filter: drop-shadow(0 0 10px rgba(100, 0, 0, 0.5));
+      margin-right: 25%;
+      margin-left: 25%;
+      align-self: center;
+    `;
     return (<PosterImg src={props.imgUrl}/>);
 }
 
@@ -129,12 +142,13 @@ export const InfoPage = () => {
                     <BiLinkExternal/> Положення</A>
                 <A href="https://docs.google.com/document/d/1qdyL0mXafowI888sPJLyM7yuhYJNR70b/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
                     <BiLinkExternal/> Організаційний комітет конкурсу </A>
+                <br/>
+                <br/>
+                <P>Запрошуємо до участі у проекті</P>
+                <LowQualitiPoster imgUrl={poster_2}/>
             </LinkContainer>
             <Div1>
             <br/>
-            <P>Запрошуємо до участі у проекті</P>
-            <br/>
-            <Poster imgUrl={poster_2}/>
             <Poster imgUrl={poster_1}/>
         </Div1>
             <br/>
