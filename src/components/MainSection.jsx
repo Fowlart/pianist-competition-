@@ -4,7 +4,7 @@ import {ResultsFilter} from "./ResultsFilter";
 import {Card} from "./Card";
 import {useSelector} from "react-redux";
 import {RegularHeader} from "./RegularHeader";
-import {InfoPage} from "./InfoPage";
+import {InfoPage, InfoPage2} from "./InfoPage";
 import logo from "../1163023.png";
 
 const CommonWrapper = styled.div`
@@ -29,7 +29,10 @@ export const MainSection = () => {
         `Номінація "Фортепіанний ансамбль"`,
         `Номінація "Концертмейстер"`,
         `Усі відео`,
-        `Про конкурс`];
+        `Про конкурс`,
+        "Рівненські фортепіаннні студії"];
+
+    let infoPage = (cardCount===-1)?<InfoPage/>:<InfoPage2/>
 
     return (
         <CommonWrapper>
@@ -43,5 +46,5 @@ export const MainSection = () => {
                             videoUrl={card.videoUrl}
                             composition={card.composition}
                             key={card.id.$oid}/>
-                    ))}</MainSectionFlex>) : (<InfoPage/>)}</CommonWrapper>);
+                    ))}</MainSectionFlex>) : infoPage}</CommonWrapper>);
 };

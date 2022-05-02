@@ -10,7 +10,6 @@ import person5 from "./info-page-imgs/Остапчук М. М.png";
 import person6 from "./info-page-imgs/Марцева-1.png";
 import person7 from "./info-page-imgs/Заходякін-1.png";
 import person8 from "./info-page-imgs/Вишневська-1.png";
-import poster_1 from "./info-page-imgs/poster.png";
 import poster_2 from "./rfs-page-imgs/rfs.png";
 
 
@@ -108,15 +107,29 @@ const P = styled.div`
 const Poster = (props) => {
 
     const PosterImg = styled.img`
-      margin-top: 20px;
-      margin-right: 5%;
-      margin-left: 5%;
+      margin-top: 2%;
+      margin-right: 20%;
+      margin-left: 20%;
+      margin-bottom: 10%;
       border: solid dimgrey 3px;
-      border-radius: 15px;
       filter: drop-shadow(0 0 10px rgba(100, 0, 0, 0.5));
     `;
 
     return (<PosterImg src={props.imgUrl}/>);
+}
+
+export const InfoPage2 = () => {
+    return (<Wrapper>
+            <LinkContainer>
+                <A href="https://docs.google.com/document/d/1_n0nBVRw7cT8-zR_CKBQ1Z8jlty-cyIJ/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
+                    <BiLinkExternal/> Учасники проекту «Рівненські фортепіанні студії» 2022 </A>
+            </LinkContainer>
+            <br/>
+            <P>Запрошуємо до участі у проекті</P>
+            <br/>
+            <Poster imgUrl={poster_2}/>
+        </Wrapper>
+    );
 }
 
 
@@ -130,13 +143,6 @@ export const InfoPage = () => {
                 <A href="https://docs.google.com/document/d/1qdyL0mXafowI888sPJLyM7yuhYJNR70b/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
                     <BiLinkExternal/> Організаційний комітет конкурсу </A>
             </LinkContainer>
-            <Div1>
-            <br/>
-            <P>Запрошуємо до участі у проекті</P>
-            <br/>
-            <Poster imgUrl={poster_2}/>
-            <Poster imgUrl={poster_1}/>
-        </Div1>
             <br/>
             <P>Склад журі</P>
             <br/>

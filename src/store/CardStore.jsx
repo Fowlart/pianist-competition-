@@ -2773,7 +2773,7 @@ function filmReducer(state = {cardCount: myCards.length, cards: myCards, isDataI
     switch (action.type) {
         case 'RFS_PAGE':
             return {
-                cardCount: -1,
+                cardCount: -2,
                 cards: [],
                 isDataInPlace: false,
                 error: ""

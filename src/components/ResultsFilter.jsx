@@ -129,14 +129,24 @@ export const ResultsFilter = (props) => {
         }
     }
 
-    function renderInfoPage(event) {
-        reRenderRedLin(event);
-        dispatch({type: "INFO_PAGE"});
+    function renderInfoPage(section) {
+        if (section[0]==="Рівненські фортепіаннні студії"){
+            reRenderRedLin(section[1]);
+            dispatch({type: "RFS_PAGE"});
+        }
+        else {
+            reRenderRedLin(section[1]);
+            dispatch({type: "INFO_PAGE"});
+        }
     }
 
     let renderedSections = sections.map((section) => (
-        section === "Про конкурс" ?
-            <FilterSection  onClick={renderInfoPage} key={section}> <FaUniversity/>{section} </FilterSection>
+        section === "Про конкурс" || section === "Рівненські фортепіаннні студії"?
+            <FilterSection  onClick={()=> {
+                let sec = [section,event]
+                renderInfoPage(sec)
+
+            }} key={section}> <FaUniversity/>{section}</FilterSection>
             : <FilterSection  ref={markedSectionRef} onClick={e => onFilterSectionClick({section}, e)} key={section}> <FaFolder/>{section}</FilterSection>
     ));
 
