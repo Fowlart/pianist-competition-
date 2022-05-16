@@ -29,7 +29,8 @@ export const Button = styled.button`
   color: white;
   transition: all 0.5s;
   background-color: black;
-  font-size: 30px;
+  font-family: "Segoe UI", serif;
+  font-size: 19px;
   padding-top: 6px;
   :hover {
     color: darkred;
@@ -68,7 +69,7 @@ export const Card = (props) => {
                 <br/>
                 <span><FaBookOpen/> {composition}</span>
                 <br/>
-                <Button onClick={openVideoHandler} value={openVideoButtonName}><AiFillPlaySquare/></Button><span>{openVideoButtonName}</span>
+                <Button onClick={openVideoHandler} value={openVideoButtonName}>{openVideoButtonName}</Button>
                 <br/>
                 {showIframe ? <IframeBox src={videoUrl} width={calculatedWidth}/> : null}
             </FilmInfo>
