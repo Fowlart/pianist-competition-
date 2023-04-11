@@ -35,22 +35,25 @@ const PersonInfoSection = styled.div`
 const Person = (props) => {
 
     const TextSection = styled.div`
-      color: white;
+      color: whitesmoke;
       margin-top: 10px;
       margin-bottom: 80px;
       margin-left: 80px;
       margin-right: 80px;
-      font-family: "Segoe UI", serif;
+      text-blink: 10;
+      font-family: "Monaco", serif;
       font-weight: 1000;
       text-align: center;
-      font-size: 20px;
+      font-size: 22px;
     `;
 
     const Image = styled.img`
-      margin-top: 20px;
-      margin-right: 30%;
-      margin-left: 30%;
+      margin-top: 30px;
+      margin-left: 20px;
+      left: 20px;
       border: solid white 2px;
+      width: 215px;
+      height: 300px;
     `;
 
 
