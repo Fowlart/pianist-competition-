@@ -111,10 +111,10 @@ const Poster = (props) => {
 
     const PosterImg = styled.img`
       margin-top: 2%;
-      margin-right: 10%;
-      margin-left: 10%;
-      margin-bottom: 10%;
-      border: solid dimgrey 3px;
+      margin-right: 5%;
+      margin-left: 5%;
+      margin-bottom: 5%;
+      border: solid dimgrey 5px;
       filter: drop-shadow(0 0 10px rgba(100, 0, 0, 0.5));
     `;
 
