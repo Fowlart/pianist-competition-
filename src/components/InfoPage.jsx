@@ -35,25 +35,29 @@ const PersonInfoSection = styled.div`
 const Person = (props) => {
 
     const TextSection = styled.div`
-      color: whitesmoke;
+      color: white;
+      box-shadow: darkslategray;
+      prefers-contrast: more;
       margin-top: 10px;
       margin-bottom: 80px;
       margin-left: 80px;
       margin-right: 80px;
       text-blink: 10;
-      font-family: "Monaco", serif;
+      font-family: "Tamil MN", serif;
+      background-color: black;
       font-weight: 1000;
       text-align: center;
-      font-size: 22px;
+      font-size: 25px;
+      border-radius: 25px;
     `;
 
     const Image = styled.img`
-      margin-top: 30px;
+      margin-top: 20px;
       margin-left: 20px;
       left: 20px;
-      border: solid white 2px;
-      width: 215px;
-      height: 300px;
+      width: 210px;
+      height: 290px;
+      border-radius: 25px;
     `;
 
 
@@ -114,7 +118,7 @@ const Poster = (props) => {
       margin-right: 5%;
       margin-left: 5%;
       margin-bottom: 5%;
-      border: solid dimgrey 5px;
+      border-radius: 25px;
       filter: drop-shadow(0 0 10px rgba(100, 0, 0, 0.5));
     `;
 
