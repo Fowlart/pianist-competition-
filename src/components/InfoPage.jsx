@@ -11,7 +11,7 @@ import person6 from "./info-page-imgs/Марцева-1.png";
 import person7 from "./info-page-imgs/Заходякін-1.png";
 import person8 from "./info-page-imgs/Вишневська-1.png";
 import poster_2 from "./rfs-page-imgs/rfs.png";
-
+import { createGlobalStyle } from 'styled-components';
 
 export const LinkContainer = styled.div`
   display: flex;
@@ -35,6 +35,8 @@ const PersonInfoSection = styled.div`
 const Person = (props) => {
 
     const TextSection = styled.div`
+      font-family: 'Jura', sans-serif;
+      background-color: black;
       color: white;
       box-shadow: darkslategray;
       prefers-contrast: more;
@@ -42,9 +44,6 @@ const Person = (props) => {
       margin-bottom: 80px;
       margin-left: 80px;
       margin-right: 80px;
-      text-blink: 10;
-      font-family: "Tamil MN", serif;
-      background-color: black;
       font-weight: 1000;
       text-align: center;
       font-size: 25px;

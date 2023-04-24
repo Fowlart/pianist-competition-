@@ -52,6 +52,18 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 8192,
+                            name: 'fonts/[name].[ext]',
+                        },
+                    },
+                ],
             }
         ]
     }
