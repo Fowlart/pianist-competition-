@@ -4,8 +4,8 @@ import {AiFillPlaySquare, BsFillPersonFill, FaBookOpen} from "react-icons/all";
 import useWindowDimensions from "../hooks/UseWindowDimensions";
 
 const FilmWrapper = styled.div`
-  font-size: 19px;
-  font-family: "Segoe UI", serif;
+  font-size: 30px;
+  font-family: 'Jura', sans-serif;
   font-weight: 700;
   color: white;
   display: flex;
@@ -29,9 +29,9 @@ export const Button = styled.button`
   color: white;
   transition: all 0.5s;
   background-color: black;
-  font-family: "Segoe UI", serif;
-  font-size: 19px;
-  padding-top: 6px;
+  font-family: 'Jura', sans-serif;
+  font-size: 30px;
+  padding-top: 10px;
   :hover {
     color: darkred;
   }`;

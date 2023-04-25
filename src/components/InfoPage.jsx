@@ -11,11 +11,10 @@ import person6 from "./info-page-imgs/Марцева-1.png";
 import person7 from "./info-page-imgs/Заходякін-1.png";
 import person8 from "./info-page-imgs/Вишневська-1.png";
 import poster_2 from "./rfs-page-imgs/rfs.png";
-import { createGlobalStyle } from 'styled-components';
 
 export const LinkContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 `;
 
@@ -52,8 +51,8 @@ const Person = (props) => {
 
     const Image = styled.img`
       margin-top: 20px;
-      margin-left: 20px;
-      left: 20px;
+      margin-left: 45%;
+      left: 40px;
       width: 210px;
       height: 290px;
       border-radius: 25px;
