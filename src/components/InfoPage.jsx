@@ -38,7 +38,6 @@ const Person = (props) => {
       background-color: black;
       color: white;
       box-shadow: darkslategray;
-      prefers-contrast: more;
       margin-top: 10px;
       margin-bottom: 80px;
       margin-left: 80px;
@@ -51,7 +50,7 @@ const Person = (props) => {
 
     const Image = styled.img`
       margin-top: 20px;
-      margin-left: 45%;
+      margin-left: 10%;
       left: 40px;
       width: 210px;
       height: 290px;
