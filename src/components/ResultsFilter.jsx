@@ -114,7 +114,7 @@ export const ResultsFilter = (props) => {
             case `Рівненські фортепіанні студії`:
                 dispatch({type: "RFS_PAGE"});
                 break;
-            case `Усі відео`:
+            case `Архівні відео`:
                 dispatch({type: "ALL"});
                 break;
             case `Номінація "Фортепіано соло"`:
