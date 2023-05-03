@@ -2,14 +2,7 @@ import styled from "styled-components";
 import React from "react";
 import {BiLinkExternal, GiPodiumWinner} from "react-icons/all";
 import logo from "../1163023.png";
-import person1 from "./info-page-imgs/Закопець-1.png";
-import person2 from "./info-page-imgs/Кузнєцова-1.png";
-import person3 from "./info-page-imgs/Іванова Л.І.png";
-import person4 from "./info-page-imgs/Райт І.С.png";
-import person5 from "./info-page-imgs/Остапчук М. М.png";
-import person6 from "./info-page-imgs/Марцева-1.png";
-import person7 from "./info-page-imgs/Заходякін-1.png";
-import person8 from "./info-page-imgs/Вишневська-1.png";
+import judges_2023 from  "./info-page-imgs/judges_2023.jpeg"
 import poster_2 from "./rfs-page-imgs/rfs.png";
 
 export const LinkContainer = styled.div`
@@ -142,47 +135,16 @@ export const InfoPage = () => {
             <LinkContainer>
                 <A href="https://docs.google.com/document/d/1auoJ8rWsFopRwbNWrEph_DF6BaofMZah/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
                     <GiPodiumWinner/> Лауреати 2021 </A>
-                <A href="https://docs.google.com/document/d/1ka7GuVc0mhHzR5jq1qhTCHnlNa0HcXmB/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
+                <A href="https://docs.google.com/document/d/1bb9IOUE7IL996NHuLs2qntV2ZS7SNb8h/edit?usp=share_link&ouid=113883921299144449053&rtpof=true&sd=true">
                     <BiLinkExternal/> Положення</A>
-                <A href="https://docs.google.com/document/d/1qdyL0mXafowI888sPJLyM7yuhYJNR70b/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
+                <A href="https://docs.google.com/document/d/156ZGNdnMajHEzjfjrG7bD_-3v9R1GH4w/edit?usp=share_link&ouid=113883921299144449053&rtpof=true&sd=true">
                     <BiLinkExternal/> Організаційний комітет конкурсу </A>
             </LinkContainer>
             <br/>
             <P>Склад журі</P>
             <br/>
-            <PersonInfoSection>
-                <Person imgUrl={person2}
-                        text={`Кузнєцова О.О.- голова журі, доктор філософії, кандидат педагогічних наук, професор кафедри  
-                    музично- інструментального виконавства Харківського Національного педагогічного університету імені 
-                    Г.Сковороди, заслужений діяч мистецтв України,  "Відмінник освіти України", відзначена орденом 
-                    Міністерства культури  України "За досягнення в розвитку  культури  і мистецтв ", секретар 
-                    Національної всеукраїнської музичної спілки, голова Асоціації піаністів  Національної  всеукраїнської 
-                    музичної спілки,  президент Асоціації піаністів-педагогів України("EPTA" Ukraine), Віце- президент  
-                    Асоціації піаністів-педагогів Європи "EPTA" London)`}/>
-
-                <Person imgUrl={person1}
-                        text="Закопець Л.С.- голова журі, заслужений  діяч мистецтв України, викладач-методист Львівського
-                    державного музичного ліцею імені С. Крушельницької, почесний амбасадор музичної  культури  Польщі"/>
-
-                <Person imgUrl={person4}
-                        text="Райт І.С., кандидат педагогічних наук,  науковий співробітник лабораторії естетичного виховання
-                    та мистецької  освіти  Інституту  проблем виховання  Національної  академії  педагогічних  наук України"/>
-
-                <Person imgUrl={person5}
-                        text="Остапчук М. М., доцент кафедри  гри на  музичних інструментах Інституту  мистецтв  РДГУ"/>
-
-                <Person imgUrl={person7}
-                        text="Заходякін О.В., доцент кафедри естрадної музики Інституту  мистецтв  РДГУ"/>
-
-                <Person imgUrl={person8}
-                        text='Вишневська І.П., викладач вищої категорії, голова циклової комісії "Фортепіано"
-                    Рівненського музичного фахового коледжу РДГУ'/>
-
-                <Person imgUrl={person3} text={`Іванова Л.І., викладач першої категорії КЗ "Луцька музична  школа 3"`}/>
-
-                <Person imgUrl={person6}
-                        text="Марцева Ж.П., старший викладач, завідуюча фортепіанним відділом Рівненської дитячої музичної школи №1 імені М. Лисенка"/>
-            </PersonInfoSection>
+            <br/>
+            <Poster imgUrl={judges_2023}/>
         </Wrapper>
     );
 }
