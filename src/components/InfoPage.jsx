@@ -5,6 +5,7 @@ import logo from "../1163023.png";
 import judges_2023 from  "./info-page-imgs/judges_2023.jpeg"
 import poster_2 from "./rfs-page-imgs/rfs.png";
 import poster_1 from "./info-page-imgs/Poster_2023_ua.png";
+import poster_3 from "./info-page-imgs/poster_2023_en.png"
 
 export const LinkContainer = styled.div`
   display: flex;
@@ -142,9 +143,12 @@ export const InfoPage = () => {
                     <BiLinkExternal/> Організаційний комітет конкурсу </A>
             </LinkContainer>
             <br/>
-            <P>Афіша</P>
+            <P>Афіша(ua)</P>
             <br/>
             <Poster imgUrl={poster_1}/>
+            <P>Афіша(eng)</P>
+            <br/>
+            <Poster imgUrl={poster_3}/>
             <br/>
             <P>Склад журі</P>
             <br/>
