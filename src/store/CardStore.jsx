@@ -93,9 +93,9 @@ function filmReducer(state = {cardCount: myCards.length, cards: myCards, isDataI
             }
         default:
             return {
-                cards: myCards,
+                cards: fortepianoSolo,
                 isDataInPlace: true,
-                cardCount: myCards.length,
+                cardCount: fortepianoSolo.length,
                 error: ""
             }
     }
