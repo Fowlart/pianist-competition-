@@ -26,6 +26,7 @@ export const MainSection = () => {
     const cardCount = useSelector(state => state.cardCount);
     const sectionsForFilter = [
         `Архівні відео`,
+        `Номінація "Фортепіано соло"`,
         `Про конкурс`,
         "Рівненські фортепіаннні студії"];
 

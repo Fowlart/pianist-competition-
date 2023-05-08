@@ -115,7 +115,7 @@ export const ResultsFilter = (props) => {
                 dispatch({type: "RFS_PAGE"});
                 break;
             case `Архівні відео`:
-                dispatch({type: "ALL"});
+                dispatch({type: "ARCHIVE"});
                 break;
             case `Номінація "Фортепіано соло"`:
                 dispatch({type: "group-1"});
