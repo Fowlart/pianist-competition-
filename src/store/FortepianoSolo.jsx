@@ -9,7 +9,6 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        // https://www.youtube.com/embed/i63bXHyKWoA
         "videoUrl": "https://youtube.com/embed/i63bXHyKWoA",
         "composition": "М. Шентюрк (Терещук). «Менует граційної балерини»",
         "name": "Ваширенко Діана, 12.10.2013 р.н.",
@@ -118,7 +117,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=Ita5y9ybU28&feature=share",
+        "videoUrl": "https://youtube.com/embed/Ita5y9ybU28",
         "composition": "Л. Бетховен. Сонатина",
         "name": "Митюк Арсен, 27.06.2014 р.н.",
         "id": {
@@ -127,7 +126,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=sJv3PZ8RtS8&feature=share",
+        "videoUrl": "https://youtube.com/embed/sJv3PZ8RtS8",
         "composition": "В. Косенко. Скерцино",
         "name": "Митюк Арсен, 27.06.2014 р.н.",
         "id": {
@@ -172,7 +171,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/shorts/_WdGfSImyF4",
+        "videoUrl": "https://youtube.com/embed/_WdGfSImyF4",
         "composition": "Ю. Зубай «Бабуся Ягуся»",
         "name": "Остапчук Катерина, 11.08.2013 р.н.",
         "id": {
@@ -190,7 +189,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/shorts/MS3jIpoIFY4?feature=share",
+        "videoUrl": "https://youtube.com/embed/MS3jIpoIFY4",
         "composition": "А. Роулі. «Китайський хлопчик»",
         "name": "Пархоменко Євгенія, 08.04.2016 р.н.",
         "id": {
@@ -199,7 +198,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/shorts/0n5yyz0F9kg?feature=share",
+        "videoUrl": "https://youtube.com/embed/0n5yyz0F9kg",
         "composition": "Л. Шитте. «На скейтборді»",
         "name": "Пархоменко Євгенія, 08.04.2016 р.н.",
         "id": {
@@ -217,7 +216,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/shorts/jx_ozYsL5EQ?feature=share",
+        "videoUrl": "https://youtube.com/embed/jx_ozYsL5EQ",
         "composition": "І. Іордан. «Полювання на метелика»",
         "name": "Пісоцька Соломія, 29.03.2016 р.н.",
         "id": {
@@ -226,7 +225,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/shorts/tOeQT-UIKmA?feature=share",
+        "videoUrl": "https://youtube.com/embed/tOeQT-UIKmA",
         "composition": "М. Шентюрк (Терещук). «Грайливе зайченятко»",
         "name": "Примак Юлія, 02.03.2014 р.н.",
         "id": {
@@ -289,7 +288,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/watch?v=dkOChCdNmCQ&ab_channel=%D0%98%D1%80%D0%B8%D0%BD%D0%B0%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B2%D0%B0",
+        "videoUrl": "https://www.youtube.com/embed/dkOChCdNmCQ",
         "composition": "В. Полянський. «Квітень. Вітерець повіяв» з циклу «Пори року. 12 п\u2019єс для фортепіано в джазових тонах»",
         "name": "Смірнова Аліса, 12.01.2014 р.н.",
         "id": {
@@ -298,7 +297,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/watch?v=UKwwS9siL40&ab_channel=%D0%98%D1%80%D0%B8%D0%BD%D0%B0%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B2%D0%B0",
+        "videoUrl": "https://www.youtube.com/embed/UKwwS9siL40",
         "composition": "К. Черні. Сонатина до мажор",
         "name": "Смірнова Аліса, 12.01.2014 р.н.",
         "id": {
@@ -379,7 +378,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=FT1tZdP2Vbc&feature=share",
+        "videoUrl": "https://youtube.com/embed/FT1tZdP2Vbc",
         "composition": "О. Білаченко. Експромт фа мінор",
         "name": "Шамина Маргарита, 08.01.2014 р.н.",
         "id": {
@@ -388,7 +387,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=hw-cAvT9HBA&feature=share",
+        "videoUrl": "https://youtube.com/embed/hw-cAvT9HBA",
         "composition": "П. Захарова. «Жарт-сувенір»",
         "name": "Шамина Маргарита, 08.01.2014 р.н.",
         "id": {
@@ -433,7 +432,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/shorts/erQmPy6GoxQ?feature=share",
+        "videoUrl": "https://youtube.com/embed/erQmPy6GoxQ",
         "composition": "І. Кореневська. «Дощик»",
         "name": "Юзвак Єва, 14.06.2015 р.н.",
         "id": {
@@ -523,7 +522,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/watch?v=VylIZoK8hL4&ab_channel=PavelRybak",
+        "videoUrl": "https://www.youtube.com/embed/VylIZoK8hL4",
         "composition": "П. Чайковський. «Хвороба ляльки»",
         "name": "Безсмольна Зоряна, 22.10.2013 р.н.",
         "id": {
@@ -532,7 +531,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/watch?v=txm2JB9ChUg&ab_channel=PavelRybak",
+        "videoUrl": "https://www.youtube.com/embed/txm2JB9ChUg",
         "composition": "М. Мієр. «Downright Happy Rag»",
         "name": "Безсмольна Зоряна, 22.10.2013 р.н.",
         "id": {
@@ -550,7 +549,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/shorts/vhecrrySG7U?feature=share",
+        "videoUrl": "https://youtube.com/embed/vhecrrySG7U",
         "composition": "Ю. Щуровський. Інвенція",
         "name": "Бондарчук Мирослава, 18.04.2011 р.н.",
         "id": {
@@ -775,7 +774,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=Qj8phsWaDks&feature=share",
+        "videoUrl": "https://youtube.com/embed/Qj8phsWaDks",
         "composition": "Ю Щуровський, Баркарола",
         "name": "Ковальчук Анна, 14.11.2010 р.н.",
         "id": {
@@ -820,7 +819,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/watch?v=Z2Z7W0IfPqk",
+        "videoUrl": "https://www.youtube.com/embed/Z2Z7W0IfPqk",
         "composition": "1. Й.С. Бах. Алеманда з «Французької сюїти» мі бемоль мажор; 2. М. Лисенко. Мазурка до мінор",
         "name": "Коцирій Аріна, 20.08.2010 р.н.",
         "id": {
@@ -829,7 +828,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=7z6STyDoowg&feature=share",
+        "videoUrl": "https://youtube.com/embed/7z6STyDoowg",
         "composition": "Л. Шукайло. Марш з сюїти «Цирк»",
         "name": "Кришталь Ян, 21.06.2012 р.н.",
         "id": {
@@ -838,7 +837,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/shorts/BRJ7qwf1uzc?feature=share",
+        "videoUrl": "https://youtube.com/embed/BRJ7qwf1uzc",
         "composition": "С. Сосніна. «Дракон»",
         "name": "Кришталь Ян, 21.06.2012 р.н.",
         "id": {
@@ -847,7 +846,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/watch?v=ePDCw1DlCQg",
+        "videoUrl": "https://www.youtube.com/embed/ePDCw1DlCQg",
         "composition": "О. Яковчук. Полонез",
         "name": "Кулик Олеся, 16.01.2011 р.н.",
         "id": {
@@ -856,7 +855,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/watch?v=yJg3KKvYLig",
+        "videoUrl": "https://www.youtube.com/embed/yJg3KKvYLig",
         "composition": "Л. Бетховен. «До Елізи»",
         "name": "Кулик Олеся, 16.01.2011 р.н.",
         "id": {
@@ -910,7 +909,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/shorts/tbRGr008Shg",
+        "videoUrl": "https://youtube.com/embed/tbRGr008Shg",
         "composition": "В. Гіллок. «Карнавал в Ріо»",
         "name": "Максютинська Надія, 10.08.2010 р.н.",
         "id": {
@@ -1063,7 +1062,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/shorts/oPUczWpGT4I?feature=share",
+        "videoUrl": "https://youtube.com/embed/oPUczWpGT4I",
         "composition": "Д. Циполі. Фегета",
         "name": "Проданчук Соня, 09.04.2013 р.н.",
         "id": {
@@ -1072,7 +1071,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/shorts/UODnXENJP7g?feature=share_",
+        "videoUrl": "https://youtube.com/embed/UODnXENJP7g_",
         "composition": "О. Білаченко. «Дощовий ранок»",
         "name": "Проданчук Соня, 09.04.2013 р.н.",
         "id": {
@@ -1099,7 +1098,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=dGHFoiafREw&feature=share",
+        "videoUrl": "https://youtube.com/embed/dGHFoiafREw",
         "composition": "О. Білаченко, Сонатина ре мажор",
         "name": "Романова Катерина, 14.07.2011 р.н.",
         "id": {
@@ -1108,7 +1107,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=SBnelOV2iIk&feature=share",
+        "videoUrl": "https://youtube.com/embed/SBnelOV2iIk",
         "composition": "М. Шентюрк (Терещук). Експромт",
         "name": "Романова Катерина, 14.07.2011 р.н.",
         "id": {
@@ -1153,7 +1152,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/watch?v=vJPvIsEvfqg",
+        "videoUrl": "https://www.youtube.com/embed/vJPvIsEvfqg",
         "composition": "Л. Ревуцький. Пісня2. К. Черні. Етюд, тв. 219, №15",
         "name": "Скороходько Євгенія, 24.07.2010 р.н.",
         "id": {
@@ -1162,7 +1161,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/watch?v=Yage2KFEoLs&ab_channel=%D0%98%D1%80%D0%B8%D0%BD%D0%B0%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B2%D0%B0",
+        "videoUrl": "https://www.youtube.com/embed/Yage2KFEoLs&ab_channel=%D0%98%D1%80%D0%B8%D0%BD%D0%B0%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B2%D0%B0",
         "composition": "Ф. Ліст. «Юнацький етюд» №1",
         "name": "Смірнова Євгенія, 03.03.2012 р.н.",
         "id": {
@@ -1171,7 +1170,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/watch?v=wQXtWMy6Srw&ab_channel=%D0%98%D1%80%D0%B8%D0%BD%D0%B0%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B2%D0%B0",
+        "videoUrl": "https://www.youtube.com/embed/wQXtWMy6Srw&ab_channel=%D0%98%D1%80%D0%B8%D0%BD%D0%B0%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B2%D0%B0",
         "composition": "М. Ластовецький. «І задзвонили дзвони \u2026»  №5 з циклу «12 Раціональних ескізів в додекафонній техніці для фортепіано»",
         "name": "Смірнова Євгенія, 03.03.2012 р.н.",
         "id": {
@@ -1315,7 +1314,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/watch?v=W0Xc24xQj0I",
+        "videoUrl": "https://www.youtube.com/embed/W0Xc24xQj0I",
         "composition": "1. Й.С. Бах. Двоголосна інвенція ля мінор; 2. П. Захарова. «Вперше на арені»",
         "name": "Якименко Єлизавета, 23.10.2010 р.н.",
         "id": {
@@ -1441,7 +1440,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=JKqGLVJBsLk&feature=share",
+        "videoUrl": "https://youtube.com/embed/JKqGLVJBsLk",
         "composition": "Д. Щириця. «Український етюд»",
         "name": "Грушковська Валерія, 17.01.2010 р.н.",
         "id": {
@@ -1450,7 +1449,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=GOhPa_AGxuo&feature=share",
+        "videoUrl": "https://youtube.com/embed/GOhPa_AGxuo",
         "composition": "Л. Іваненко. «Ей Люлі же мі, люлю»",
         "name": "Грушковська Валерія, 17.01.2010 р.н.",
         "id": {
@@ -1576,7 +1575,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=NHTBv1jGBcY&feature=share",
+        "videoUrl": "https://youtube.com/embed/NHTBv1jGBcY",
         "composition": "А. Кореллі. Сарабанда мі мінор",
         "name": "Кічук Роман, 29.10.2008 р.н.",
         "id": {
@@ -1585,7 +1584,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=aZOTWN7L0j0&feature=share",
+        "videoUrl": "https://youtube.com/embed/aZOTWN7L0j0",
         "composition": "І. Мохначева. «Літній вечір»",
         "name": "Кічук Роман, 29.10.2008 р.н.",
         "id": {
@@ -1648,7 +1647,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=pM150qdBAMg&feature=share",
+        "videoUrl": "https://youtube.com/embed/pM150qdBAMg",
         "composition": "І. Шамо. «Весняний дощ» із циклу «Гуцульські акварелі»",
         "name": "Левчук Тимофій, 19.11.2008 р.н.",
         "id": {
@@ -1801,7 +1800,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=_wnM565vWb8",
+        "videoUrl": "https://youtube.com/embed/_wnM565vWb8",
         "composition": "1. З. Фібіх. Поема; 2.К. Дебюссі. «Ляльковий кек-уок»",
         "name": "Остапенко Анна, 26.08.2009 р.н. (2-ий рік навчання)",
         "id": {
@@ -1882,7 +1881,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=6cS6hnR8rKg&amp;feature=share",
+        "videoUrl": "https://youtube.com/embed/6cS6hnR8rKg",
         "composition": "1. Ф. Кулау. Сонатина №1, тв.60; 2. К. Вік. Полонез",
         "name": "Робуляк Микола,04.05.2010р.н.",
         "id": {
@@ -1909,11 +1908,20 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/@user-bi5rp8mk7u",
-        "composition": "1. М. Скорик. «Мелодія»; 2. І. Беркович. Токата ля мінор",
+        "videoUrl": "https://www.youtube.com/embed/irY4dbbKdA8",
+        "composition": "М. Скорик. «Мелодія»",
         "name": "Саврай Катерина, 04.07.009 р.н.",
         "id": {
             "$oid": "49463850830819"
+        },
+        "group": "Номінація \"Фортепіано соло\""
+    },
+    {
+        "videoUrl": "https://www.youtube.com/embed/JjoZwgWUyGM",
+        "composition": "І. Беркович. Токата ля мінор",
+        "name": "Саврай Катерина, 04.07.009 р.н.",
+        "id": {
+            "$oid": "494638508308119"
         },
         "group": "Номінація \"Фортепіано соло\""
     },
@@ -2017,7 +2025,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/watch?v=wgc_kLIIi6g",
+        "videoUrl": "https://www.youtube.com/embed/wgc_kLIIi6g",
         "composition": "С. Борткевич. Етюд фа дієз мінор",
         "name": "Шевчук Ніколетта, 26.04.2009 р.н.",
         "id": {
@@ -2053,7 +2061,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/shorts/0N_xV3U5G80?feature=share",
+        "videoUrl": "https://youtube.com/embed/0N_xV3U5G80",
         "composition": "І. Крамер. Етюд №5, ля мінор",
         "name": "Біла Ксенія, 15.01.2005 р.н",
         "id": {
@@ -2098,7 +2106,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/watch?v=JHqajp5YPqg&feature=share",
+        "videoUrl": "https://youtube.com/embed/JHqajp5YPqg",
         "composition": "1. К. Дебюссі. Арабеска №2; 2. С. Борткевич. Етюд №2, тв.15",
         "name": "Гултурян Поліна, 11.10.2006 р.н",
         "id": {
@@ -2107,7 +2115,8 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/watch?v=UEiWcFRcPRw",
+        // <iframe width="469" height="264" src="https://www.youtube.com/embed/UEiWcFRcPRw" title="М. Колесса &quot;Три коломийки&quot;." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        "videoUrl": "https://www.youtube.com/embed/UEiWcFRcPRw",
         "composition": "М. Колесса. «Три коломийки»",
         "name": "Дашевська Альона, 04.04.2005 р.н.",
         "id": {
