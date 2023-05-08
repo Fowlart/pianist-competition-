@@ -1071,7 +1071,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://youtube.com/embed/UODnXENJP7g_",
+        "videoUrl": "https://youtube.com/embed/UODnXENJP7g",
         "composition": "О. Білаченко. «Дощовий ранок»",
         "name": "Проданчук Соня, 09.04.2013 р.н.",
         "id": {
@@ -1161,7 +1161,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/embed/Yage2KFEoLs&ab_channel=%D0%98%D1%80%D0%B8%D0%BD%D0%B0%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B2%D0%B0",
+        "videoUrl": "https://www.youtube.com/embed/Yage2KFEoLs",
         "composition": "Ф. Ліст. «Юнацький етюд» №1",
         "name": "Смірнова Євгенія, 03.03.2012 р.н.",
         "id": {
@@ -1170,7 +1170,7 @@ export let fortepianoSolo = [
         "group": "Номінація \"Фортепіано соло\""
     },
     {
-        "videoUrl": "https://www.youtube.com/embed/wQXtWMy6Srw&ab_channel=%D0%98%D1%80%D0%B8%D0%BD%D0%B0%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B2%D0%B0",
+        "videoUrl": "https://www.youtube.com/embed/wQXtWMy6Srw",
         "composition": "М. Ластовецький. «І задзвонили дзвони \u2026»  №5 з циклу «12 Раціональних ескізів в додекафонній техніці для фортепіано»",
         "name": "Смірнова Євгенія, 03.03.2012 р.н.",
         "id": {
