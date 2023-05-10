@@ -1,13 +1,15 @@
 import {createStore} from 'redux'
 import {archive} from "./Archive";
 import {fortepianoSolo} from "./FortepianoSolo";
+import {ensembles} from "./Ensemble";
 
 const group1 = `Номінація "Фортепіано соло"`;
-const group2 = `Номінація "Фортепіанний ансамбль"`;
+const group2 = `Номінація «Фортепіанний ансамбль»`;
 const group3 = `Номінація "Концертмейстер"`;
 
 let myCards = archive;
 myCards = myCards.concat(fortepianoSolo)
+myCards = myCards.concat(ensembles)
 
 /** CODE **/
 function filmReducer(state = {cardCount: myCards.length, cards: myCards, isDataInPlace: true, error: ""}, action) {
@@ -93,9 +95,9 @@ function filmReducer(state = {cardCount: myCards.length, cards: myCards, isDataI
             }
         default:
             return {
-                cards: fortepianoSolo,
+                cards: ensembles,
                 isDataInPlace: true,
-                cardCount: fortepianoSolo.length,
+                cardCount: ensembles.length,
                 error: ""
             }
     }
