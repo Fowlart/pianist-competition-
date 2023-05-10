@@ -24,7 +24,6 @@ const FilterSection = styled(FilterContainer)`
   color: white;
   transition: all 0.6s;
   :hover {
-    font-size: 27px;
     color: darkred;
   }
 `;
