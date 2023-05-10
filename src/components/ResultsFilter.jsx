@@ -6,9 +6,13 @@ import useWindowDimensions from "../hooks/UseWindowDimensions";
 
 const FilterContainer = styled.div`
   font-size: 25px;
+  transition: all 0.6s;
   font-family: "Segoe UI", serif;
   color: #ffffff;
   display: flex;
+  :hover{
+    background-color: black;
+  },
   flex-direction: row;
   justify-content: left;
   margin-top: 26px;
@@ -18,8 +22,9 @@ const FilterSection = styled(FilterContainer)`
   align-self: center;
   margin: 14px;
   color: white;
-  transition: all 0.5s;
+  transition: all 0.6s;
   :hover {
+    font-size: 27px;
     color: darkred;
   }
 `;
