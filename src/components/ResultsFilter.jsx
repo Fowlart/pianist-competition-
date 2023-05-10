@@ -123,7 +123,7 @@ export const ResultsFilter = (props) => {
             case `Номінація "Фортепіанний ансамбль"`:
                 dispatch({type: "group-2"});
                 break;
-            case `Номінація "Концертмейстер"`:
+            case `Номінація «Додатковий інструмент (фортепіано)»`:
                 dispatch({type: "group-3"});
                 break;
         }
