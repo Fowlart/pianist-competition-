@@ -7,7 +7,7 @@ import useWindowDimensions from "../hooks/UseWindowDimensions";
 const FilterContainer = styled.div`
   font-size: 25px;
   transition: all 0.6s;
-  font-family: "Segoe UI", serif;
+  font-family: 'Jura', sans-serif;
   color: #ffffff;
   display: flex;
   :hover{
@@ -24,7 +24,10 @@ const FilterSection = styled(FilterContainer)`
   color: white;
   transition: all 0.6s;
   :hover {
-    color: darkred;
+    text-decoration-line: underline;
+    text-decoration-color: darkred;
+    text-underline-offset: 10px;
+    
   }
 `;
 
@@ -121,14 +124,17 @@ export const ResultsFilter = (props) => {
             case `Архівні відео`:
                 dispatch({type: "ARCHIVE"});
                 break;
-            case `Номінація "Фортепіано соло"`:
+            case `Номінація «Фортепіано соло»`:
                 dispatch({type: "group-1"});
                 break;
-            case `Номінація "Фортепіанний ансамбль"`:
+            case `Номінація «Фортепіанний ансамбль»`:
                 dispatch({type: "group-2"});
                 break;
             case `Номінація «Додатковий інструмент (фортепіано)»`:
                 dispatch({type: "group-3"});
+                break;
+            case `Номінація «Концертмейстер»`:
+                dispatch({type: "group-4"});
                 break;
         }
     }

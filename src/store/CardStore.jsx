@@ -3,13 +3,15 @@ import {archive} from "./Archive";
 import {fortepianoSolo} from "./FortepianoSolo";
 import {ensembles} from "./Ensemble";
 import {additionalInstruments} from "./AdditionalInstruments";
+import {concertmasters} from "./Concertmasters";
 
 const group1 = `Номінація "Фортепіано соло"`;
 const group2 = `Номінація «Фортепіанний ансамбль»`;
 const group3 = `Номінація «Додатковий інструмент (фортепіано)»`;
+const group4 = `Номінація «Концертмейстер»`;
 
 let myCards = archive;
-myCards = myCards.concat(fortepianoSolo).concat(ensembles).concat(additionalInstruments)
+myCards = myCards.concat(fortepianoSolo).concat(ensembles).concat(additionalInstruments).concat(concertmasters)
 
 /** CODE **/
 function filmReducer(state = {cardCount: myCards.length, cards: myCards, isDataInPlace: true, error: ""}, action) {
@@ -69,6 +71,14 @@ function filmReducer(state = {cardCount: myCards.length, cards: myCards, isDataI
                 cardCount: newCards2.length,
                 error: "",
             }
+        case 'group-4':
+            let newCards4 = myCards.filter(card => card.group === group4).slice();
+            return {
+                cards: newCards4,
+                isDataInPlace: true,
+                cardCount: newCards4.length,
+                error: "",
+            }
         case 'SEARCH':
             let q = action.query.toLowerCase();
             console.log(`> Пошук: ${q}`);
@@ -95,9 +105,9 @@ function filmReducer(state = {cardCount: myCards.length, cards: myCards, isDataI
             }
         default:
             return {
-                cards: additionalInstruments,
+                cards: concertmasters,
                 isDataInPlace: true,
-                cardCount: additionalInstruments.length,
+                cardCount: concertmasters.length,
                 error: ""
             }
     }

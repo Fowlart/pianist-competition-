@@ -13,7 +13,7 @@ export const LinkContainer = styled.div`
   justify-content: center;
 `;
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   background-image: url("${logo}");
   display: flex;
   flex-direction: column;

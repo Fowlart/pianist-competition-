@@ -9,7 +9,6 @@ import logo from "../1163023.png";
 
 const CommonWrapper = styled.div`
   background-image: url("${logo}");
-  min-height: 1000px;
 `;
 
 const MainSectionFlex = styled.div`
@@ -26,19 +25,21 @@ export const MainSection = () => {
     const cardCount = useSelector(state => state.cardCount);
     const sectionsForFilter = [
         `Архівні відео`,
-        `Номінація "Фортепіано соло"`,
-        `Номінація "Фортепіанний ансамбль"`,
+        `Номінація «Фортепіано соло»`,
+        `Номінація «Фортепіанний ансамбль»`,
         `Номінація «Додатковий інструмент (фортепіано)»`,
+        `Номінація «Концертмейстер»`,
         `Про конкурс`,
         "Рівненські фортепіаннні студії"];
 
     let infoPage = (cardCount===-1)?<InfoPage/>:<InfoPage2/>
 
     return (
-        <CommonWrapper>
+        <>
             <RegularHeader cardCount={cardCount}/>
             <ResultsFilter sections={sectionsForFilter}/>
             {isDataInPlace ? (
+                <CommonWrapper>
                 <MainSectionFlex>
                     {cards.map(card => (
                         <Card
@@ -46,5 +47,5 @@ export const MainSection = () => {
                             videoUrl={card.videoUrl}
                             composition={card.composition}
                             key={card.id.$oid}/>
-                    ))}</MainSectionFlex>) : infoPage}</CommonWrapper>);
+                    ))}</MainSectionFlex></CommonWrapper>) : infoPage}</>);
 };
