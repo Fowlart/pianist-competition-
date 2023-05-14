@@ -81,7 +81,7 @@ export let concertmasters = [
         "group": "Номінація «Концертмейстер»"
     },
     {
-        "videoUrl": "https://www.www.youtube.com/watch?v=XPdRpSLvP4A",
+        "videoUrl": "https://www.youtube.com/embed/XPdRpSLvP4A",
         "composition": "1. М. Мангіні. «Execuive»; 2. Дж. Россіні. Арія Берти з опери «Севільський цирульник»",
         "name": "Алексійчук Валерія, 14.03.2004 р.н.",
         "id": {
