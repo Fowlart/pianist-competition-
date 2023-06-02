@@ -7,6 +7,7 @@ import {RegularHeader} from "./RegularHeader";
 import {InfoPage, InfoPage2} from "./InfoPage";
 
 const CommonWrapper = styled.div`
+  background-color: black;
   background-size: contain;
   border: 6px solid #333;
   margin: 20px;
