@@ -8,7 +8,10 @@ import {InfoPage, InfoPage2} from "./InfoPage";
 import logo from "../1163023.png";
 
 const CommonWrapper = styled.div`
-  background-image: url("${logo}");
+  background: url("${logo}");
+  background-size: contain;
+  border: 6px solid #333;
+  margin: 20px;
 `;
 
 const MainSectionFlex = styled.div`
