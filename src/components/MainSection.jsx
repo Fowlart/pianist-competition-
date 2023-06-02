@@ -9,7 +9,7 @@ import logo from "../1163023.png";
 
 const CommonWrapper = styled.div`
   background: url("${logo}") no-repeat center fixed;
-  background-size: cover;
+  background-size: contain;
   border: 6px solid #333;
   margin: 20px;
   transition: all 0.5s;
