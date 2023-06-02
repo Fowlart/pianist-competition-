@@ -20,59 +20,6 @@ export const Wrapper = styled.div`
   justify-content: center;
 `;
 
-const PersonInfoSection = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-
-const Person = (props) => {
-
-    const TextSection = styled.div`
-      font-family: 'Jura', sans-serif;
-      background-color: black;
-      color: white;
-      box-shadow: darkslategray;
-      margin-top: 10px;
-      margin-bottom: 80px;
-      margin-left: 80px;
-      margin-right: 80px;
-      font-weight: 1000;
-      text-align: center;
-      font-size: 25px;
-      border-radius: 25px;
-    `;
-
-    const Image = styled.img`
-      margin-top: 20px;
-      margin-left: 10%;
-      left: 40px;
-      width: 210px;
-      height: 290px;
-      border-radius: 25px;
-    `;
-
-
-    return (<><Image src={props.imgUrl}/><TextSection>{props.text}</TextSection></>);
-
-}
-
-const Div = styled.div`
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-`;
-
-const Div1 = styled(Div)`
-  margin-top: 5px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-`;
-
 const A = styled.a`
   text-align: center;
   font-family: "Segoe UI", serif;
@@ -87,11 +34,6 @@ const A = styled.a`
   :hover {
     color: darkred;
   }
-`;
-
-const A1 = styled(A)`
-  font-style: normal;
-  font-size: 30px;
 `;
 
 const P = styled.div`

@@ -10,9 +10,6 @@ const FilterContainer = styled.div`
   font-family: 'Jura', sans-serif;
   color: #ffffff;
   display: flex;
-  :hover{
-    background-color: black;
-  },
   flex-direction: row;
   justify-content: left;
   margin-top: 26px;

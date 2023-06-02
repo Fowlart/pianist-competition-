@@ -12,7 +12,6 @@ const CommonWrapper = styled.div`
   background-size: contain;
   border: 6px solid #333;
   margin: 20px;
-  transition: all 0.5s;
 `;
 
 const MainSectionFlex = styled.div`
