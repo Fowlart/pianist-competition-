@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import React from "react";
 import {BiLinkExternal, GiPodiumWinner} from "react-icons/all";
-import logo from "../1163023.png";
 import judges_2023 from  "./info-page-imgs/judges_2023.jpeg"
 import poster_2 from "./rfs-page-imgs/rfs.png";
 import poster_1 from "./info-page-imgs/Poster_2023_ua.png";
@@ -14,7 +13,6 @@ export const LinkContainer = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  background-image: url("${logo}");
   display: flex;
   flex-direction: column;
   justify-content: center;

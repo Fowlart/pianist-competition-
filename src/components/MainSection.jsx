@@ -5,10 +5,8 @@ import {Card} from "./Card";
 import {useSelector} from "react-redux";
 import {RegularHeader} from "./RegularHeader";
 import {InfoPage, InfoPage2} from "./InfoPage";
-import logo from "../1163023.png";
 
 const CommonWrapper = styled.div`
-  background: url("${logo}") no-repeat center fixed;
   background-size: contain;
   border: 6px solid #333;
   margin: 20px;
