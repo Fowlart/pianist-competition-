@@ -89,7 +89,7 @@ export const InfoPage = () => {
                     <BiLinkExternal/> Положення</A>
                 <A href="https://docs.google.com/document/d/156ZGNdnMajHEzjfjrG7bD_-3v9R1GH4w/edit?usp=share_link&ouid=113883921299144449053&rtpof=true&sd=true">
                     <BiLinkExternal/> Організаційний комітет конкурсу </A>
-                <A href="https://drive.google.com/file/d/12yjempAz8sTmX-lQ0sty-WnetirNrgeE/view">
+                <A href="https://docs.google.com/document/d/1zGd9LkPbiXPmgOR_K48UW-OOcoUpRjuM/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
                     <BiLinkExternal/>  Програма "Всеукраїнського відкритого конкурсу піаністів. Рівне-2023" </A>
             </LinkContainer>
             <br/>
