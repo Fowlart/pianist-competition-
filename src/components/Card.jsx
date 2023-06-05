@@ -30,6 +30,13 @@ const IframeBox = styled.iframe`
 `;
 
 export const Button = styled.button`
+  @keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+  }
   color: white;
   transition: all 0.5s;
   background-color: black;
@@ -37,7 +44,7 @@ export const Button = styled.button`
   font-size: 20px;
   padding-top: 10px;
   :hover {
-    color: darkred;
+    animation: horizontal-shaking 0.5s infinite;
   }`;
 
 export const Card = (props) => {
