@@ -3,8 +3,7 @@ import React from "react";
 import {BiLinkExternal, GiPodiumWinner} from "react-icons/all";
 import judges_2023 from  "./info-page-imgs/judges_2023.jpeg"
 import poster_2 from "./rfs-page-imgs/rfs.png";
-import poster_1 from "./info-page-imgs/Poster_2023_ua.png";
-import poster_3 from "./info-page-imgs/poster_2023_en.png"
+import poster_1 from "./info-page-imgs/Poster_2024_ua.png";
 
 export const LinkContainer = styled.div`
   display: flex;
@@ -24,8 +23,8 @@ const A = styled.a`
   font-weight: 600;
   margin-top: 10px;
   margin-left: 35px;
-  font-size: 25px;
-  color: white;
+  font-size: 35px;
+  color: darkblue;
   text-decoration: none;
   transition: all 0.5s;
 
@@ -83,23 +82,15 @@ export const InfoPage2 = () => {
 export const InfoPage = () => {
     return (<Wrapper>
             <LinkContainer>
-                <A href="https://docs.google.com/document/d/1auoJ8rWsFopRwbNWrEph_DF6BaofMZah/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
-                    <GiPodiumWinner/> Лауреати 2021 </A>
-                <A href="https://docs.google.com/document/d/1bb9IOUE7IL996NHuLs2qntV2ZS7SNb8h/edit?usp=share_link&ouid=113883921299144449053&rtpof=true&sd=true">
+                <A href="https://docs.google.com/document/d/11DCmhXJRjgQ4PpAQUniL7e6BrTWsqAt2/edit?usp=drive_link&ouid=113883921299144449053&rtpof=true&sd=true">
                     <BiLinkExternal/> Положення</A>
-                <A href="https://docs.google.com/document/d/156ZGNdnMajHEzjfjrG7bD_-3v9R1GH4w/edit?usp=share_link&ouid=113883921299144449053&rtpof=true&sd=true">
+                <A href="https://docs.google.com/document/d/1OD0IkMgQBZX-ebBQfzs8X2mL1hJPoMLs/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
                     <BiLinkExternal/> Організаційний комітет конкурсу </A>
-                <A href="https://docs.google.com/document/d/1zGd9LkPbiXPmgOR_K48UW-OOcoUpRjuM/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
-                    <BiLinkExternal/>  Програма "Всеукраїнського відкритого конкурсу піаністів. Рівне-2023" </A>
             </LinkContainer>
             <br/>
             <P>Афіша(ua)</P>
             <br/>
             <Poster imgUrl={poster_1}/>
-            <P>Афіша(eng)</P>
-            <br/>
-            <Poster imgUrl={poster_3}/>
-            <br/>
             <P>Склад журі</P>
             <br/>
             <Poster imgUrl={judges_2023}/>
