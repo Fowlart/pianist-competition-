@@ -56,7 +56,7 @@ const Error = styled.div`
 
 const Warn = styled.div`
   margin-top: 17px;
-  font-size: 18px;
+  font-size: 35px;
   color: yellow;
   text-align: center;`
 
