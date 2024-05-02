@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 import {BiLinkExternal, GiPodiumWinner} from "react-icons/all";
-import judges_2023 from  "./info-page-imgs/judges_2023.jpeg"
+import judges_2024 from "./info-page-imgs/judges_2024.jpeg"
 import poster_2 from "./rfs-page-imgs/rfs.png";
 import poster_1 from "./info-page-imgs/Poster_2024_ua.png";
 
@@ -93,7 +93,7 @@ export const InfoPage = () => {
             <Poster imgUrl={poster_1}/>
             <P>Склад журі</P>
             <br/>
-            <Poster imgUrl={judges_2023}/>
+            <Poster imgUrl={judges_2024}/>
         </Wrapper>
     );
 }
