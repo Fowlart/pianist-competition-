@@ -5,60 +5,61 @@ import {useDispatch, useSelector} from "react-redux";
 import useWindowDimensions from "../hooks/UseWindowDimensions";
 
 export const Button = styled.div`
-  padding-top: 8px;
-  text-align: center;
-  margin-top: 14px;
-  font-size: 25px;
-  font-family: "Segoe UI", serif;
-  width: 15%;
-  border: solid white 2px;
-  color: white;
-  transition: all 0.5s;
+    padding-top: 8px;
+    text-align: center;
+    margin-top: 14px;
+    font-size: 25px;
+    font-family: "Segoe UI", serif;
+    width: 15%;
+    border: solid white 2px;
+    color: white;
+    background-color: black;
+    transition: all 0.5s;
 
-  :hover {
-    border: solid darkred 2px;
-    color: darkred;
-  }`;
+    :hover {
+        border: solid darkred 2px;
+        color: darkred;
+    }`;
 
 const Input = styled.input`
-  font-size: 15px;
-  flex-direction: column;
-  color: ${props => props.inputColor || "palevioletred"};
+    font-size: 15px;
+    flex-direction: column;
+    color: ${props => props.inputColor || "palevioletred"};
 `;
 
 
 const InputStyle = styled.div`
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  height: 50%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 50%;
 `;
 
 const InputWraper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  height: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 60px;
 `;
 
 const StyledSpan = styled.span`
-  color: white;
-  font-size: 25px;
-  font-family: "Segoe UI", serif;
+    color: white;
+    font-size: 25px;
+    font-family: "Segoe UI", serif;
 `;
 
 const Error = styled.div`
-  margin-top: 17px;
-  font-size: 18px;
-  color: red;
-  text-align: center;`
+    margin-top: 17px;
+    font-size: 18px;
+    color: red;
+    text-align: center;`
 
 const Warn = styled.div`
-  margin-top: 17px;
-  font-size: 35px;
-  color: yellow;
-  text-align: center;`
+    margin-top: 17px;
+    font-size: 35px;
+    color: yellow;
+    text-align: center;`
 
 export const RegularHeader = (props) => {
 
