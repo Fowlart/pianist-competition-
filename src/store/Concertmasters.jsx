@@ -251,4 +251,41 @@ export let concertmasters = [
       },
       "group": "Номінація «Концертмейстер»"
    }
-]
+].concat([
+   {
+      "videoUrl": "https://www.youtube.com/embed/cnJLRz7m_fw",
+      "composition": "В. Сокальський. «Канцонета»",
+      "name": "Свірчевська Олівія, 20.03.2023 р.н.",
+      "id": {
+         "$oid": "1714767944.3784525"
+      },
+      "group": "Номінація «Концертмейстер»"
+   },
+   {
+      "videoUrl": "https://www.youtube.com/embed/8kj9WTcJI-s",
+      "composition": "К. Бом. «Галоп»",
+      "name": "Свірчевська Олівія, 20.03.2023 р.н.",
+      "id": {
+         "$oid": "1714767944.378463"
+      },
+      "group": "Номінація «Концертмейстер»"
+   },
+   {
+      "videoUrl": "https://www.youtube.com/embed/_iXvfrP2FDY",
+      "composition": "Т Віталі. Чакона",
+      "name": "Мудра-Шендера Ю.В.",
+      "id": {
+         "$oid": "1714767944.378465"
+      },
+      "group": "Номінація «Концертмейстер»"
+   },
+   {
+      "videoUrl": "https://www.youtube.com/embed/RBZkoAItkKg",
+      "composition": "Е. Млинарський. Мазурка",
+      "name": "Мудра-Шендера Ю.В.",
+      "id": {
+         "$oid": "1714767944.3784664"
+      },
+      "group": "Номінація «Концертмейстер»"
+   }
+])
