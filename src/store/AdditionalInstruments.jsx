@@ -216,7 +216,7 @@ export let additionalInstruments = [
         "group": "Номінація «Додатковий інструмент (фортепіано)»"
     },
     {
-        "videoUrl": "https://www.youtube.com/embed/vW8iRkdMacI",
+        "videoUrl": "https://www.youtube.com/embed/KhH41h0K_3k",
         "composition": "1) Дж. Гершвін. «Summertime»; 2) Ф. Бургмюллер. «Хвилювання»",
         "name": "Уварова Софія",
         "id": {

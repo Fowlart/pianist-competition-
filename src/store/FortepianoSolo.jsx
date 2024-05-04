@@ -1856,15 +1856,6 @@ export let fortepianoSolo = [
             "group": "Номінація \"Фортепіано соло\""
         },
         {
-            "videoUrl": "https://www.youtube.com/embed/vW8iRkdMacI",
-            "composition": "1) Дж. Гершвін. «Summertime»; 2) Ф. Бургмюллер. «Хвилювання»",
-            "name": "Уварова Софія",
-            "id": {
-                "$oid": "1714420877.0437899"
-            },
-            "group": "Номінація \"Фортепіано соло\""
-        },
-        {
             "videoUrl": "https://www.youtube.com/embed/oi9AkmGqvuc",
             "composition": "1) М. Скорик. Вальс з Партити №5; 2) Ф. Шопен Ноктюрн мі бемоль мажор тв. 9 №2.",
             "name": "Сардачук Аделіна",
