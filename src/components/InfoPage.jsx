@@ -68,7 +68,7 @@ export const InfoPage2 = () => {
     return (<Wrapper>
             <LinkContainer>
                 <A href="https://docs.google.com/document/d/1_n0nBVRw7cT8-zR_CKBQ1Z8jlty-cyIJ/edit?usp=sharing&ouid=113883921299144449053&rtpof=true&sd=true">
-                    <BiLinkExternal/> Учасники проекту «Рівненські фортепіанні студії» 2023 </A>
+                    <BiLinkExternal/> Учасники проекту «Рівненські фортепіанні студії»</A>
             </LinkContainer>
             <br/>
             <P>Запрошуємо до участі у проекті</P>
